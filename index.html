@@ -1,9 +1,17 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ruang Aman</title>
+
+
+    <!-- Google Fonts -->
+
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
 
@@ -14,367 +22,608 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+
+
+    <!-- =====================================
+         BACKGROUND HAZY CIRCLES
+    ====================================== -->
+
+    <div class="background-circle circle-one"></div>
+
+    <div class="background-circle circle-two"></div>
+
     <div class="background-circle circle-three"></div>
+
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
     <header class="site-header">
 
-    <div class="navbar">
-
-        <a href="index.html" class="logo">
-            <span class="logo-icon">❖</span>
-            <span>Ruang Aman</span>
-        </a>
+        <div class="navbar">
 
 
-        <nav class="navigation">
+            <!-- LOGO -->
 
-            <a href="index.html" class="active">
-                Home
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">❖</span>
+
+                <span>Ruang Aman</span>
+
             </a>
 
-            <a href="cases.html">
-                Cases
-            </a>
-
-            <a href="law.html">
-                Law
-            </a>
-
-            <a href="report.html">
-                Report
-            </a>
-
-            <a href="support.html">
-                Help
-            </a>
-
-        </nav>
 
 
-       <div class="nav-actions">
+            <!-- NAVIGATION -->
 
-    <!-- PALETTE BUTTON -->
-    <div class="palette-container">
+            <nav class="navigation">
 
-        <button
-            class="icon-button"
-            id="palette-toggle"
-            aria-label="Choose colour">
-            🎨
-        </button>
+                <a href="index.html" class="active">
+                    Home
+                </a>
 
-        <div class="palette-menu" id="palette-menu">
+                <a href="cases.html">
+                    Cases
+                </a>
 
-            <button class="color-option purple" data-color="purple"></button>
-            <button class="color-option green" data-color="green"></button>
-            <button class="color-option pink" data-color="pink"></button>
-            <button class="color-option yellow" data-color="yellow"></button>
-            <button class="color-option blue" data-color="blue"></button>
-            <button class="color-option peach" data-color="peach"></button>
+                <a href="law.html">
+                    Law
+                </a>
+
+                <a href="report.html">
+                    Report
+                </a>
+
+                <a href="support.html">
+                    Help
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAVIGATION BUTTONS -->
+
+            <div class="nav-actions">
+
+
+                <!-- COLOUR PALETTE -->
+
+                <div class="palette-container">
+
+                    <button
+                        class="icon-button"
+                        id="palette-toggle"
+                        aria-label="Choose colour">
+
+                        🎨
+
+                    </button>
+
+
+                    <div
+                        class="palette-menu"
+                        id="palette-menu">
+
+
+                        <button
+                            class="color-option purple"
+                            data-color="purple"
+                            aria-label="Purple theme">
+                        </button>
+
+
+                        <button
+                            class="color-option green"
+                            data-color="green"
+                            aria-label="Green theme">
+                        </button>
+
+
+                        <button
+                            class="color-option pink"
+                            data-color="pink"
+                            aria-label="Pink theme">
+                        </button>
+
+
+                        <button
+                            class="color-option yellow"
+                            data-color="yellow"
+                            aria-label="Yellow theme">
+                        </button>
+
+
+                        <button
+                            class="color-option blue"
+                            data-color="blue"
+                            aria-label="Blue theme">
+                        </button>
+
+
+                        <button
+                            class="color-option peach"
+                            data-color="peach"
+                            aria-label="Peach theme">
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    class="icon-button"
+                    id="theme-toggle"
+                    aria-label="Toggle dark mode">
+
+                    ☾
+
+                </button>
+
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    class="icon-button mobile-menu-button"
+                    id="menu-toggle"
+                    aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
+
+            </div>
+
 
         </div>
 
-    </div>
+    </header>
 
 
-    <!-- DARK MODE BUTTON -->
-    <button
-        class="icon-button"
-        id="theme-toggle"
-        aria-label="Toggle dark mode">
-        ☾
-    </button>
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main>
 
 
-    <!-- MOBILE MENU -->
-    <button
-        class="icon-button mobile-menu-button"
-        id="menu-toggle">
-        ☰
-    </button>
 
-</div>
+        <!-- =================================
+             HERO
+        ================================== -->
 
-    </div>
-
-</header>
-<main>
-
-    <section class="hero">
-
-        <img
-            src="assets/hero-hall.jpg"
-            alt="University lecture hall"
-            class="hero-image"
-        >
-
-        <div class="hero-overlay"></div>
+        <section class="hero">
 
 
-        <div class="hero-content">
-
-            <p class="eyebrow">
-                A student research archive — Indonesia
-            </p>
-
-
-            <h1>
-                The group chat is a room too.
-                And it is rarely a safe one.
-            </h1>
+            <img
+                src="assets/hero-hall.jpg"
+                alt="University lecture hall"
+                class="hero-image"
+            >
 
 
-            <p class="hero-description">
-                Sexual harassment on Indonesian campuses does not
-                only happen in supervisors' offices and dormitory
-                corridors. It happens in class group chats,
-                organisation groups and alumni groups.
-            </p>
+            <div class="hero-overlay"></div>
 
 
-            <div class="hero-buttons">
+            <div class="hero-content">
 
-                <a
-                    href="report.html"
-                    class="button button-primary">
-                    Report anonymously
-                </a>
 
+                <p class="eyebrow">
+
+                    A student research archive — Indonesia
+
+                </p>
+
+
+
+                <h1>
+
+                    The group chat is a room too.
+                    And it is rarely a safe one.
+
+                </h1>
+
+
+
+                <p class="hero-description">
+
+                    Sexual harassment on Indonesian campuses does not
+                    only happen in supervisors' offices and dormitory
+                    corridors. It happens in class group chats,
+                    organisation groups and alumni groups.
+
+                </p>
+
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="hero-buttons">
+
+
+                    <a
+                        href="report.html"
+                        class="button button-primary">
+
+                        Report anonymously
+
+                    </a>
+
+
+
+                    <a
+                        href="cases.html"
+                        class="button button-secondary">
+
+                        Read the case studies
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             STATISTICS
+        ================================== -->
+
+        <section class="statistics">
+
+
+            <div class="stat-grid">
+
+
+                <div class="stat">
+
+                    <p class="stat-number">
+                        77%
+                    </p>
+
+                    <p class="stat-description">
+
+                        of academics surveyed said sexual violence
+                        had occurred on their campus.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat">
+
+                    <p class="stat-number">
+                        63%
+                    </p>
+
+                    <p class="stat-description">
+
+                        of those said the case was never reported
+                        to the institution.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat">
+
+                    <p class="stat-number">
+                        2022
+                    </p>
+
+                    <p class="stat-description">
+
+                        Indonesia passed the Sexual Violence Crimes
+                        Law (UU TPKS).
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             WHAT'S INSIDE
+        ================================== -->
+
+        <section class="whats-inside">
+
+
+            <h2>
+                What's inside
+            </h2>
+
+
+
+            <div class="inside-grid">
+
+
+                <!-- CARD 01 -->
 
                 <a
                     href="cases.html"
-                    class="button button-secondary">
-                    Read the case studies
+                    class="inside-card">
+
+
+                    <p class="card-number">
+                        01
+                    </p>
+
+
+                    <h3>
+                        Case studies
+                    </h3>
+
+
+                    <p>
+
+                        Documented harassment cases across Indonesian
+                        universities, including cases involving
+                        group chats and social media.
+
+                    </p>
+
+
+                    <span class="card-link">
+                        Open section →
+                    </span>
+
+
                 </a>
 
+
+
+                <!-- CARD 02 -->
+
+                <a
+                    href="law.html"
+                    class="inside-card">
+
+
+                    <p class="card-number">
+                        02
+                    </p>
+
+
+                    <h3>
+                        The law
+                    </h3>
+
+
+                    <p>
+
+                        Learn about Indonesian laws and regulations
+                        relating to sexual harassment and violence
+                        on university campuses.
+
+                    </p>
+
+
+                    <span class="card-link">
+                        Open section →
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- CARD 03 -->
+
+                <a
+                    href="support.html"
+                    class="inside-card">
+
+
+                    <p class="card-number">
+                        03
+                    </p>
+
+
+                    <h3>
+                        Get help
+                    </h3>
+
+
+                    <p>
+
+                        Find hotlines, campus support systems,
+                        legal aid organisations and resources.
+
+                    </p>
+
+
+                    <span class="card-link">
+                        Open section →
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- CARD 04 -->
+
+                <a
+                    href="report.html"
+                    class="inside-card">
+
+
+                    <p class="card-number">
+                        04
+                    </p>
+
+
+                    <h3>
+                        Anonymous reports
+                    </h3>
+
+
+                    <p>
+
+                        Share your experience anonymously and
+                        learn about the reporting process.
+
+                    </p>
+
+
+                    <span class="card-link">
+                        Open section →
+                    </span>
+
+
+                </a>
+
+
             </div>
 
-        </div>
 
-    </section>
-<section class="statistics">
+        </section>
 
-        <div class="stat-grid">
 
-            <div class="stat">
+    </main>
 
-                <p class="stat-number">
-                    77%
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-content">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-about">
+
+
+                <p class="footer-logo">
+                    Ruang Aman ©
                 </p>
 
-                <p class="stat-description">
-                    of academics surveyed said sexual violence
-                    had occurred on their campus.
+
+                <p>
+
+                    A student-built archive on sexual harassment
+                    in Indonesian universities.
+
                 </p>
+
 
             </div>
 
 
-            <div class="stat">
 
-                <p class="stat-number">
-                    63%
+            <!-- EMERGENCY -->
+
+            <div class="footer-emergency">
+
+
+                <p class="footer-heading">
+                    Emergency
                 </p>
 
-                <p class="stat-description">
-                    of those said the case was never reported
-                    to the institution.
+
+                <p>
+
+                    Police <strong>110</strong><br>
+
+                    SAPA <strong>129</strong><br>
+
+                    Komnas Perempuan
+
                 </p>
+
 
             </div>
 
 
-            <div class="stat">
 
-                <p class="stat-number">
-                    2022
+            <!-- MORE -->
+
+            <div class="footer-links">
+
+
+                <p class="footer-heading">
+                    More
                 </p>
 
-                <p class="stat-description">
-                    Indonesia passed the Sexual Violence Crimes
-                    Law (UU TPKS).
-                </p>
+
+                <a href="support.html">
+                    Get help
+                </a>
+
+
+                <a href="report.html">
+                    Submit a report
+                </a>
+
 
             </div>
 
-        </div>
-
-    </section>
-    
-
-    <section class="inside">
-
-    <h2>
-        What's inside
-    </h2>
-
-
-    <div class="card-grid">
-
-
-        <a href="cases.html" class="info-card">
-
-            <p class="card-number">
-                01
-            </p>
-
-            <h3>
-                Case studies
-            </h3>
-
-            <p>
-                Documented harassment cases across Indonesian
-                universities, including cases involving
-                group chats and social media.
-            </p>
-
-            <span class="card-link">
-                Open section →
-            </span>
-
-        </a>
-
-
-
-        <a href="law.html" class="info-card">
-
-            <p class="card-number">
-                02
-            </p>
-
-            <h3>
-                The law
-            </h3>
-
-            <p>
-                Learn about Indonesian laws and regulations
-                relating to sexual harassment and violence
-                on university campuses.
-            </p>
-
-            <span class="card-link">
-                Open section →
-            </span>
-
-        </a>
-
-
-
-        <a href="support.html" class="info-card">
-
-            <p class="card-number">
-                03
-            </p>
-
-            <h3>
-                Get help
-            </h3>
-
-            <p>
-                Find hotlines, campus support systems,
-                legal aid organisations and resources.
-            </p>
-
-            <span class="card-link">
-                Open section →
-            </span>
-
-        </a>
-
-
-
-        <a href="report.html" class="info-card">
-
-            <p class="card-number">
-                04
-            </p>
-
-            <h3>
-                Anonymous reports
-            </h3>
-
-            <p>
-                Share your experience anonymously and
-                learn about the reporting process.
-            </p>
-
-            <span class="card-link">
-                Open section →
-            </span>
-
-        </a>
-
-
-    </div>
-
-</section>
-
-</main>
-<footer class="site-footer">
-
-    <div class="footer-content">
-
-
-        <div class="footer-about">
-
-            <p class="footer-logo">
-                Ruang Aman ©
-            </p>
-
-            <p>
-                A student-built archive on sexual harassment
-                in Indonesian universities.
-            </p>
 
         </div>
 
 
-        <div class="footer-emergency">
 
-            <p class="footer-heading">
-                Emergency
-            </p>
+        <!-- FOOTER NOTE -->
 
-            <p>
-                Police <strong>110</strong><br>
-                SAPA <strong>129</strong><br>
-                Komnas Perempuan
-            </p>
+        <p class="footer-note">
 
-        </div>
+            This website is for educational and informational
+            purposes and is not a substitute for professional
+            legal or psychological assistance.
+
+        </p>
 
 
-        <div class="footer-links">
-
-            <p class="footer-heading">
-                More
-            </p>
-
-            <a href="support.html">
-                Get help
-            </a>
-
-            <a href="report.html">
-                Submit a report
-            </a>
-
-        </div>
+    </footer>
 
 
-    </div>
 
+    <!-- JAVASCRIPT -->
 
-    <p class="footer-note">
-        This website is for educational and informational
-        purposes and is not a substitute for professional
-        legal or psychological assistance.
-    </p>
+    <script src="script.js"></script>
 
-</footer>
-
-<script src="script.js"></script>
 
 </body>
 
