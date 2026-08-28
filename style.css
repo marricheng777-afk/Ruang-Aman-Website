@@ -2360,3 +2360,945 @@ body,
         color 0.5s ease,
         border-color 0.5s ease;
 }
+/* =========================================================
+   REPORT PAGE
+========================================================= */
+
+.report-page {
+    min-height: 100vh;
+}
+
+
+/* REPORT SECTION */
+
+.report-section {
+    padding: 170px 6% 100px;
+    min-height: 100vh;
+}
+
+.report-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.85fr);
+
+    gap: 55px;
+}
+
+
+/* =========================================================
+   REPORT FORM
+========================================================= */
+
+.report-form-area h1 {
+    margin-bottom: 15px;
+
+    color: var(--heading-color, #4d327d);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.05;
+}
+
+.report-introduction {
+    max-width: 700px;
+
+    margin-bottom: 35px;
+
+    color: var(--text-color, #30303a);
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+.report-form {
+    padding: 38px;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    border: 1px solid rgba(120, 110, 150, 0.18);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 45px rgba(50, 40, 90, 0.08);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 27px;
+}
+
+
+.form-group > label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 9px;
+
+    color: var(--heading-color, #30303a);
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.required {
+    color: #d22b2b;
+}
+
+
+.optional {
+    color: #777484;
+
+    font-size: 11px;
+
+    font-weight: 400;
+}
+
+
+/* INPUTS */
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #d1cfdd;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    color: #25243d;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 170px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: var(--accent, #6948a8);
+
+    box-shadow:
+        0 0 0 3px rgba(105, 72, 168, 0.10);
+}
+
+
+.character-count {
+    text-align: right;
+
+    margin-top: 5px;
+
+    color: #777484;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.hidden-file {
+    display: none;
+}
+
+
+.file-upload {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 16px;
+
+    border: 1px dashed #c5c1d4;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.file-upload:hover {
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border-color: var(--accent, #6948a8);
+}
+
+
+.upload-icon {
+    font-size: 25px;
+
+    color: var(--accent, #6948a8);
+}
+
+
+.file-upload strong {
+    display: block;
+
+    color: #353348;
+
+    font-size: 14px;
+}
+
+
+.file-upload small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #777484;
+
+    font-size: 11px;
+}
+
+
+.file-name {
+    margin-top: 8px;
+
+    color: var(--accent, #6948a8);
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   VISIBILITY
+========================================================= */
+
+.radio-option {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin-bottom: 15px;
+
+    cursor: pointer;
+}
+
+
+.radio-option input {
+
+    margin-top: 4px;
+
+    accent-color: var(--accent, #6948a8);
+}
+
+
+.radio-option strong {
+
+    display: block;
+
+    color: #30303f;
+
+    font-size: 14px;
+}
+
+
+.radio-option small {
+
+    display: block;
+
+    max-width: 600px;
+
+    margin-top: 3px;
+
+    color: #777484;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* PRIVACY */
+
+.privacy-small {
+
+    margin-top: 7px;
+
+    color: #777484;
+
+    font-size: 11px;
+}
+
+
+/* SUBMIT */
+
+.report-submit {
+
+    width: auto;
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: var(--accent, #543c98);
+
+    color: white;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(80, 55, 145, 0.18);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.report-submit:hover {
+
+    transform: translateY(-2px);
+
+    background: var(--accent-dark, #43286f);
+}
+
+
+.privacy-message {
+
+    margin-top: 18px;
+
+    color: #6d6b7c;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PUBLIC REPORT WALL
+========================================================= */
+
+.report-wall {
+
+    position: relative;
+
+    border-left: 1px solid rgba(100, 90, 130, 0.18);
+
+    padding-left: 35px;
+}
+
+
+.wall-heading {
+    margin-bottom: 25px;
+}
+
+
+.wall-heading h2 {
+
+    margin-bottom: 5px;
+
+    color: var(--heading-color, #292741);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+}
+
+
+.wall-heading h2 span {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.wall-heading p {
+
+    color: #6c697d;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   REPORT CARD
+========================================================= */
+
+.reports-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+.report-card {
+
+    position: relative;
+
+    padding: 23px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border: 1px solid rgba(100, 90, 130, 0.16);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(50, 40, 90, 0.07);
+
+    animation:
+        reportFadeIn 0.7s ease both;
+}
+
+
+@keyframes reportFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* DELETE BUTTON */
+
+.delete-report-button {
+
+    position: absolute;
+
+    top: 13px;
+
+    right: 13px;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #9b98a7;
+
+    font-size: 15px;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.report-card:hover .delete-report-button {
+
+    opacity: 1;
+}
+
+
+.delete-report-button:hover {
+
+    background: #fff0f0;
+
+    color: #d32f2f;
+}
+
+
+/* CARD INFORMATION */
+
+.report-university {
+
+    padding-right: 35px;
+
+    margin-bottom: 3px;
+
+    color: var(--heading-color, #573c9a);
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.report-city,
+.report-date {
+
+    margin-bottom: 2px;
+
+    color: #4e4c5c;
+
+    font-size: 12px;
+}
+
+
+.report-incident {
+
+    margin-top: 14px;
+
+    margin-bottom: 8px;
+
+    color: #c92b2b;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.report-experience {
+
+    margin: 0;
+
+    color: #363541;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    white-space: pre-wrap;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* FILE SHOWN ON CARD */
+
+.report-file {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 15px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #ddd9e4;
+
+    color: var(--accent, #543c98);
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.wall-note {
+
+    margin-top: 20px;
+
+    color: #777484;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DELETE MODAL
+========================================================= */
+
+.delete-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(20, 18, 30, 0.55);
+
+    backdrop-filter: blur(5px);
+}
+
+
+.delete-modal.show {
+
+    display: flex;
+}
+
+
+.delete-modal-box {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    padding: 32px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.22);
+
+    animation:
+        modalAppear 0.2s ease;
+}
+
+
+@keyframes modalAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+.delete-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0f0;
+
+    font-size: 20px;
+}
+
+
+.delete-modal-box h2 {
+
+    margin-bottom: 8px;
+
+    color: #25243d;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+}
+
+
+.delete-modal-box p {
+
+    margin-bottom: 25px;
+
+    color: #666475;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+
+.delete-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.delete-buttons button {
+
+    padding: 11px 19px;
+
+    border-radius: 8px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.cancel-delete {
+
+    border: 1px solid #d5d2dc;
+
+    background: white;
+
+    color: #222222;
+}
+
+
+.cancel-delete:hover {
+
+    background: #f5f5f5;
+}
+
+
+.confirm-delete {
+
+    border: 1px solid #d22c2c;
+
+    background: #d22c2c;
+
+    color: white;
+}
+
+
+.confirm-delete:hover {
+
+    background: #b91f1f;
+}
+
+
+/* =========================================================
+   DARK MODE — REPORT PAGE
+========================================================= */
+
+.dark .report-form,
+.dark .report-card {
+
+    background: rgba(30, 25, 40, 0.78);
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+
+.dark .form-group input[type="text"],
+.dark .form-group input[type="date"],
+.dark .form-group select,
+.dark .form-group textarea {
+
+    background: rgba(15, 12, 22, 0.75);
+
+    border-color: rgba(255, 255, 255, 0.14);
+
+    color: white;
+}
+
+
+.dark .form-group input::placeholder,
+.dark .form-group textarea::placeholder {
+
+    color: #aaa6b5;
+}
+
+
+.dark .radio-option strong {
+
+    color: white;
+}
+
+
+.dark .report-experience {
+
+    color: #ffffff;
+}
+
+
+.dark .report-city,
+.dark .report-date {
+
+    color: #ddd9e4;
+}
+
+
+.dark .file-upload {
+
+    background: rgba(20, 16, 27, 0.6);
+
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.dark .file-upload strong {
+
+    color: white;
+}
+
+
+.dark .delete-modal-box {
+
+    background: #1b1722;
+}
+
+
+.dark .delete-modal-box h2 {
+
+    color: white;
+}
+
+
+.dark .delete-modal-box p {
+
+    color: #c4bfcb;
+}
+
+
+.dark .cancel-delete {
+
+    background: white;
+
+    color: black;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .report-section {
+
+        padding: 135px 5% 70px;
+
+    }
+
+    .report-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+    .report-wall {
+
+        border-left: none;
+
+        border-top: 1px solid rgba(100, 90, 130, 0.18);
+
+        padding-left: 0;
+
+        padding-top: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .report-form {
+
+        padding: 25px;
+
+    }
+
+    .report-form-area h1 {
+
+        font-size: 42px;
+
+    }
+
+    .report-introduction {
+
+        font-size: 15px;
+
+    }
+
+    .delete-buttons {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .delete-buttons button {
+
+        width: 100%;
+
+    }
+
+}

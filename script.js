@@ -430,12 +430,338 @@ if (menuToggle && navigation) {
 
 
 /* ================================
-   REPORT FORM
+   REPORT SYSTEM
 ================================ */
 
 const reportForm =
-    document.querySelector(".report-form");
+    document.getElementById("report-form");
 
+const reportsList =
+    document.getElementById("reports-list");
+
+const characterCount =
+    document.getElementById("character-count");
+
+const experienceInput =
+    document.getElementById("experience");
+
+const evidenceFile =
+    document.getElementById("evidence-file");
+
+const fileName =
+    document.getElementById("file-name");
+
+
+/* ================================
+   DELETE MODAL
+================================ */
+
+const deleteModal =
+    document.getElementById("delete-modal");
+
+const cancelDelete =
+    document.getElementById("cancel-delete");
+
+const confirmDelete =
+    document.getElementById("confirm-delete");
+
+let reportToDelete = null;
+
+
+/* ================================
+   CHARACTER COUNTER
+================================ */
+
+if (experienceInput && characterCount) {
+
+    experienceInput.addEventListener(
+        "input",
+        function () {
+
+            characterCount.textContent =
+                experienceInput.value.length;
+
+        }
+    );
+
+}
+
+
+/* ================================
+   FILE NAME
+================================ */
+
+if (evidenceFile && fileName) {
+
+    evidenceFile.addEventListener(
+        "change",
+        function () {
+
+            if (evidenceFile.files.length > 0) {
+
+                fileName.textContent =
+                    "📎 " + evidenceFile.files[0].name;
+
+            } else {
+
+                fileName.textContent = "";
+
+            }
+
+        }
+    );
+
+}
+
+
+/* ================================
+   LOAD REPORTS
+================================ */
+
+function getReports() {
+
+    try {
+
+        return JSON.parse(
+            localStorage.getItem("ruangAmanReports")
+        ) || [];
+
+    } catch (error) {
+
+        return [];
+
+    }
+
+}
+
+
+/* ================================
+   SAVE REPORTS
+================================ */
+
+function saveReports(reports) {
+
+    localStorage.setItem(
+        "ruangAmanReports",
+        JSON.stringify(reports)
+    );
+
+}
+
+
+/* ================================
+   CREATE REPORT CARD
+================================ */
+
+function createReportCard(report) {
+
+    const card =
+        document.createElement("article");
+
+    card.className = "report-card";
+
+    card.dataset.id = report.id;
+
+
+    /* DELETE BUTTON */
+
+    const deleteButton =
+        document.createElement("button");
+
+    deleteButton.type = "button";
+
+    deleteButton.className =
+        "delete-report-button";
+
+    deleteButton.innerHTML = "🗑";
+
+    deleteButton.setAttribute(
+        "aria-label",
+        "Delete this report"
+    );
+
+
+    deleteButton.addEventListener(
+        "click",
+        function (event) {
+
+            event.stopPropagation();
+
+            reportToDelete = report.id;
+
+            if (deleteModal) {
+
+                deleteModal.classList.add("show");
+
+                deleteModal.setAttribute(
+                    "aria-hidden",
+                    "false"
+                );
+
+            }
+
+        }
+    );
+
+
+    card.appendChild(deleteButton);
+
+
+    /* UNIVERSITY */
+
+    if (report.university) {
+
+        const university =
+            document.createElement("h3");
+
+        university.className =
+            "report-university";
+
+        university.textContent =
+            report.university;
+
+        card.appendChild(university);
+
+    }
+
+
+    /* CITY */
+
+    if (report.city) {
+
+        const city =
+            document.createElement("p");
+
+        city.className =
+            "report-city";
+
+        city.textContent =
+            report.city;
+
+        card.appendChild(city);
+
+    }
+
+
+    /* DATE */
+
+    if (report.date) {
+
+        const date =
+            document.createElement("p");
+
+        date.className =
+            "report-date";
+
+        date.textContent =
+            report.date;
+
+        card.appendChild(date);
+
+    }
+
+
+    /* INCIDENT TYPE */
+
+    const incident =
+        document.createElement("p");
+
+    incident.className =
+        "report-incident";
+
+    incident.textContent =
+        report.incidentType;
+
+    card.appendChild(incident);
+
+
+    /* EXPERIENCE */
+
+    const experience =
+        document.createElement("p");
+
+    experience.className =
+        "report-experience";
+
+    experience.textContent =
+        report.experience;
+
+    card.appendChild(experience);
+
+
+    /* FILE */
+
+    if (report.fileName) {
+
+        const file =
+            document.createElement("p");
+
+        file.className =
+            "report-file";
+
+        file.textContent =
+            "📎 " + report.fileName;
+
+        card.appendChild(file);
+
+    }
+
+
+    return card;
+
+}
+
+
+/* ================================
+   DISPLAY REPORTS
+================================ */
+
+function displayReports() {
+
+    if (!reportsList) {
+        return;
+    }
+
+
+    reportsList.innerHTML = "";
+
+
+    const reports =
+        getReports();
+
+
+    const publicReports =
+        reports.filter(
+            function (report) {
+
+                return report.visibility === "public";
+
+            }
+        );
+
+
+    /* Newest first */
+
+    publicReports.reverse();
+
+
+    publicReports.forEach(
+        function (report) {
+
+            const card =
+                createReportCard(report);
+
+            reportsList.appendChild(card);
+
+        }
+    );
+
+}
+
+
+/* ================================
+   SUBMIT REPORT
+================================ */
 
 if (reportForm) {
 
@@ -445,11 +771,305 @@ if (reportForm) {
 
             event.preventDefault();
 
+
+            const university =
+                document.getElementById(
+                    "university"
+                ).value.trim();
+
+
+            const city =
+                document.getElementById(
+                    "city"
+                ).value.trim();
+
+
+            const date =
+                document.getElementById(
+                    "incident-date"
+                ).value;
+
+
+            const incidentType =
+                document.getElementById(
+                    "incident-type"
+                ).value;
+
+
+            const experience =
+                document.getElementById(
+                    "experience"
+                ).value.trim();
+
+
+            const contact =
+                document.getElementById(
+                    "contact"
+                ).value.trim();
+
+
+            const visibility =
+                document.querySelector(
+                    'input[name="visibility"]:checked'
+                ).value;
+
+
+            let uploadedFileName = "";
+
+
+            if (
+                evidenceFile &&
+                evidenceFile.files.length > 0
+            ) {
+
+                uploadedFileName =
+                    evidenceFile.files[0].name;
+
+            }
+
+
+            /* Create report */
+
+            const newReport = {
+
+                id:
+                    Date.now().toString(),
+
+                university:
+                    university,
+
+                city:
+                    city,
+
+                date:
+                    date
+                        ? new Date(
+                            date + "T00:00:00"
+                        ).toLocaleDateString(
+                            "en-US",
+                            {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric"
+                            }
+                        )
+                        : "",
+
+                incidentType:
+                    incidentType,
+
+                experience:
+                    experience,
+
+                fileName:
+                    uploadedFileName,
+
+                visibility:
+                    visibility,
+
+                contact:
+                    contact
+
+            };
+
+
+            const reports =
+                getReports();
+
+
+            reports.push(newReport);
+
+
+            saveReports(reports);
+
+
+            /* Update wall */
+
+            displayReports();
+
+
+            /* Reset form */
+
+            reportForm.reset();
+
+
+            if (characterCount) {
+
+                characterCount.textContent = "0";
+
+            }
+
+
+            if (fileName) {
+
+                fileName.textContent = "";
+
+            }
+
+
+            /*
+                Only public reports appear
+                on the wall.
+            */
+
+            if (visibility === "public") {
+
+                setTimeout(
+                    function () {
+
+                        const cards =
+                            document.querySelectorAll(
+                                ".report-card"
+                            );
+
+                        const newest =
+                            cards[0];
+
+                        if (newest) {
+
+                            newest.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center"
+                            });
+
+                        }
+
+                    },
+                    100
+                );
+
+            }
+
+
             alert(
-                "Your report has been submitted."
+                visibility === "public"
+                    ? "Your anonymous report has been published."
+                    : "Your private report has been submitted."
             );
 
         }
     );
 
 }
+
+
+/* ================================
+   CANCEL DELETE
+================================ */
+
+if (cancelDelete) {
+
+    cancelDelete.addEventListener(
+        "click",
+        function () {
+
+            reportToDelete = null;
+
+            deleteModal.classList.remove(
+                "show"
+            );
+
+            deleteModal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+        }
+    );
+
+}
+
+
+/* ================================
+   CONFIRM DELETE
+================================ */
+
+if (confirmDelete) {
+
+    confirmDelete.addEventListener(
+        "click",
+        function () {
+
+            if (!reportToDelete) {
+                return;
+            }
+
+
+            let reports =
+                getReports();
+
+
+            reports =
+                reports.filter(
+                    function (report) {
+
+                        return report.id !==
+                            reportToDelete;
+
+                    }
+                );
+
+
+            saveReports(reports);
+
+
+            reportToDelete = null;
+
+
+            deleteModal.classList.remove(
+                "show"
+            );
+
+            deleteModal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+
+            displayReports();
+
+        }
+    );
+
+}
+
+
+/* ================================
+   CLICK OUTSIDE DELETE MODAL
+================================ */
+
+if (deleteModal) {
+
+    deleteModal.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target ===
+                deleteModal
+            ) {
+
+                reportToDelete = null;
+
+                deleteModal.classList.remove(
+                    "show"
+                );
+
+                deleteModal.setAttribute(
+                    "aria-hidden",
+                    "true"
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+/* ================================
+   DISPLAY SAVED REPORTS
+================================ */
+
+displayReports();
