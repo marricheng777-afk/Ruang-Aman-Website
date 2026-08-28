@@ -3302,3 +3302,352 @@ body,
     }
 
 }
+/* =========================================
+   FINAL DARK MODE + PALETTE FIXES
+========================================= */
+
+
+/* =========================================
+   HEADER / NAVBAR
+   Always WHITE
+========================================= */
+
+.site-header .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    color: #20203d;
+}
+
+.site-header .logo {
+    color: #20203d;
+}
+
+.site-header .logo span {
+    color: #ee7d45;
+}
+
+.site-header .navigation a {
+    color: #4f5067;
+}
+
+.site-header .navigation a.active,
+.site-header .navigation a:hover {
+    color: var(--accent-dark);
+}
+
+.site-header .icon-button {
+    background: #ffffff;
+    color: #20203d;
+    border-color: #dddddd;
+}
+
+
+/* =========================================
+   WHAT'S INSIDE TITLE
+   Always WHITE background + readable text
+========================================= */
+
+.whats-inside {
+    background: #ffffff;
+}
+
+.whats-inside h2 {
+    color: var(--heading-color);
+}
+
+
+/* =========================================
+   WHAT'S INSIDE BOXES
+========================================= */
+
+.inside-grid {
+    background: #ffffff;
+}
+
+.inside-card {
+    background: #ffffff;
+    border-color: #d0d0df;
+}
+
+.inside-card:hover {
+    background: var(--page-background);
+}
+
+.inside-card .card-number,
+.inside-card .number {
+    color: #66667b;
+}
+
+.inside-card h3 {
+    color: var(--heading-color);
+}
+
+.inside-card p {
+    color: #303030;
+}
+
+.inside-card .card-link {
+    color: var(--accent);
+}
+
+
+/* =========================================
+   FOOTER
+   Always WHITE
+========================================= */
+
+.site-footer {
+    background: #ffffff;
+    color: #20203d;
+}
+
+.site-footer p,
+.site-footer a {
+    color: #303030;
+}
+
+.site-footer .footer-heading {
+    color: var(--heading-color);
+}
+
+.site-footer a:hover {
+    color: var(--accent);
+}
+
+.footer-note {
+    color: #666666 !important;
+}
+
+
+/* =========================================
+   HOME HERO BUTTONS
+========================================= */
+
+/* REPORT ANONYMOUSLY
+   Light mode = dark palette colour + white text
+   Dark mode = dark palette colour + white text
+*/
+
+.button-primary {
+    background: var(--accent-dark);
+    color: #ffffff;
+    border: 1px solid var(--accent-dark);
+}
+
+.button-primary:hover {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+
+/* READ CASE STUDIES
+   Light mode = white + dark palette text
+   Dark mode = light palette + dark text
+*/
+
+.button-secondary {
+    background: #ffffff;
+    color: var(--accent-dark);
+    border: 1px solid var(--accent-dark);
+}
+
+.button-secondary:hover {
+    background: var(--page-background);
+    color: var(--accent-dark);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+html.dark {
+
+    /* -------------------------------------
+       HEADER
+    ------------------------------------- */
+
+    .site-header .navbar {
+        background: #ffffff;
+    }
+
+    .site-header .logo {
+        color: #20203d;
+    }
+
+    .site-header .navigation a {
+        color: #4f5067;
+    }
+
+    .site-header .navigation a.active,
+    .site-header .navigation a:hover {
+        color: var(--accent-dark);
+    }
+
+    .site-header .icon-button {
+        background: #ffffff;
+        color: #20203d;
+    }
+
+
+    /* -------------------------------------
+       WHAT'S INSIDE
+    ------------------------------------- */
+
+    .whats-inside {
+        background: #ffffff;
+    }
+
+    .whats-inside h2 {
+        color: var(--heading-color);
+    }
+
+    .inside-grid {
+        background: #ffffff;
+    }
+
+    .inside-card {
+        background: #ffffff;
+    }
+
+    .inside-card:hover {
+        background: var(--page-background);
+    }
+
+    .inside-card h3 {
+        color: var(--heading-color);
+    }
+
+    .inside-card p {
+        color: #303030;
+    }
+
+    .inside-card .card-number,
+    .inside-card .number {
+        color: #66667b;
+    }
+
+    .inside-card .card-link {
+        color: var(--accent-dark);
+    }
+
+
+    /* -------------------------------------
+       FOOTER
+    ------------------------------------- */
+
+    .site-footer {
+        background: #ffffff;
+        color: #20203d;
+    }
+
+    .site-footer p,
+    .site-footer a {
+        color: #303030;
+    }
+
+    .site-footer .footer-heading {
+        color: var(--heading-color);
+    }
+
+    .footer-note {
+        color: #666666 !important;
+    }
+
+
+    /* -------------------------------------
+       HOME BUTTONS
+    ------------------------------------- */
+
+    /* Report button = DARK palette colour */
+    .button-primary {
+        background: var(--accent-dark);
+        color: #ffffff;
+        border-color: var(--accent-dark);
+    }
+
+    .button-primary:hover {
+        background: var(--accent);
+        color: #ffffff;
+    }
+
+    /* Case studies = LIGHT palette colour */
+    .button-secondary {
+        background: var(--accent);
+        color: #20203d;
+        border-color: var(--accent);
+    }
+
+    .button-secondary:hover {
+        background: var(--accent-dark);
+        color: #ffffff;
+    }
+}
+
+
+/* =========================================
+   REPORT PAGE BACKGROUND
+   ========================================= */
+
+/* Change this selector if your report page
+   uses a different main class */
+
+.report-page {
+    background: #ffffff;
+}
+
+
+/* If the report section itself uses this class */
+.report-section {
+    background: #ffffff;
+}
+
+
+/* Dark mode report page STILL WHITE */
+html.dark .report-page,
+html.dark .report-section {
+    background: #ffffff;
+}
+
+
+/* =========================================
+   REPORT FORM
+========================================= */
+
+html.dark .report-form {
+    background: #ffffff;
+    color: #20203d;
+}
+
+html.dark .report-form h1,
+html.dark .report-form h2,
+html.dark .report-form h3 {
+    color: var(--heading-color);
+}
+
+html.dark .report-form label {
+    color: #303030;
+}
+
+html.dark .report-form input,
+html.dark .report-form textarea,
+html.dark .report-form select {
+    background: #ffffff;
+    color: #20203d;
+    border-color: #d0d0df;
+}
+
+
+/* =========================================
+   REPORT PAGE TEXT
+========================================= */
+
+html.dark .report-page h1,
+html.dark .report-page h2,
+html.dark .report-page h3 {
+    color: var(--heading-color);
+}
+
+html.dark .report-page p,
+html.dark .report-page label {
+    color: #303030;
+}
