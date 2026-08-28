@@ -3590,33 +3590,10 @@ html.dark {
 
 /* Change this selector if your report page
    uses a different main class */
-
-.report-page {
-    background: #ffffff;
-}
-
-
-/* If the report section itself uses this class */
-.report-section {
-    background: #ffffff;
-}
-
-
-/* Dark mode report page STILL WHITE */
-html.dark .report-page,
-html.dark .report-section {
-    background: #ffffff;
-}
-
-
 /* =========================================
    REPORT FORM
 ========================================= */
 
-html.dark .report-form {
-    background: #ffffff;
-    color: #20203d;
-}
 
 html.dark .report-form h1,
 html.dark .report-form h2,
@@ -3650,4 +3627,72 @@ html.dark .report-page h3 {
 html.dark .report-page p,
 html.dark .report-page label {
     color: #303030;
+}
+/* =========================================
+   REPORT FORM ONLY
+   The page background stays themed
+   The form itself stays white
+========================================= */
+
+.report-form {
+    background: #ffffff;
+    color: #20203d;
+    border-radius: 18px;
+}
+
+/* Form headings */
+.report-form h1,
+.report-form h2,
+.report-form h3 {
+    color: var(--heading-color);
+}
+
+/* Form labels and normal text */
+.report-form label,
+.report-form p {
+    color: #303030;
+}
+
+/* Input boxes */
+.report-form input,
+.report-form textarea,
+.report-form select {
+    background: #ffffff;
+    color: #20203d;
+    border: 1px solid #d0d0df;
+}
+
+/* Placeholder text */
+.report-form input::placeholder,
+.report-form textarea::placeholder {
+    color: #888888;
+}
+
+
+/* =========================================
+   DARK MODE — FORM REMAINS WHITE
+========================================= */
+
+html.dark .report-form {
+    background: #ffffff;
+    color: #20203d;
+}
+
+html.dark .report-form h1,
+html.dark .report-form h2,
+html.dark .report-form h3 {
+    color: var(--heading-color);
+}
+
+html.dark .report-form label,
+html.dark .report-form p {
+    color: #303030;
+}
+
+html.dark .report-form input,
+html.dark .report-form textarea,
+html.dark .report-form select {
+    background: #ffffff;
+    color: #20203d;
+    border-color: #d0d0df;
 }
