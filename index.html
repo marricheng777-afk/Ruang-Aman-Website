@@ -69,29 +69,29 @@
 
             <!-- NAVIGATION -->
 
-            <nav class="navigation">
+          <nav class="navigation">
 
-                <a href="index.html" class="active">
-                    Home
-                </a>
+             <a href="index.html" class="active" data-i18n="nav.home">
+              Home
+              </a>
 
-                <a href="cases.html">
-                    Cases
-                </a>
+             <a href="cases.html" data-i18n="nav.cases">
+              Cases
+              </a>
 
-                <a href="law.html">
-                    Law
-                </a>
+               <a href="law.html" data-i18n="nav.law">
+              Law
+             </a>
 
-                <a href="report.html">
-                    Report
-                </a>
+             <a href="report.html" data-i18n="nav.report">
+            Report
+             </a>
 
-                <a href="support.html">
-                    Help
-                </a>
+             <a href="support.html" data-i18n="nav.help">
+             Help
+             </a>
 
-            </nav>
+        </nav>
 
 
 
@@ -165,7 +165,36 @@
 
                 </div>
 
+                <!-- LANGUAGE -->
+<div class="language-container">
 
+    <button
+        class="icon-button"
+        id="language-toggle"
+        aria-label="Change language"
+        title="Change language">
+        EN
+    </button>
+
+    <div
+        class="language-menu"
+        id="language-menu">
+
+        <button
+            class="language-option"
+            data-language="en">
+            English
+        </button>
+
+        <button
+            class="language-option"
+            data-language="id">
+            Bahasa Indonesia
+        </button>
+
+    </div>
+
+</div>
 
                 <!-- DARK MODE -->
 
@@ -229,60 +258,39 @@
             <div class="hero-content">
 
 
-                <p class="eyebrow">
+               <p class="eyebrow" data-i18n="hero.eyebrow">
+    A student research archive — Indonesia
+</p>
 
-                    A student research archive — Indonesia
+<h1 data-i18n="hero.title">
+    The group chat is a room too.
+    And it is rarely a safe one.
+</h1>
 
-                </p>
+<p class="hero-description" data-i18n="hero.description">
+    Sexual harassment on Indonesian campuses does not
+    only happen in supervisors' offices and dormitory
+    corridors. It happens in class group chats,
+    organisation groups and alumni groups.
+</p>
 
+<div class="hero-buttons">
 
+    <a
+        href="report.html"
+        class="button button-primary"
+        data-i18n="hero.report">
+        Report anonymously
+    </a>
 
-                <h1>
+    <a
+        href="cases.html"
+        class="button button-secondary"
+        data-i18n="hero.cases">
+        Read the case studies
+    </a>
 
-                    The group chat is a room too.
-                    And it is rarely a safe one.
-
-                </h1>
-
-
-
-                <p class="hero-description">
-
-                    Sexual harassment on Indonesian campuses does not
-                    only happen in supervisors' offices and dormitory
-                    corridors. It happens in class group chats,
-                    organisation groups and alumni groups.
-
-                </p>
-
-
-
-                <!-- HERO BUTTONS -->
-
-                <div class="hero-buttons">
-
-
-                    <a
-                        href="report.html"
-                        class="button button-primary">
-
-                        Report anonymously
-
-                    </a>
-
-
-
-                    <a
-                        href="cases.html"
-                        class="button button-secondary">
-
-                        Read the case studies
-
-                    </a>
-
-
-                </div>
-
+</div>
 
             </div>
 
@@ -307,16 +315,11 @@
                         77%
                     </p>
 
-                    <p class="stat-description">
-
-                        of academics surveyed said sexual violence
-                        had occurred on their campus.
-
-                    </p>
-
-                </div>
-
-
+                    <p class="stat-description" data-i18n="stats.one">
+    of academics surveyed said sexual violence
+    had occurred on their campus.
+</p>
+             </div>
 
                 <div class="stat">
 
@@ -324,12 +327,10 @@
                         63%
                     </p>
 
-                    <p class="stat-description">
-
-                        of those said the case was never reported
-                        to the institution.
-
-                    </p>
+                   <p class="stat-description" data-i18n="stats.two">
+    of those said the case was never reported
+    to the institution.
+</p>
 
                 </div>
 
@@ -362,14 +363,9 @@
              WHAT'S INSIDE
         ================================== -->
 
-        <section class="whats-inside">
-
-
-            <h2>
-                What's inside
-            </h2>
-
-
+       <h2 data-i18n="inside.title">
+    What's inside
+</h2>
 
             <div class="inside-grid">
 
@@ -378,31 +374,19 @@
 
                 <a
                     href="cases.html"
-                    class="inside-card">
+                 <h3 data-i18n="inside.cases.title">
+    Case studies
+</h3>
 
+<p data-i18n="inside.cases.description">
+    Documented harassment cases across Indonesian
+    universities, including cases involving
+    group chats and social media.
+</p>
 
-                    <p class="card-number">
-                        01
-                    </p>
-
-
-                    <h3>
-                        Case studies
-                    </h3>
-
-
-                    <p>
-
-                        Documented harassment cases across Indonesian
-                        universities, including cases involving
-                        group chats and social media.
-
-                    </p>
-
-
-                    <span class="card-link">
-                        Open section →
-                    </span>
+<span class="card-link" data-i18n="inside.open">
+    Open section →
+</span>
 
 
                 </a>
@@ -413,31 +397,19 @@
 
                 <a
                     href="law.html"
-                    class="inside-card">
+                  <h3 data-i18n="inside.law.title">
+    The law
+</h3>
 
+<p data-i18n="inside.law.description">
+    Learn about Indonesian laws and regulations
+    relating to sexual harassment and violence
+    on university campuses.
+</p>
 
-                    <p class="card-number">
-                        02
-                    </p>
-
-
-                    <h3>
-                        The law
-                    </h3>
-
-
-                    <p>
-
-                        Learn about Indonesian laws and regulations
-                        relating to sexual harassment and violence
-                        on university campuses.
-
-                    </p>
-
-
-                    <span class="card-link">
-                        Open section →
-                    </span>
+<span class="card-link" data-i18n="inside.open">
+    Open section →
+</span>
 
 
                 </a>
@@ -448,32 +420,18 @@
 
                 <a
                     href="support.html"
-                    class="inside-card">
+                  <h3 data-i18n="inside.help.title">
+    Get help
+</h3>
 
+<p data-i18n="inside.help.description">
+    Find hotlines, campus support systems,
+    legal aid organisations and resources.
+</p>
 
-                    <p class="card-number">
-                        03
-                    </p>
-
-
-                    <h3>
-                        Get help
-                    </h3>
-
-
-                    <p>
-
-                        Find hotlines, campus support systems,
-                        legal aid organisations and resources.
-
-                    </p>
-
-
-                    <span class="card-link">
-                        Open section →
-                    </span>
-
-
+<span class="card-link" data-i18n="inside.open">
+    Open section →
+</span>
                 </a>
 
 
@@ -482,30 +440,18 @@
 
                 <a
                     href="report.html"
-                    class="inside-card">
+                 <h3 data-i18n="inside.report.title">
+    Anonymous reports
+</h3>
 
+<p data-i18n="inside.report.description">
+    Share your experience anonymously and
+    learn about the reporting process.
+</p>
 
-                    <p class="card-number">
-                        04
-                    </p>
-
-
-                    <h3>
-                        Anonymous reports
-                    </h3>
-
-
-                    <p>
-
-                        Share your experience anonymously and
-                        learn about the reporting process.
-
-                    </p>
-
-
-                    <span class="card-link">
-                        Open section →
-                    </span>
+<span class="card-link" data-i18n="inside.open">
+    Open section →
+</span>
 
 
                 </a>
@@ -525,98 +471,82 @@
          FOOTER
     ====================================== -->
 
-    <footer class="site-footer">
+   <footer class="site-footer">
 
+    <div class="footer-content">
 
-        <div class="footer-content">
+        <div class="footer-about">
 
+            <p class="footer-logo">
+                Ruang Aman ©
+            </p>
 
-            <!-- ABOUT -->
-
-            <div class="footer-about">
-
-
-                <p class="footer-logo">
-                    Ruang Aman ©
-                </p>
-
-
-                <p>
-
-                    A student-built archive on sexual harassment
-                    in Indonesian universities.
-
-                </p>
-
-
-            </div>
-
-
-
-            <!-- EMERGENCY -->
-
-            <div class="footer-emergency">
-
-
-                <p class="footer-heading">
-                    Emergency
-                </p>
-
-
-                <p>
-
-                    Police <strong>110</strong><br>
-
-                    SAPA <strong>129</strong><br>
-
-                    Komnas Perempuan
-
-                </p>
-
-
-            </div>
-
-
-
-            <!-- MORE -->
-
-            <div class="footer-links">
-
-
-                <p class="footer-heading">
-                    More
-                </p>
-
-
-                <a href="support.html">
-                    Get help
-                </a>
-
-
-                <a href="report.html">
-                    Submit a report
-                </a>
-
-
-            </div>
-
+            <p data-i18n="footer.description">
+                A student-built archive on sexual harassment
+                in Indonesian universities.
+            </p>
 
         </div>
 
 
+        <div class="footer-emergency">
 
-        <!-- FOOTER NOTE -->
+            <p
+                class="footer-heading"
+                data-i18n="footer.emergency">
+                Emergency
+            </p>
 
-        <p class="footer-note">
+            <p>
+                <span data-i18n="footer.police">
+                    Police
+                </span>
+                <strong>110</strong><br>
 
-            This website is for educational and informational
-            purposes and is not a substitute for professional
-            legal or psychological assistance.
+                SAPA <strong>129</strong><br>
 
-        </p>
+                Komnas Perempuan
+            </p>
+
+        </div>
 
 
-    </footer>
+        <div class="footer-links">
+
+            <p
+                class="footer-heading"
+                data-i18n="footer.more">
+                More
+            </p>
+
+            <a
+                href="support.html"
+                data-i18n="footer.help">
+                Get help
+            </a>
+
+            <a
+                href="report.html"
+                data-i18n="footer.report">
+                Submit a report
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <p
+        class="footer-note"
+        data-i18n="footer.note">
+
+        This website is for educational and informational
+        purposes and is not a substitute for professional
+        legal or psychological assistance.
+
+    </p>
+
+</footer>
 
 
 

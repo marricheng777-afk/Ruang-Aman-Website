@@ -19,6 +19,407 @@ const paletteMenu =
 const colorOptions =
     document.querySelectorAll(".color-option");
 
+/* =========================================================
+   LANGUAGE SYSTEM
+========================================================= */
+
+
+/* ---------- LANGUAGE ELEMENTS ---------- */
+
+const languageToggle =
+    document.getElementById("language-toggle");
+
+const languageMenu =
+    document.getElementById("language-menu");
+
+const languageOptions =
+    document.querySelectorAll(".language-option");
+
+
+/* ---------- TRANSLATIONS ---------- */
+
+const translations = {
+
+    en: {
+
+        /* NAVIGATION */
+
+        "nav.home": "Home",
+        "nav.cases": "Cases",
+        "nav.law": "Law",
+        "nav.report": "Report",
+        "nav.help": "Help",
+
+
+        /* HERO */
+
+        "hero.eyebrow":
+            "A student research archive — Indonesia",
+
+        "hero.title":
+            "The group chat is a room too. And it is rarely a safe one.",
+
+        "hero.description":
+            "Sexual harassment on Indonesian campuses does not only happen in supervisors' offices and dormitory corridors. It happens in class group chats, organisation groups and alumni groups.",
+
+        "hero.report":
+            "Report anonymously",
+
+        "hero.cases":
+            "Read the case studies",
+
+
+        /* STATISTICS */
+
+        "stats.one":
+            "of academics surveyed said sexual violence had occurred on their campus.",
+
+        "stats.two":
+            "of those said the case was never reported to the institution.",
+
+        "stats.three":
+            "Indonesia passed the Sexual Violence Crimes Law (UU TPKS).",
+
+
+        /* WHAT'S INSIDE */
+
+        "inside.title":
+            "What's inside",
+
+        "inside.cases.title":
+            "Case studies",
+
+        "inside.cases.description":
+            "Documented harassment cases across Indonesian universities, including cases involving group chats and social media.",
+
+        "inside.law.title":
+            "The law",
+
+        "inside.law.description":
+            "Learn about Indonesian laws and regulations relating to sexual harassment and violence on university campuses.",
+
+        "inside.help.title":
+            "Get help",
+
+        "inside.help.description":
+            "Find hotlines, campus support systems, legal aid organisations and resources.",
+
+        "inside.report.title":
+            "Anonymous reports",
+
+        "inside.report.description":
+            "Share your experience anonymously and learn about the reporting process.",
+
+        "inside.open":
+            "Open section →",
+
+
+        /* FOOTER */
+
+        "footer.description":
+            "A student-built archive on sexual harassment in Indonesian universities.",
+
+        "footer.emergency":
+            "Emergency",
+
+        "footer.police":
+            "Police",
+
+        "footer.more":
+            "More",
+
+        "footer.help":
+            "Get help",
+
+        "footer.report":
+            "Submit a report",
+
+        "footer.note":
+            "This website is for educational and informational purposes and is not a substitute for professional legal or psychological assistance."
+
+    },
+
+
+    id: {
+
+        /* NAVIGATION */
+
+        "nav.home":
+            "Beranda",
+
+        "nav.cases":
+            "Kasus",
+
+        "nav.law":
+            "Hukum",
+
+        "nav.report":
+            "Lapor",
+
+        "nav.help":
+            "Bantuan",
+
+
+        /* HERO */
+
+        "hero.eyebrow":
+            "Arsip penelitian siswa — Indonesia",
+
+        "hero.title":
+            "Grup chat juga merupakan sebuah ruang. Dan ruang itu jarang benar-benar aman.",
+
+        "hero.description":
+            "Pelecehan seksual di kampus-kampus Indonesia tidak hanya terjadi di ruang kerja dosen atau lorong asrama. Pelecehan juga terjadi di grup chat kelas, organisasi, dan alumni.",
+
+        "hero.report":
+            "Lapor secara anonim",
+
+        "hero.cases":
+            "Baca studi kasus",
+
+
+        /* STATISTICS */
+
+        "stats.one":
+            "dari akademisi yang disurvei mengatakan bahwa kekerasan seksual pernah terjadi di kampus mereka.",
+
+        "stats.two":
+            "dari mereka mengatakan bahwa kasus tersebut tidak pernah dilaporkan kepada institusi.",
+
+        "stats.three":
+            "Indonesia mengesahkan Undang-Undang Tindak Pidana Kekerasan Seksual (UU TPKS).",
+
+
+        /* WHAT'S INSIDE */
+
+        "inside.title":
+            "Apa saja yang ada di sini",
+
+        "inside.cases.title":
+            "Studi kasus",
+
+        "inside.cases.description":
+            "Dokumentasi kasus pelecehan di berbagai universitas Indonesia, termasuk kasus yang terjadi melalui grup chat dan media sosial.",
+
+        "inside.law.title":
+            "Hukum",
+
+        "inside.law.description":
+            "Pelajari hukum dan peraturan di Indonesia yang berkaitan dengan pelecehan dan kekerasan seksual di lingkungan kampus.",
+
+        "inside.help.title":
+            "Dapatkan bantuan",
+
+        "inside.help.description":
+            "Temukan layanan bantuan, sistem dukungan kampus, bantuan hukum, dan berbagai sumber informasi.",
+
+        "inside.report.title":
+            "Laporan anonim",
+
+        "inside.report.description":
+            "Bagikan pengalamanmu secara anonim dan pelajari proses pelaporan.",
+
+        "inside.open":
+            "Buka bagian →",
+
+
+        /* FOOTER */
+
+        "footer.description":
+            "Arsip yang dibuat oleh siswa mengenai pelecehan seksual di universitas-universitas Indonesia.",
+
+        "footer.emergency":
+            "Darurat",
+
+        "footer.police":
+            "Polisi",
+
+        "footer.more":
+            "Lainnya",
+
+        "footer.help":
+            "Dapatkan bantuan",
+
+        "footer.report":
+            "Kirim laporan",
+
+        "footer.note":
+            "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional."
+
+    }
+
+};
+
+
+/* =========================================================
+   APPLY LANGUAGE
+========================================================= */
+
+function applyLanguage(language) {
+
+    const selectedLanguage =
+        translations[language];
+
+    if (!selectedLanguage) {
+        return;
+    }
+
+
+    /* Translate all data-i18n elements */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(function (element) {
+
+            const key =
+                element.dataset.i18n;
+
+            if (
+                selectedLanguage[key] !== undefined
+            ) {
+
+                element.textContent =
+                    selectedLanguage[key];
+
+            }
+
+        });
+
+
+    /* Update HTML language */
+
+    document.documentElement.lang =
+        language;
+
+
+    /* Update button */
+
+    if (languageToggle) {
+
+        languageToggle.textContent =
+            language === "id"
+                ? "ID"
+                : "EN";
+
+    }
+
+
+    /* Highlight selected language */
+
+    languageOptions.forEach(
+        function (option) {
+
+            option.classList.toggle(
+                "active",
+                option.dataset.language === language
+            );
+
+        }
+    );
+
+
+    /* Save language */
+
+    localStorage.setItem(
+        "language",
+        language
+    );
+
+}
+
+
+/* =========================================================
+   LOAD SAVED LANGUAGE
+========================================================= */
+
+let currentLanguage =
+    localStorage.getItem("language") || "en";
+
+
+applyLanguage(currentLanguage);
+
+
+/* =========================================================
+   LANGUAGE BUTTON
+========================================================= */
+
+if (languageToggle && languageMenu) {
+
+    languageToggle.addEventListener(
+        "click",
+        function (event) {
+
+            event.stopPropagation();
+
+            languageMenu.classList.toggle(
+                "show"
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   LANGUAGE SELECTION
+========================================================= */
+
+languageOptions.forEach(
+    function (option) {
+
+        option.addEventListener(
+            "click",
+            function () {
+
+                currentLanguage =
+                    option.dataset.language;
+
+
+                applyLanguage(
+                    currentLanguage
+                );
+
+
+                languageMenu.classList.remove(
+                    "show"
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   CLOSE LANGUAGE MENU
+========================================================= */
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            languageMenu &&
+            languageToggle &&
+            !languageMenu.contains(
+                event.target
+            ) &&
+            !languageToggle.contains(
+                event.target
+            )
+        ) {
+
+            languageMenu.classList.remove(
+                "show"
+            );
+
+        }
+
+    }
+);
+
 
 /* ================================
    COLOUR THEMES
