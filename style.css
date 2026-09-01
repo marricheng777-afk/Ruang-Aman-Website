@@ -844,71 +844,50 @@ body.dark-mode .button-secondary:hover {
 
 
 /* =========================================================
-   15. WHAT'S INSIDE
+   7. WHAT'S INSIDE
 ========================================================= */
 
-/*
-   IMPORTANT:
-   This section intentionally has its own variables.
-   This prevents other dark-mode rules from accidentally
-   destroying the card grid.
-*/
-
 .whats-inside {
-
     width: 100%;
-
     padding: 70px 8% 100px;
-
-    background: var(--inside-background);
-
-    color: var(--inside-text);
-
+    background: #ffffff;
+    color: #20203d;
     transition:
         background-color 0.5s ease,
         color 0.5s ease;
 }
 
-
 .whats-inside h2 {
-
     max-width: 1250px;
-
     margin: 0 auto 35px;
 
-    color: var(--inside-heading);
+    color: #20203d;
 
     font-family: "Playfair Display", serif;
-
     font-size: 42px;
-
     line-height: 1.2;
-
     font-weight: 600;
 }
 
 
 /* =========================================================
-   16. WHAT'S INSIDE GRID
+   WHAT'S INSIDE GRID
 ========================================================= */
 
 .inside-grid {
-
+    width: 100%;
     max-width: 1250px;
 
     margin: 0 auto;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     overflow: hidden;
 
-    background: var(--inside-background);
+    background: #ffffff;
 
-    border: 1px solid var(--inside-border);
-
+    border: 1px solid #d0d0df;
     border-radius: 16px;
 
     transition:
@@ -918,85 +897,70 @@ body.dark-mode .button-secondary:hover {
 
 
 /* =========================================================
-   17. INSIDE CARD
+   INDIVIDUAL CARD
 ========================================================= */
 
 .inside-card {
-
     min-height: 280px;
 
     padding: 38px;
 
     display: block;
 
+    background: #ffffff;
 
+    color: #20203d;
 
-    background: var(--inside-card-background);
-
-    color: var(--inside-text);
-
-    border-right: 1px solid var(--inside-border);
-
-    border-bottom: 1px solid var(--inside-border);
+    border-right: 1px solid #d0d0df;
+    border-bottom: 1px solid #d0d0df;
 
     cursor: pointer;
 
     transition:
         background-color 0.25s ease,
+        color 0.25s ease,
         border-color 0.25s ease,
         transform 0.25s ease;
 }
 
 
-/* Right column */
+/* Right column = no right border */
 
 .inside-card:nth-child(2n) {
-
     border-right: none;
 }
 
 
-/* Bottom row */
+/* Bottom row = no bottom border */
 
 .inside-card:nth-child(3),
 .inside-card:nth-child(4) {
-
     border-bottom: none;
 }
 
 
 /* =========================================================
-   18. INSIDE CARD HOVER
+   CARD HOVER
 ========================================================= */
 
 .inside-card:hover {
-
-    background:
-        color-mix(
-            in srgb,
-            var(--inside-card-background) 90%,
-            var(--accent) 10%
-        );
+    background: #f3efff;
 
     transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   19. CARD NUMBER
+   CARD NUMBER
 ========================================================= */
 
 .inside-card .card-number,
 .inside-card .number {
+    margin: 0 0 25px;
 
-
-
-    margin-bottom: 25px;
-
-    color: var(--inside-number);
+    color: #66667b;
 
     font-size: 13px;
-
     font-weight: 600;
 
     letter-spacing: 2px;
@@ -1004,21 +968,17 @@ body.dark-mode .button-secondary:hover {
 
 
 /* =========================================================
-   20. CARD TITLE
+   CARD TITLE
 ========================================================= */
 
 .inside-card h3 {
+    margin: 0 0 20px;
 
-
-
-    margin-bottom: 20px;
-
-    color: var(--inside-heading);
+    color: #20203d;
 
     font-family: "Playfair Display", serif;
 
     font-size: 28px;
-
     line-height: 1.2;
 
     font-weight: 600;
@@ -1026,47 +986,126 @@ body.dark-mode .button-secondary:hover {
 
 
 /* =========================================================
-   21. CARD DESCRIPTION
+   CARD DESCRIPTION
 ========================================================= */
 
 .inside-card p {
-
     max-width: 650px;
 
-    margin-bottom: 25px;
+    margin: 0 0 25px;
 
-    color: var(--inside-text);
+    color: #303030;
 
     font-size: 17px;
-
     line-height: 1.65;
 }
 
 
 /* =========================================================
-   22. CARD LINK
+   CARD LINK
 ========================================================= */
 
 .inside-card a,
 .inside-card .card-link {
-
-    color: var(--accent);
+    color: #6948a8;
 
     font-size: 16px;
-
-
-
-
-
-
     font-weight: 600;
-}
 
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
 
 .inside-card a:hover,
 .inside-card .card-link:hover {
+    color: #503680;
 
     text-decoration: underline;
+}
+
+
+/* =========================================================
+   DARK MODE — WHAT'S INSIDE
+========================================================= */
+
+/*
+   IMPORTANT:
+   You previously wanted this section to STAY WHITE
+   even when the rest of the website is dark mode.
+*/
+
+html.dark .whats-inside,
+body.dark-mode .whats-inside {
+    background: #ffffff;
+
+    color: #20203d;
+}
+
+
+html.dark .whats-inside h2,
+body.dark-mode .whats-inside h2 {
+    color: #20203d;
+}
+
+
+html.dark .inside-grid,
+body.dark-mode .inside-grid {
+    background: #ffffff;
+
+    border-color: #d0d0df;
+}
+
+
+html.dark .inside-card,
+body.dark-mode .inside-card {
+    background: #ffffff;
+
+    color: #20203d;
+
+    border-color: #d0d0df;
+}
+
+
+html.dark .inside-card:hover,
+body.dark-mode .inside-card:hover {
+    background: #f3efff;
+}
+
+
+html.dark .inside-card h3,
+body.dark-mode .inside-card h3 {
+    color: #20203d;
+}
+
+
+html.dark .inside-card p,
+body.dark-mode .inside-card p {
+    color: #303030;
+}
+
+
+html.dark .inside-card .card-number,
+html.dark .inside-card .number,
+body.dark-mode .inside-card .card-number,
+body.dark-mode .inside-card .number {
+    color: #66667b;
+}
+
+
+html.dark .inside-card a,
+html.dark .inside-card .card-link,
+body.dark-mode .inside-card a,
+body.dark-mode .inside-card .card-link {
+    color: #6948a8;
+}
+
+
+html.dark .inside-card a:hover,
+html.dark .inside-card .card-link:hover,
+body.dark-mode .inside-card a:hover,
+body.dark-mode .inside-card .card-link:hover {
+    color: #503680;
 }
 
 
@@ -2488,103 +2527,65 @@ body.dark-mode .button-secondary:hover {
     }
 
 
-    /* =====================================================
-       WHAT'S INSIDE — MOBILE
-       ===================================================== */
+    /* ---------- WHAT'S INSIDE ---------- */
 
-    .whats-inside {
+.whats-inside {
+    padding: 55px 7% 75px;
+}
 
-        padding:
-            55px 7% 75px;
-    }
+.whats-inside h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
 
+.inside-grid {
+    grid-template-columns: 1fr;
+    border-radius: 14px;
+}
 
-    .whats-inside h2 {
+.inside-card {
+    min-height: auto;
+    padding: 30px;
+    border-right: none;
+    border-bottom: 1px solid #d0d0df;
+}
 
-        font-size: 36px;
+/* Remove bottom border from the LAST card on mobile */
+.inside-card:last-child {
+    border-bottom: none;
+}
 
-        margin-bottom: 25px;
-    }
+/* Make sure dark mode DOES NOT override the white cards */
+html.dark .whats-inside,
+body.dark-mode .whats-inside {
+    background: #ffffff;
+}
 
+html.dark .inside-grid,
+body.dark-mode .inside-grid {
+    background: #ffffff;
+}
 
-    .inside-grid {
+html.dark .inside-card,
+body.dark-mode .inside-card {
+    background: #ffffff;
+    color: #20203d;
+}
 
-        grid-template-columns:
-            1fr;
-    }
+html.dark .inside-card:hover,
+body.dark-mode .inside-card:hover {
+    background: #f3efff;
+}
 
+html.dark .inside-card h3,
+body.dark-mode .inside-card h3 {
+    color: #20203d;
+}
 
-    .inside-card {
-
-        min-height: auto;
-
-        padding: 30px;
-    }
-
-
-    /* Reset desktop borders */
-
-    .inside-card:nth-child(n) {
-
-        border-right: none;
-
-        border-bottom:
-            1px solid var(--inside-border);
-    }
-
-
-    .inside-card:last-child {
-
-        border-bottom: none;
-    }
-
-
-    /* FOOTER */
-
-    .site-footer {
-
-        width:
-            calc(100% - 14%);
-
-        padding: 30px;
-    }
-
-
-    .footer-content {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 25px;
-    }
-
-
-    /* REPORT */
-
-    .report-section {
-
-        padding:
-            125px 7% 70px;
-    }
-
-
-    .report-form {
-
-        padding: 25px;
-    }
-
-
-    .report-form-area h1 {
-
-        font-size: 42px;
-    }
-
-
-    .report-introduction {
-
-        font-size: 15px;
-    }
-
+html.dark .inside-card p,
+body.dark-mode .inside-card p {
+    color: #303030;
+}
 
     /* DELETE MODAL */
 
