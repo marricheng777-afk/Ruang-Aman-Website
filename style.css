@@ -777,190 +777,158 @@ body::after {
 
 
 /* =========================================================
-   7. WHAT'S INSIDE
-========================================================= */
+   WHAT'S INSIDE
+   ========================================================= */
 
 .whats-inside {
+    width: 100%;
     padding: 70px 8% 100px;
-
-    background: transparent;
-
-    transition:
-        background-color 0.5s ease;
+    background: #ffffff;
+    transition: background-color 0.5s ease;
 }
-
 
 .whats-inside h2 {
     max-width: 1250px;
-
     margin: 0 auto 35px;
-
-    color: var(--heading-color);
-
+    color: var(--heading-color, #20203d);
     font-family: "Playfair Display", serif;
-
     font-size: 42px;
-
     line-height: 1.2;
-
     font-weight: 600;
 }
 
-
 /* =========================================================
-   INSIDE GRID
-========================================================= */
+   WHAT'S INSIDE GRID
+   ========================================================= */
 
 .inside-grid {
     max-width: 1250px;
-
     margin: 0 auto;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    border: 1px solid var(--card-border);
-
-    border-radius: 16px;
+    grid-template-columns: repeat(2, 1fr);
 
     overflow: hidden;
 
-    background: var(--card-background);
+    background: #ffffff;
+
+    border: 1px solid #d0d0df;
+    border-radius: 16px;
 
     transition:
         background-color 0.5s ease,
         border-color 0.5s ease;
 }
 
-
 /* =========================================================
-   INSIDE CARD
-========================================================= */
+   INDIVIDUAL CARD
+   ========================================================= */
 
 .inside-card {
     min-height: 280px;
-
     padding: 38px;
 
-    background: var(--card-background);
-
-    border-right: 1px solid var(--card-border);
-
-    border-bottom: 1px solid var(--card-border);
-
+    display: block;
     box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-right: 1px solid #d0d0df;
+    border-bottom: 1px solid #d0d0df;
 
     cursor: pointer;
 
     transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
         transform 0.25s ease;
 }
 
-
+/* Remove right border from right column */
 .inside-card:nth-child(2n) {
     border-right: none;
 }
 
-
+/* Remove bottom border from bottom row */
 .inside-card:nth-child(3),
 .inside-card:nth-child(4) {
     border-bottom: none;
 }
 
-
 /* =========================================================
    CARD HOVER
-========================================================= */
+   ========================================================= */
 
 .inside-card:hover {
-    background: color-mix(
-        in srgb,
-        var(--card-background) 70%,
-        var(--accent) 30%
-    );
+    background: var(--page-background);
+    transform: translateY(-2px);
 }
-
 
 /* =========================================================
    CARD NUMBER
-========================================================= */
+   ========================================================= */
 
 .inside-card .card-number,
 .inside-card .number {
     margin: 0 0 25px;
 
-    color: var(--text-secondary);
+    color: #66667b;
 
     font-size: 13px;
-
     font-weight: 600;
-
     letter-spacing: 2px;
 }
 
-
 /* =========================================================
    CARD TITLE
-========================================================= */
+   ========================================================= */
 
 .inside-card h3 {
     margin: 0 0 20px;
 
-    color: var(--heading-color);
+    color: var(--heading-color, #242440);
 
     font-family: "Playfair Display", serif;
-
     font-size: 28px;
-
     line-height: 1.2;
-
     font-weight: 600;
 }
 
-
 /* =========================================================
    CARD DESCRIPTION
-========================================================= */
+   ========================================================= */
 
 .inside-card p {
     max-width: 650px;
 
     margin: 0 0 25px;
 
-    color: var(--text-secondary);
+    color: #303030;
 
     font-size: 17px;
-
     line-height: 1.65;
 }
 
-
 /* =========================================================
    CARD LINK
-========================================================= */
+   ========================================================= */
 
 .inside-card a,
 .inside-card .card-link {
     color: var(--accent);
 
     font-size: 16px;
-
     font-weight: 600;
 
     text-decoration: none;
-}
 
+    transition: color 0.2s ease;
+}
 
 .inside-card a:hover,
 .inside-card .card-link:hover {
     text-decoration: underline;
 }
-
-
 /* =========================================================
    8. FOOTER
 ========================================================= */
@@ -2759,37 +2727,45 @@ body,
 
     /* ---------- WHAT'S INSIDE ---------- */
 
-    .whats-inside {
-        padding:
-            55px 7% 70px;
-    }
+  html.dark .whats-inside {
+    background: #ffffff;
+}
 
-    .whats-inside h2 {
-        font-size: 35px;
-    }
+html.dark .inside-grid {
+    background: #ffffff;
+    border-color: #d0d0df;
+}
 
-    .inside-grid {
-        grid-template-columns:
-            1fr;
-    }
+html.dark .inside-card {
+    background: #ffffff;
+    border-color: #d0d0df;
+}
 
-    .inside-card {
-        min-height: auto;
+html.dark .inside-card:hover {
+    background: var(--page-background);
+}
 
-        padding: 30px;
+html.dark .whats-inside h2 {
+    color: var(--heading-color);
+}
 
-        border-right: none;
-    }
+html.dark .inside-card h3 {
+    color: var(--heading-color);
+}
 
-    .inside-card:nth-child(3) {
-        border-bottom:
-            1px solid var(--card-border);
-    }
+html.dark .inside-card p {
+    color: #303030;
+}
 
-    .inside-card:nth-child(4) {
-        border-bottom: none;
-    }
+html.dark .inside-card .card-number,
+html.dark .inside-card .number {
+    color: #66667b;
+}
 
+html.dark .inside-card a,
+html.dark .inside-card .card-link {
+    color: var(--accent-dark);
+}
 
     /* ---------- FOOTER ---------- */
 
