@@ -844,51 +844,80 @@ body.dark-mode .button-secondary:hover {
 
 
 /* =========================================================
-   7. WHAT'S INSIDE
+   WHAT'S INSIDE SECTION
 ========================================================= */
 
 .whats-inside {
     width: 100%;
-    padding: 70px 8% 100px;
-    background: #ffffff;
-    color: #20203d;
-    transition:
-        background-color 0.5s ease,
-        color 0.5s ease;
+    padding: 70px 6% 100px;
+
+    /* Soft gradient background like the reference */
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(190, 165, 255, 0.28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 95% 15%,
+            rgba(120, 220, 235, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(255, 180, 190, 0.18),
+            transparent 35%
+        ),
+        #f3f4ff;
+
+    transition: background 0.5s ease;
 }
 
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
 .whats-inside h2 {
-    max-width: 1250px;
-    margin: 0 auto 35px;
+    width: 100%;
+    max-width: 1585px;
+
+    margin: 0 auto 42px;
 
     color: #20203d;
 
     font-family: "Playfair Display", serif;
-    font-size: 42px;
+
+    font-size: 44px;
     line-height: 1.2;
     font-weight: 600;
 }
 
 
 /* =========================================================
-   WHAT'S INSIDE GRID
+   MAIN 2 × 2 GRID
 ========================================================= */
 
 .inside-grid {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1585px;
 
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
     overflow: hidden;
 
     background: #ffffff;
 
     border: 1px solid #d0d0df;
-    border-radius: 16px;
+
+    border-radius: 18px;
+
+    box-shadow: none;
 
     transition:
         background-color 0.5s ease,
@@ -897,19 +926,19 @@ body.dark-mode .button-secondary:hover {
 
 
 /* =========================================================
-   INDIVIDUAL CARD
+   INDIVIDUAL CARDS
 ========================================================= */
 
 .inside-card {
-    min-height: 280px;
+    min-height: 330px;
 
-    padding: 38px;
+    padding: 40px;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     background: #ffffff;
-
-    color: #20203d;
 
     border-right: 1px solid #d0d0df;
     border-bottom: 1px solid #d0d0df;
@@ -917,22 +946,22 @@ body.dark-mode .button-secondary:hover {
     cursor: pointer;
 
     transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease,
+        background-color 0.3s ease,
         transform 0.25s ease;
 }
 
 
-/* Right column = no right border */
+/* =========================================================
+   REMOVE INTERNAL BORDERS
+========================================================= */
 
-.inside-card:nth-child(2n) {
+/* Right column */
+.inside-card:nth-child(2),
+.inside-card:nth-child(4) {
     border-right: none;
 }
 
-
-/* Bottom row = no bottom border */
-
+/* Bottom row */
 .inside-card:nth-child(3),
 .inside-card:nth-child(4) {
     border-bottom: none;
@@ -944,9 +973,9 @@ body.dark-mode .button-secondary:hover {
 ========================================================= */
 
 .inside-card:hover {
-    background: #f3efff;
+    background: #faf9ff;
 
-    transform: translateY(-2px);
+    transform: none;
 }
 
 
@@ -958,9 +987,11 @@ body.dark-mode .button-secondary:hover {
 .inside-card .number {
     margin: 0 0 25px;
 
-    color: #66667b;
+    color: #68687e;
 
-    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 15px;
     font-weight: 600;
 
     letter-spacing: 2px;
@@ -978,7 +1009,8 @@ body.dark-mode .button-secondary:hover {
 
     font-family: "Playfair Display", serif;
 
-    font-size: 28px;
+    font-size: 29px;
+
     line-height: 1.2;
 
     font-weight: 600;
@@ -990,13 +1022,16 @@ body.dark-mode .button-secondary:hover {
 ========================================================= */
 
 .inside-card p {
-    max-width: 650px;
+    max-width: 850px;
 
-    margin: 0 0 25px;
+    margin: 0 0 28px;
 
-    color: #303030;
+    color: #68687e;
 
-    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 18px;
+
     line-height: 1.65;
 }
 
@@ -1007,81 +1042,80 @@ body.dark-mode .button-secondary:hover {
 
 .inside-card a,
 .inside-card .card-link {
-    color: #6948a8;
+    margin-top: auto;
 
-    font-size: 16px;
+    color: #59419a;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 17px;
+
     font-weight: 600;
 
     text-decoration: none;
 
-    transition: color 0.2s ease;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
 }
+
 
 .inside-card a:hover,
 .inside-card .card-link:hover {
-    color: #503680;
+    color: #3f2d73;
 
-    text-decoration: underline;
+    text-decoration: none;
+
+    transform: translateX(3px);
 }
 
 
 /* =========================================================
-   DARK MODE — WHAT'S INSIDE
+   DARK MODE
 ========================================================= */
-
-/*
-   IMPORTANT:
-   You previously wanted this section to STAY WHITE
-   even when the rest of the website is dark mode.
-*/
 
 html.dark .whats-inside,
 body.dark-mode .whats-inside {
-    background: #ffffff;
-
-    color: #20203d;
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(100, 70, 160, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 95% 15%,
+            rgba(50, 120, 140, 0.18),
+            transparent 35%
+        ),
+        #17121f;
 }
 
 
 html.dark .whats-inside h2,
 body.dark-mode .whats-inside h2 {
-    color: #20203d;
+    color: #f2edfa;
 }
 
 
 html.dark .inside-grid,
 body.dark-mode .inside-grid {
-    background: #ffffff;
+    background: #211b29;
 
-    border-color: #d0d0df;
+    border-color: #40364d;
 }
 
 
 html.dark .inside-card,
 body.dark-mode .inside-card {
-    background: #ffffff;
+    background: #211b29;
 
-    color: #20203d;
-
-    border-color: #d0d0df;
+    border-color: #40364d;
 }
 
 
 html.dark .inside-card:hover,
 body.dark-mode .inside-card:hover {
-    background: #f3efff;
-}
-
-
-html.dark .inside-card h3,
-body.dark-mode .inside-card h3 {
-    color: #20203d;
-}
-
-
-html.dark .inside-card p,
-body.dark-mode .inside-card p {
-    color: #303030;
+    background: #292231;
 }
 
 
@@ -1089,7 +1123,19 @@ html.dark .inside-card .card-number,
 html.dark .inside-card .number,
 body.dark-mode .inside-card .card-number,
 body.dark-mode .inside-card .number {
-    color: #66667b;
+    color: #a9a1b3;
+}
+
+
+html.dark .inside-card h3,
+body.dark-mode .inside-card h3 {
+    color: #f2edfa;
+}
+
+
+html.dark .inside-card p,
+body.dark-mode .inside-card p {
+    color: #c3bbcd;
 }
 
 
@@ -1097,7 +1143,7 @@ html.dark .inside-card a,
 html.dark .inside-card .card-link,
 body.dark-mode .inside-card a,
 body.dark-mode .inside-card .card-link {
-    color: #6948a8;
+    color: #b18de8;
 }
 
 
@@ -1105,10 +1151,111 @@ html.dark .inside-card a:hover,
 html.dark .inside-card .card-link:hover,
 body.dark-mode .inside-card a:hover,
 body.dark-mode .inside-card .card-link:hover {
-    color: #503680;
+    color: #c9aff4;
 }
 
 
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .whats-inside {
+        padding: 60px 5% 80px;
+    }
+
+    .whats-inside h2 {
+        font-size: 38px;
+
+        margin-bottom: 32px;
+    }
+
+    .inside-card {
+        min-height: 300px;
+
+        padding: 32px;
+    }
+
+    .inside-card h3 {
+        font-size: 26px;
+    }
+
+    .inside-card p {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .whats-inside {
+        padding: 50px 6% 70px;
+    }
+
+    .whats-inside h2 {
+        font-size: 34px;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* Change from 2 × 2 to one column */
+    .inside-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+        border-radius: 15px;
+    }
+
+
+    .inside-card {
+        min-height: 260px;
+
+        padding: 28px;
+    }
+
+
+    /* Reset borders first */
+    .inside-card:nth-child(1),
+    .inside-card:nth-child(2),
+    .inside-card:nth-child(3),
+    .inside-card:nth-child(4) {
+        border-right: none;
+
+        border-bottom: 1px solid #d0d0df;
+    }
+
+
+    /* Last card has no bottom border */
+    .inside-card:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    .inside-card h3 {
+        font-size: 25px;
+    }
+
+
+    .inside-card p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Dark mobile borders */
+    html.dark .inside-card,
+    body.dark-mode .inside-card {
+        border-color: #40364d;
+    }
+}
 /* =========================================================
    23. FOOTER
 ========================================================= */
