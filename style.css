@@ -86,7 +86,7 @@ button {
 
     /* What's Inside */
        --inside-background: transparent;
-    --inside-card-background: transparent;
+    --inside-card-background: #ffffff;
     --inside-border: #d0d0df;
     --inside-heading: #20203d;
     --inside-text: #303030;
@@ -130,7 +130,7 @@ body.dark-mode {
 
     /* What's Inside */
     --inside-background: transparent;
-    --inside-card-background: transparent;
+    --inside-card-background: #1e1927;
     --inside-border: rgba(255, 255, 255, 0.13);
     --inside-heading: #f2edfa;
     --inside-text: #c3bbcd;
@@ -904,7 +904,7 @@ body.dark-mode .button-secondary:hover {
     flex-direction: column;
     align-items: flex-start;
 
-  background: transparent;
+   background: var(--inside-card-background);
     border-right: 1px solid var(--inside-border);
     border-bottom: 1px solid var(--inside-border);
 
@@ -938,8 +938,8 @@ body.dark-mode .button-secondary:hover {
 ========================================================= */
 
 .inside-card:hover {
-    background: #faf9ff;
-
+    background: var(--inside-card-background);
+    filter: brightness(0.97);
     transform: none;
 }
 
