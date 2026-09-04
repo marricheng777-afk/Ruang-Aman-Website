@@ -85,8 +85,8 @@ button {
     --footer-background: rgba(255, 255, 255, 0.82);
 
     /* What's Inside */
-    --inside-background: #ffffff;
-    --inside-card-background: #ffffff;
+       --inside-background: transparent;
+    --inside-card-background: transparent;
     --inside-border: #d0d0df;
     --inside-heading: #20203d;
     --inside-text: #303030;
@@ -129,8 +129,8 @@ body.dark-mode {
     --footer-background: rgba(30, 25, 40, 0.90);
 
     /* What's Inside */
-    --inside-background: #1e1927;
-    --inside-card-background: #1e1927;
+    --inside-background: transparent;
+    --inside-card-background: transparent;
     --inside-border: rgba(255, 255, 255, 0.13);
     --inside-heading: #f2edfa;
     --inside-text: #c3bbcd;
