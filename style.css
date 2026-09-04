@@ -2726,3 +2726,437 @@ body.dark-mode .inside-card .card-link:hover {
     }
 }
 
+/* =========================================
+   CASE STUDIES PAGE
+========================================= */
+
+.cases-page {
+    width: 100%;
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(196, 181, 253, 0.45),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 0%,
+            rgba(103, 232, 249, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 70%,
+            rgba(251, 207, 232, 0.25),
+            transparent 35%
+        ),
+        #f5f5ff;
+
+    color: #19182f;
+    padding-bottom: 100px;
+}
+
+
+/* =========================================
+   PAGE INTRO
+========================================= */
+
+.cases-intro {
+    padding: 55px 4.3% 75px;
+    border-bottom: 1px solid rgba(70, 67, 100, 0.18);
+}
+
+.section-label {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #67657a;
+    margin-bottom: 38px;
+}
+
+.cases-intro h1 {
+    max-width: 1400px;
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(58px, 6vw, 105px);
+    font-weight: 500;
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+}
+
+.cases-intro p {
+    max-width: 1450px;
+    margin: 55px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: clamp(20px, 1.8vw, 29px);
+    line-height: 1.55;
+    color: #68677b;
+}
+
+
+/* =========================================
+   INDIVIDUAL CASE
+========================================= */
+
+.case-study {
+    padding: 48px 4.3% 70px;
+    border-bottom: 1px solid rgba(70, 67, 100, 0.18);
+}
+
+
+/* =========================================
+   UNIVERSITY + DATE
+========================================= */
+
+.case-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 25px;
+}
+
+.case-university {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    color: #69677b;
+}
+
+.case-date {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #69677b;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   CASE TITLE
+========================================= */
+
+.case-title {
+    max-width: 1250px;
+    margin: 0 0 32px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 4vw, 68px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+
+/* =========================================
+   MAIN CASE LAYOUT
+========================================= */
+
+.case-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 430px;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* =========================================
+   CASE DESCRIPTION
+========================================= */
+
+.case-description {
+    max-width: 1100px;
+    margin: 0 0 55px;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666579;
+}
+
+
+/* =========================================
+   OUTCOME CARD
+========================================= */
+
+.case-outcome {
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid rgba(83, 80, 112, 0.2);
+    border-radius: 20px;
+
+    padding: 27px 28px 30px;
+
+    box-shadow:
+        0 10px 30px rgba(50, 45, 80, 0.04);
+}
+
+.outcome-label {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+
+    color: #68667b;
+    margin-bottom: 22px;
+}
+
+.case-outcome p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+    color: #292840;
+}
+
+
+/* =========================================
+   GROUP CHAT HIGHLIGHT
+========================================= */
+
+.case-highlight {
+    border-left: 3px solid #ef7b52;
+
+    padding: 3px 0 3px 22px;
+    margin: 20px 0 50px;
+
+    max-width: 1150px;
+}
+
+.highlight-title {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+
+    color: #68667b;
+
+    margin-bottom: 17px;
+}
+
+.case-highlight p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.65;
+
+    color: #292840;
+}
+
+
+/* =========================================
+   CASE DETAILS
+========================================= */
+
+.case-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+    gap: 0;
+
+    max-width: 1150px;
+
+    border-top: 1px solid rgba(70, 67, 100, 0.18);
+    border-bottom: 1px solid rgba(70, 67, 100, 0.18);
+
+    margin-bottom: 38px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    padding: 23px 25px 23px 0;
+}
+
+.detail-item:nth-child(even) {
+    padding-left: 25px;
+    border-left: 1px solid rgba(70, 67, 100, 0.18);
+}
+
+.detail-item:nth-child(n + 3) {
+    border-top: 1px solid rgba(70, 67, 100, 0.18);
+}
+
+.detail-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+
+    color: #777488;
+}
+
+.detail-value {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.45;
+
+    color: #292840;
+}
+
+
+/* =========================================
+   SOURCES
+========================================= */
+
+.case-sources {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 35px;
+}
+
+.sources-title {
+    width: 100%;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+
+    color: #68667b;
+    margin-bottom: 2px;
+}
+
+.case-sources a {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+    color: #5a459d;
+    text-decoration: none;
+
+    border-bottom: 1px solid #5a459d;
+
+    padding-bottom: 3px;
+
+    transition: opacity 0.2s ease;
+}
+
+.case-sources a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .case-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .case-outcome {
+        max-width: 650px;
+    }
+
+    .cases-intro h1 {
+        font-size: clamp(52px, 8vw, 80px);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .cases-intro {
+        padding: 40px 6% 55px;
+    }
+
+    .section-label {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .cases-intro h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .cases-intro p {
+        font-size: 18px;
+        margin-top: 35px;
+    }
+
+    .case-study {
+        padding: 38px 6% 55px;
+    }
+
+    .case-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .case-university {
+        font-size: 12px;
+    }
+
+    .case-date {
+        font-size: 14px;
+    }
+
+    .case-title {
+        font-size: 39px;
+        margin-bottom: 25px;
+    }
+
+    .case-description {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .case-highlight {
+        padding-left: 16px;
+        margin-bottom: 40px;
+    }
+
+    .case-highlight p {
+        font-size: 17px;
+    }
+
+    .case-details {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-item {
+        padding: 20px 0;
+    }
+
+    .detail-item:nth-child(even) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .detail-item:nth-child(n + 2) {
+        border-top: 1px solid rgba(70, 67, 100, 0.18);
+    }
+
+    .case-outcome {
+        padding: 23px;
+    }
+
+    .case-sources {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .sources-title {
+        margin-bottom: 5px;
+    }
+
+}
