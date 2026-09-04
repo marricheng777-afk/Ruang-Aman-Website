@@ -836,28 +836,8 @@ body.dark-mode .button-secondary:hover {
 .whats-inside {
     width: 100%;
     padding: 70px 6% 100px;
-
-    /* Soft gradient background like the reference */
-    background:
-        radial-gradient(
-            circle at 5% 10%,
-            rgba(190, 165, 255, 0.28),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 95% 15%,
-            rgba(120, 220, 235, 0.25),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 50% 100%,
-            rgba(255, 180, 190, 0.18),
-            transparent 35%
-        ),
-        #f3f4ff;
-
-    transition: background 0.5s ease;
 }
+
 
 
 /* =========================================================
