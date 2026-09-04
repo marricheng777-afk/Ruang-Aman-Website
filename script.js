@@ -436,7 +436,7 @@ const themes = {
             accent: "#6948a8",
             accentDark: "#43286f",
             circle: "rgba(115, 70, 190, 0.32)",
-            overlay: "rgba(238, 233, 255, 0.78)"
+            overlayRgb: "238, 233, 255, 0.78"
         },
 
         dark: {
@@ -447,7 +447,7 @@ const themes = {
             accent: "#a987df",
             accentDark: "#c5a8f0",
             circle: "rgba(145, 95, 220, 0.38)",
-            overlay: "rgba(18, 13, 25, 0.78)"
+            overlayRgb: "18, 13, 25, 0.78"
         }
     },
 
@@ -461,7 +461,7 @@ const themes = {
             accent: "#4c8a68",
             accentDark: "#28573a",
             circle: "rgba(60, 145, 85, 0.32)",
-            overlay: "rgba(232, 246, 237, 0.78)"
+            overlayRgb: "232, 246, 237, 0.78"
         },
 
         dark: {
@@ -472,7 +472,7 @@ const themes = {
             accent: "#75b98e",
             accentDark: "#91d5aa",
             circle: "rgba(70, 170, 100, 0.38)",
-            overlay: "rgba(12, 23, 16, 0.80)"
+            overlayRgb: "12, 23, 16, 0.80"
         }
     },
 
@@ -486,7 +486,7 @@ const themes = {
             accent: "#a05272",
             accentDark: "#73334e",
             circle: "rgba(205, 75, 125, 0.30)",
-            overlay: "rgba(253, 234, 241, 0.78)"
+            overlayRgb: "253, 234, 241, 0.78"
         },
 
         dark: {
@@ -497,7 +497,7 @@ const themes = {
             accent: "#d98aa8",
             accentDark: "#e8a1bc",
             circle: "rgba(210, 75, 125, 0.38)",
-            overlay: "rgba(28, 13, 20, 0.80)"
+            overlayRgb: "28, 13, 20, 0.80"
         }
     },
 
@@ -511,7 +511,7 @@ const themes = {
             accent: "#9a7b35",
             accentDark: "#705719",
             circle: "rgba(205, 165, 40, 0.32)",
-            overlay: "rgba(255, 247, 217, 0.78)"
+            overlayRgb: "255, 247, 217, 0.78"
         },
 
         dark: {
@@ -522,7 +522,7 @@ const themes = {
             accent: "#d2b968",
             accentDark: "#e8cf70",
             circle: "rgba(215, 180, 55, 0.38)",
-            overlay: "rgba(29, 26, 11, 0.80)"
+            overlayRgb: "29, 26, 11, 0.80"
         }
     },
 
@@ -536,7 +536,7 @@ const themes = {
             accent: "#397d9a",
             accentDark: "#245a70",
             circle: "rgba(45, 145, 180, 0.32)",
-            overlay: "rgba(229, 245, 250, 0.78)"
+            overlayRgb: "229, 245, 250, 0.78"
         },
 
         dark: {
@@ -547,7 +547,7 @@ const themes = {
             accent: "#76bdd4",
             accentDark: "#91d5e8",
             circle: "rgba(55, 155, 195, 0.38)",
-            overlay: "rgba(9, 23, 29, 0.80)"
+            overlayRgb: "9, 23, 29, 0.80"
         }
     },
 
@@ -561,7 +561,7 @@ const themes = {
             accent: "#a66a4e",
             accentDark: "#79432e",
             circle: "rgba(210, 105, 60, 0.30)",
-            overlay: "rgba(255, 240, 230, 0.78)"
+            overlayRgb: "255, 240, 230, 0.78"
         },
 
         dark: {
@@ -572,7 +572,7 @@ const themes = {
             accent: "#d99a78",
             accentDark: "#e8aa8a",
             circle: "rgba(210, 100, 60, 0.38)",
-            overlay: "rgba(30, 17, 12, 0.80)"
+            overlayRgb: "30, 17, 12, 0.80"
         }
     }
 
@@ -636,8 +636,8 @@ function applyColorTheme() {
     );
 
     document.documentElement.style.setProperty(
-        "--hero-overlay",
-        selectedTheme.overlay
+        "--hero-overlay-rgb",
+        selectedTheme.overlayRgb
     );
 }
 

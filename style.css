@@ -77,7 +77,7 @@ button {
     --navbar-background: rgba(255, 255, 255, 0.90);
 
     --hero-background: #e9eafa;
-    --hero-overlay: #f4f4ff;
+    --hero-overlay-rgb: 244, 244, 255;
 
     --input-background: rgba(255, 255, 255, 0.80);
     --input-border: #d1cfdd;
@@ -121,7 +121,7 @@ body.dark-mode {
     --navbar-background: rgba(31, 26, 40, 0.94);
 
     --hero-background: #17121f;
-    --hero-overlay: #17121f;
+    --hero-overlay-rgb: 23, 18, 31;
 
     --input-background: rgba(25, 20, 32, 0.90);
     --input-border: #4a4055;
@@ -562,24 +562,10 @@ body.dark-mode .icon-button {
     background:
         linear-gradient(
             90deg,
-            var(--hero-overlay) 0%,
-            rgba(244, 244, 255, 0.93) 35%,
-            rgba(244, 244, 255, 0.70) 70%,
-            rgba(244, 244, 255, 0.55) 100%
-        );
-}
-
-
-html.dark .hero-overlay,
-body.dark-mode .hero-overlay {
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(23, 18, 31, 0.98) 0%,
-            rgba(23, 18, 31, 0.93) 40%,
-            rgba(23, 18, 31, 0.72) 75%,
-            rgba(23, 18, 31, 0.60) 100%
+            rgba(var(--hero-overlay-rgb), 0.97) 0%,
+            rgba(var(--hero-overlay-rgb), 0.93) 35%,
+            rgba(var(--hero-overlay-rgb), 0.70) 70%,
+            rgba(var(--hero-overlay-rgb), 0.55) 100%
         );
 }
 
@@ -2694,44 +2680,12 @@ body.dark-mode .inside-card .card-link:hover {
     min-height: auto;
     padding: 30px;
     border-right: none;
-    border-bottom: 1px solid #d0d0df;
+    border-bottom: 1px solid var(--inside-border);
 }
 
 /* Remove bottom border from the LAST card on mobile */
 .inside-card:last-child {
     border-bottom: none;
-}
-
-/* Make sure dark mode DOES NOT override the white cards */
-html.dark .whats-inside,
-body.dark-mode .whats-inside {
-    background: #ffffff;
-}
-
-html.dark .inside-grid,
-body.dark-mode .inside-grid {
-    background: #ffffff;
-}
-
-html.dark .inside-card,
-body.dark-mode .inside-card {
-    background: #ffffff;
-    color: #20203d;
-}
-
-html.dark .inside-card:hover,
-body.dark-mode .inside-card:hover {
-    background: #f3efff;
-}
-
-html.dark .inside-card h3,
-body.dark-mode .inside-card h3 {
-    color: #20203d;
-}
-
-html.dark .inside-card p,
-body.dark-mode .inside-card p {
-    color: #303030;
 }
 
     /* DELETE MODAL */
