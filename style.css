@@ -2743,7 +2743,7 @@ body.dark-mode .inside-card .card-link:hover {
 ========================================= */
 
 .cases-intro {
-    padding: 55px 4.3% 75px;
+    padding: 170px 4.3% 75px;
     border-bottom: 1px solid rgba(70, 67, 100, 0.18);
 }
 
@@ -2758,20 +2758,29 @@ body.dark-mode .inside-card .card-link:hover {
 
 .cases-intro h1 {
     max-width: 1300px;
-    margin: 25px;
+    margin: 0 0 32px;
 
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(38px, 3.2vw, 58px);
+    font-size: clamp(40px, 4vw, 68px);
     font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+.cases-intro h2 {
+    max-width: 1450px;
+    margin: 55px 0 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400 ;
+    line-height: 1.08;
 }
 
 .cases-intro p {
     max-width: 1450px;
-    margin: 55px 0 0;
+    margin: 20px 0 0;
 
-    font-family: Arial, sans-serif;
+    font-family:Georgia, "Times New Roman", serif;
     font-size: clamp(20px, 1.8vw, 29px);
     line-height: 1.55;
     color: #68677b;
@@ -3055,7 +3064,7 @@ body.dark-mode .inside-card .card-link:hover {
 @media (max-width: 650px) {
 
     .cases-intro {
-        padding: 40px 6% 55px;
+        padding: 145px 6% 55px;
     }
 
     .section-label {
@@ -3064,8 +3073,9 @@ body.dark-mode .inside-card .card-link:hover {
     }
 
     .cases-intro h1 {
-        font-size: 48px;
-        line-height: 1;
+        font-size: 39px;
+        line-height: 1.08;
+        margin-bottom: 25px;
     }
 
     .cases-intro p {
