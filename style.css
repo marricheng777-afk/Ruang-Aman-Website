@@ -128,14 +128,15 @@ body.dark-mode {
 
     --footer-background: rgba(30, 25, 40, 0.90);
 
-    /* What's Inside */
-    --inside-background: transparent;
+     /* What's Inside */
+       --inside-background: transparent;
     --inside-card-background: #1e1927;
     --inside-border: rgba(255, 255, 255, 0.13);
     --inside-heading: #f2edfa;
     --inside-text: #c3bbcd;
     --inside-number: #a9a1b3;
 }
+
 
 
 /* =========================================================
@@ -360,15 +361,7 @@ body::after {
 }
 
 
-html.dark .navbar,
-body.dark-mode .navbar {
 
-    border-color:
-        rgba(255, 255, 255, 0.10);
-
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.25);
-}
 
 
 /* =========================================================
@@ -382,9 +375,9 @@ body.dark-mode .navbar {
 
     gap: 10px;
 
-    color: var(--heading-color);
+    color: var(--accent);
 
-    font-family: "Playfair Display", serif;
+    font-family: Arial, serif;
 
     font-size: 26px;
     font-weight: 700;
@@ -394,14 +387,18 @@ body.dark-mode .navbar {
 }
 
 
-.logo span,
+
 .logo-icon {
 
-    color: #514848;
-
+    color: #000000;
     font-family: Arial, sans-serif;
 
     font-size: 25px;
+}
+
+html.dark .logo-icon,
+body.dark-mode .logo-icon {
+    color: #ffffff;
 }
 
 
@@ -713,17 +710,37 @@ body.dark-mode .icon-button {
     color: #ffffff;
 }
 
+html.dark .button-primary,
+body.dark-mode .button-primary {
 
+    background: var(--accent-dark);
+
+    color: #ffffff;
+
+    border-color: var(--accent-dark);
+}
+
+
+html.dark .button-primary:hover,
+body.dark-mode .button-primary:hover {
+
+    background: var(--accent);
+
+    color: #322d2d;
+}
 
 
 
 .button-secondary {
 
-    background: transparent;
+     background: var(--accent-dark);
 
-    color: var(--accent-dark);
+    color: #ffffff;
 
     border: 1px solid var(--accent-dark);
+
+    box-shadow:
+        0 8px 20px rgba(85, 60, 150, 0.20);
 }
 
 
@@ -738,20 +755,20 @@ body.dark-mode .icon-button {
 html.dark .button-secondary,
 body.dark-mode .button-secondary {
 
-    background: rgba(177, 141, 232, 0.90);
+    background: var(--accent-dark);
 
-    color: #20203d;
+    color: #ffffff;
 
-    border-color: var(--accent);
+    border-color: var(--accent-dark);
 }
 
 
 html.dark .button-secondary:hover,
 body.dark-mode .button-secondary:hover {
 
-    background: var(--accent-dark);
+    background: var(--accent);
 
-    color: #ffffff;
+    color: #322d2d;
 }
 
 
@@ -1039,21 +1056,7 @@ body.dark-mode .button-secondary:hover {
    DARK MODE
 ========================================================= */
 
-html.dark .whats-inside,
-body.dark-mode .whats-inside {
-    background:
-        radial-gradient(
-            circle at 5% 10%,
-            rgba(100, 70, 160, 0.25),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 95% 15%,
-            rgba(50, 120, 140, 0.18),
-            transparent 35%
-        ),
-        #17121f;
-}
+
 
 
 html.dark .whats-inside h2,
@@ -1064,17 +1067,15 @@ body.dark-mode .whats-inside h2 {
 
 html.dark .inside-grid,
 body.dark-mode .inside-grid {
-    background: #211b29;
-
+ 
     border-color: #40364d;
 }
 
 
 html.dark .inside-card,
 body.dark-mode .inside-card {
-    background: #211b29;
-
-    border-color: #40364d;
+  
+    filter: brightness(1.15);
 }
 
 
@@ -3034,6 +3035,217 @@ body.dark-mode .inside-card .card-link:hover {
     opacity: 0.65;
 }
 
+/* =========================================
+   LAW PATTERNS SECTION (2x3 grid)
+========================================= */
+
+.patterns-section {
+    padding: 60px 4.3% 20px;
+}
+
+.patterns-section h2 {
+    max-width: 1585px;
+    margin: 0 auto 42px;
+
+    color: var(--heading-color);
+
+    font-family: "Playfair Display", serif;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.patterns-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    overflow: hidden;
+
+    background: transparent;
+    border: 1px solid var(--inside-border);
+    border-radius: 18px;
+
+    transition:
+        background-color 0.5s ease,
+        border-color 0.5s ease;
+}
+
+.pattern-card {
+    min-height: 220px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: var(--inside-card-background);
+    border-right: 1px solid var(--inside-border);
+    border-bottom: 1px solid var(--inside-border);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.25s ease;
+}
+
+/* Remove right border on last column */
+.pattern-card:nth-child(2n) {
+    border-right: none;
+}
+
+/* Remove bottom border on last row */
+.pattern-card:nth-child(5),
+.pattern-card:nth-child(6) {
+    border-bottom: none;
+}
+
+.pattern-card .card-number {
+    margin: 0 0 16px;
+
+    color: var(--inside-number);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.pattern-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--inside-heading);
+
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.pattern-card p {
+    margin: 0;
+
+    color: var(--inside-text);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   LAW PAGE
+========================================= */
+
+.law-page {
+    width: 100%;
+    color: var(--text-color);
+    padding-bottom: 100px;
+}
+
+
+/* =========================================
+   PAGE INTRO
+========================================= */
+
+.law-intro {
+    padding: 170px 4.3% 75px;
+    border-bottom: 1px solid rgba(70, 67, 100, 0.18);
+}
+
+.section-label {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #67657a;
+    margin-bottom: 38px;
+}
+
+.law-intro h1 {
+    max-width: 1300px;
+    margin: 0 0 32px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 4vw, 68px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+.law-intro h2 {
+    max-width: 1450px;
+    margin-top: 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400 ;
+    line-height: 1.08;
+}
+
+.law-intro p {
+    max-width: 1450px;
+    margin: 20px 0 0;
+
+    font-family:Georgia, "Times New Roman", serif;
+    font-size: clamp(20px, 1.8vw, 29px);
+    line-height: 1.55;
+    color: #68677b;
+}
+
+
+/* ---------- PATTERNS TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .patterns-section h2 {
+        font-size: 38px;
+        margin-bottom: 32px;
+    }
+
+    .pattern-card {
+        min-height: 200px;
+        padding: 24px;
+    }
+
+    .pattern-card h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* ---------- PATTERNS MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .patterns-section {
+        padding: 50px 6% 10px;
+    }
+
+    .patterns-section h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .patterns-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        border-radius: 15px;
+    }
+
+    .pattern-card {
+        min-height: auto;
+        padding: 26px;
+        border-right: none;
+        border-bottom: 1px solid var(--inside-border);
+    }
+
+    .pattern-card:last-child {
+        border-bottom: none;
+    }
+}
 
 /* =========================================
    TABLET
