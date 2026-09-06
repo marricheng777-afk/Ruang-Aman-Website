@@ -45,7 +45,7 @@ const translations = {
         /* NAVIGATION */
 
         "nav.home": "Home",
-        "nav.cases": "Cases",
+        "nav.research": "Research",
         "nav.law": "Law",
         "nav.report": "Report",
         "nav.help": "Help",
@@ -69,19 +69,42 @@ const translations = {
             "Read the case studies",
 
 
-        /* STATISTICS */
+         /* INFO SECTION */
 
-        "stats.one":
-            "of academics surveyed said sexual violence had occurred on their campus.",
+        "info.title.what":
+            "What is Sexual Harassment?",
 
-        "stats.two":
-            "of those said the case was never reported to the institution.",
+        "info.box.what":
+            "   Sexual harassment is behavior or an act involving sexual activity without the consent of one of the parties involved. Sexual harassment can make victims feel uncomfortable, degraded, humiliated, or threatened. Generally, sexual harassment is associated with extreme acts such as physical violence or even murder. However, sexual harassment does not only involve extreme actions. It can also include actions that may be considered minor, such as catcalling or staring at someone in a sexual manner.                Sexual harassment can happen to anyone, including children, teenagers, and adults. However, there are many cases where neither the perpetrator nor the victim realizes that what happened or was done constitutes sexual harassment. In many cases, victims of sexual harassment may also be unwilling to disclose or report what happened.",
 
-        "stats.three":
-            "Indonesia passed the Sexual Violence Crimes Law (UU TPKS).",
+         "info.title.why":
+            "Why should we care about sexual harassment?",
+    
+         "info.box.why":
+            "As human beings, we need to care about sexual harassment because its effects can be very serious for victims. Victims who do not receive adequate support or assistance may be at risk of experiencing mental health difficulties such as depression, PTSD, anxiety, and trauma. Sexual harassment can also have physical consequences, including unwanted pregnancy. Therefore, we need to become more aware of sexual harassment and contribute to creating an environment that is safe and supportive of victims.",
 
+        "types.title":
+            "Types of Sexual Harassment",
 
-        /* WHAT'S INSIDE */
+        "types.verbal.title":
+            "Verbal Harassment",
+
+        "types.Physical & Non-physical.title":
+            "Physical & Non-Physical Harassment",
+
+        "types.electronic.media.title":
+            "Harassment Through Electronic Media",
+
+        "types.verbal.box":
+            "Sexually suggestive words, comments, or jokes that make someone feeel uncomfortable, embarrassed, or unsafe, such as remarks about their body, appearance, clothing, relationships, or sexuality. Verbal harassment can cause anxiety, stress, humiliation, or emotional distress, and may make someone feel afraid to speak, participate in conversations, or spend time around the person responsible.",
+       
+        "types.Physical & Non-physical.box":
+            "<strong>Physical:</strong> Sexual behavior that does not involve physical contact but is intrusive or unwanted, such as sexual stares or gestures. <strong>Non-Physical:</strong> Unwanted physical contact or touching of a sexual nature without the consent of one of the parties.",
+        
+        "types.electronic.media.box":
+            "Harassment through electronic media is unwanted sexual behavior carried outthrough conversations, social media, or digital platforms. Examples include sending unsolicited sexual messages, photos, or videos; making sexual comments via direct messages or group chats; and sending content that makes someone feel uncomfortable. These actions can cause fear, embarrassment, anxiety, and distress, and make victims feel unsafe when using digital media.",        
+
+    /* WHAT'S INSIDE */
 
         "inside.title":
             "What's inside",
@@ -147,8 +170,8 @@ const translations = {
         "nav.home":
             "Beranda",
 
-        "nav.cases":
-            "Kasus",
+        "nav.research":
+            "Penelitian",
 
         "nav.law":
             "Hukum",
@@ -174,32 +197,55 @@ const translations = {
         "hero.report":
             "Lapor secara anonim",
 
-        "hero.cases":
-            "Baca studi kasus",
+        "hero.research":
+            "Penelitian kami",
 
 
-        /* STATISTICS */
+        /* INFO SECTION */
 
-        "stats.one":
-            "dari akademisi yang disurvei mengatakan bahwa kekerasan seksual pernah terjadi di kampus mereka.",
+        "info.title.what":
+            "Apa itu Pelecehan Seksual?",
 
-        "stats.two":
-            "dari mereka mengatakan bahwa kasus tersebut tidak pernah dilaporkan kepada institusi.",
+        "info.box.what":
+            "Pelecehan seksual adalah perilaku atau tindakan yang melibatkan aktivitas seksual tanpa persetujuan dari salah satu pihak yang terlibat. Pelecehan seksual dapat membuat korban merasa tidak nyaman, direndahkan, dipermalukan, atau terancam. Pada umumnya, pelecehan seksual sering dikaitkan dengan tindakan ekstrem seperti kekerasan fisik atau bahkan pembunuhan. Namun, pelecehan seksual tidak hanya mencakup tindakan ekstrem. Tindakan yang sering dianggap sepele, seperti catcalling atau menatap seseorang secara seksual, juga dapat termasuk dalam bentuk pelecehan. Pelecehan seksual dapat terjadi pada siapa saja, termasuk anak-anak, remaja, maupun orang dewasa. Namun, terdapat banyak kasus di mana baik pelaku maupun korban tidak menyadari bahwa tindakan yang terjadi atau dilakukan merupakan bentuk pelecehan seksual. Dalam banyak kasus, korban pelecehan seksual juga mungkin merasa enggan untuk menceritakan atau melaporkan apa yang telah terjadi.",
 
-        "stats.three":
-            "Indonesia mengesahkan Undang-Undang Tindak Pidana Kekerasan Seksual (UU TPKS).",
+         "info.title.why":
+            "Mengapa kita harus peduli terhadap pelecehan seksual?",
+    
+         "info.box.why":
+            "Sebagai manusia, kita perlu peduli terhadap pelecehan seksual karena dampaknya dapat sangat serius bagi korban. Korban yang tidak mendapatkan dukungan atau bantuan yang memadai dapat berisiko mengalami masalah kesehatan mental seperti depresi, PTSD, kecemasan, dan trauma. Pelecehan seksual juga dapat menimbulkan dampak fisik, termasuk kehamilan yang tidak diinginkan. Oleh karena itu, kita perlu meningkatkan kesadaran mengenai pelecehan seksual dan turut menciptakan lingkungan yang aman serta mendukung korban.",
 
+        "types.title":
+            "Jenis-jenis Pelecehan Seksual",
+
+        "types.verbal.title":
+            "Pelecehan Verbal",
+
+        "types.Physical & Non-physical.title":
+            "Pelecehan Fisik & Non-Fisik",
+
+        "types.electronic.media.title":
+            "Pelecehan melalui Media Elektronik",
+
+        "types.verbal.box":
+            "Kata-kata, komentar, atau lelucon bernuansa seksual yang membuat seseorang merasa tidak nyaman, malu, atau tidak aman, seperti komentar mengenai tubuh, penampilan, pakaian, hubungan, atau orientasi seksualnya. Pelecehan verbal dapat menimbulkan kecemasan, stres, rasa terhina, atau penderitaan emosional, dan mungkin membuat seseorang merasa takut untuk berbicara, ikut serta dalam percakapan, atau menghabiskan waktu bersama orang yang bertanggung jawab atas hal tersebut.",
+
+        "types.Physical & Non-physical.box":
+            "<strong>Fisik:</strong> Perilaku seksual yang tidak melibatkan kontak fisik tetapi bersifat mengganggu atau tidak diinginkan, seperti tatapan atau gestur seksual. <strong>Non-Fisik:</strong> Sentuhan atau kontak fisik yang tidak diinginkan dan bersifat seksual tanpa persetujuan dari salah satu pihak.",
+        
+        "types.electronic.media.box":
+            "Pelecehan melalui media elektronik adalah perilaku seksual yang tidak diinginkan yang dilakukan melalui percakapan, media sosial, atau platform digital. Contohnya termasuk mengirim pesan, foto, atau video seksual yang tidak diminta, memberikan komentar seksual melalui pesan langsung atau grup chat, serta mengirim konten yang membuat seseorang merasa tidak nyaman. Tindakan ini dapat menyebabkan rasa takut, malu, cemas, tertekan, dan membuat korban merasa tidak aman saat menggunakan media digital.",
 
         /* WHAT'S INSIDE */
 
         "inside.title":
             "Apa saja yang ada di sini",
 
-        "inside.cases.title":
-            "Studi kasus",
+        "inside.research.title":
+            "Penelitian",
 
-        "inside.cases.description":
-            "Dokumentasi kasus pelecehan di berbagai universitas Indonesia, termasuk kasus yang terjadi melalui grup chat dan media sosial.",
+        "inside.research.description":
+            "Temukan penelitian dan survei mengenai pelecehan seksual di kampus-kampus Indonesia, termasuk kasus yang melibatkan grup chat dan media sosial. Dari survei dan wawancara kami.",
 
         "inside.law.title":
             "Hukum",
@@ -278,8 +324,8 @@ function applyLanguage(language) {
                 selectedLanguage[key] !== undefined
             ) {
 
-                element.textContent =
-                    selectedLanguage[key];
+            element.innerHTML =
+                selectedLanguage[key];  
 
             }
 
