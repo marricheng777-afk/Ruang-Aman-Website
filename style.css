@@ -3586,3 +3586,744 @@ html.dark .law-intro h2,
 body.dark-mode .law-intro h2 {
     color: #cccbcb;
 }
+
+/* =========================================================
+   RESEARCH PAGE
+========================================================= */
+
+.research-page {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+
+/* =========================================================
+   RESEARCH INTRO
+========================================================= */
+
+.research-intro {
+    padding: 170px 4.3% 70px;
+}
+
+
+/* Main "Our Research Method" title */
+
+.research-intro h1 {
+    margin: 30px 0 0;
+    max-width: 1200px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 1.05;
+    font-weight: 600;
+
+    color: var(--heading-color);
+}
+
+
+/* =========================================================
+   SURVEY INTRO
+========================================================= */
+
+.research-survey {
+    margin-top: 70px;
+    max-width: 1150px;
+}
+
+
+/* "Survey" */
+
+.research-survey h2 {
+    margin: 0 0 18px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(30px, 3vw, 44px);
+    line-height: 1.1;
+    font-weight: 600;
+
+    color: var(--accent);
+}
+
+
+/* Survey description */
+
+.research-survey p {
+    margin: 0;
+    max-width: 1150px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(17px, 1.5vw, 22px);
+    line-height: 1.65;
+    font-weight: 400;
+
+    color: var(--text-color);
+}
+
+
+/* =========================================================
+   UNIVERSITY RESPONSES
+========================================================= */
+
+.research-universities {
+    padding: 20px 4.3% 80px;
+}
+
+
+/* University Responses title */
+
+.university-responses {
+    margin: 0 0 30px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(25px, 2.4vw, 36px);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   UNIVERSITY LOGOS
+========================================================= */
+
+.university-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    width: 100%;
+    padding: 35px;
+
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 28px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.university-logos img {
+    width: 100%;
+    height: 110px;
+
+    object-fit: contain;
+
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* Description under university logos */
+
+.university-description {
+    margin: 22px 0 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: var(--text-color);
+}
+
+
+/* =========================================================
+   INDIVIDUAL QUESTIONS
+========================================================= */
+
+.research-question {
+    width: 91.4%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 70px;
+
+    align-items: center;
+
+    padding: 70px 0;
+}
+
+
+/* =========================================================
+   QUESTION ORDER
+========================================================= */
+
+
+/* IMAGE ON RIGHT */
+
+.question-right {
+    grid-template-areas:
+        "text visual";
+}
+
+
+/* IMAGE ON LEFT */
+
+.question-left {
+    grid-template-areas:
+        "visual text";
+}
+
+
+/* Assign areas */
+
+.question-text {
+    grid-area: text;
+}
+
+.question-visual {
+    grid-area: visual;
+}
+
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+.question-number {
+    margin-bottom: 15px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(22px, 2vw, 30px);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    color: var(--accent);
+}
+
+
+/* Actual survey question */
+
+.question-title {
+    margin: 0 0 30px;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(24px, 2.3vw, 36px);
+    line-height: 1.3;
+    font-weight: 400;
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   ANALYSIS / OBSERVATION
+========================================================= */
+
+.question-analysis {
+    margin: 0;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(17px, 1.45vw, 21px);
+    line-height: 1.65;
+    font-weight: 400;
+
+    color: var(--text-color);
+    text-align: justify;
+}
+
+
+/* =========================================================
+   QUESTION IMAGE
+========================================================= */
+
+.question-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: var(--card-background);
+
+    border: 1px solid var(--border-color);
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.question-image:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+
+.question-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   TEXT UNDER IMAGE
+========================================================= */
+
+.question-image-description {
+    margin: 20px 0 0;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: var(--text-color);
+}
+
+
+/* Image on RIGHT → description aligns RIGHT */
+
+.question-right .question-image-description {
+    text-align: justify;
+}
+
+
+/* Image on LEFT → description aligns LEFT */
+
+.question-left .question-image-description {
+    text-align: justify;
+}
+
+
+/* =========================================================
+   QUESTION TEXT ALIGNMENT
+========================================================= */
+
+
+/* Image on right → question text stays left */
+
+.question-right .question-text {
+    text-align: justify;
+}
+
+
+/* Image on left → question text stays right */
+
+.question-left .question-text {
+    text-align: justify;
+}
+
+
+/* =========================================================
+   DIVIDER BETWEEN QUESTIONS
+========================================================= */
+
+.research-divider {
+    width: 91.4%;
+    height: 1px;
+
+    margin: 0 auto;
+
+    background: var(--accent);
+
+    opacity: 0.35;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+/*
+   Paragraphs and normal question text switch automatically
+   because they use var(--text-color).
+
+   The question labels and Survey / University Responses
+   continue using --accent, meaning they follow whatever
+   accent color your theme is currently using.
+*/
+
+html.dark .research-survey p,
+body.dark-mode .research-survey p,
+
+html.dark .university-description,
+body.dark-mode .university-description,
+
+html.dark .question-analysis,
+body.dark-mode .question-analysis,
+
+html.dark .question-image-description,
+body.dark-mode .question-image-description {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .research-intro {
+        padding: 130px 6% 60px;
+    }
+
+
+    .research-survey {
+        margin-top: 50px;
+    }
+
+
+    .research-universities {
+        padding: 20px 6% 60px;
+    }
+
+
+    .university-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        padding: 22px;
+    }
+
+
+    .research-question {
+        width: 88%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        padding: 55px 0;
+    }
+
+
+    .question-right,
+    .question-left {
+        grid-template-areas:
+            "text"
+            "visual";
+    }
+
+
+    .research-divider {
+        width: 88%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 550px) {
+
+    .research-intro {
+        padding: 110px 6% 50px;
+    }
+
+
+    .university-logos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .university-logos img {
+        height: 90px;
+    }
+
+
+    .research-question {
+        width: 88%;
+    }
+
+
+    .question-image {
+        border-radius: 20px;
+    }
+
+}
+
+/* =========================================
+   INTERVIEW -- HOPE HELPS UI
+========================================= */
+
+.hope-interview-section {
+    width: 100%;
+    padding: 130px 4.3% 120px;
+    color: var(--text-color);
+}
+
+
+/* =========================================
+   INTERVIEW HEADER
+========================================= */
+
+.hope-interview-header {
+    max-width: 900px;
+    margin-bottom: 65px;
+}
+
+.hope-interview-header .section-label,
+.hope-questions-header .section-label {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    margin-bottom: 14px;
+}
+
+.hope-interview-header h2,
+.hope-questions-header h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+    margin: 0 0 18px;
+    color: var(--text-color);
+}
+
+.hope-interview-subtitle {
+    max-width: 650px;
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   VIDEO + DESCRIPTION
+========================================= */
+
+.hope-interview-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.9fr);
+    gap: 55px;
+    align-items: start;
+    margin-bottom: 120px;
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.hope-video-container {
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.hope-video-container video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    background: #000;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hope-interview-description {
+    padding-top: 5px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.hope-description-label {
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    margin: 0 0 18px;
+}
+
+.hope-interview-description h3 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin: 0 0 25px;
+    color: var(--text-color);
+}
+
+.hope-interview-description p:not(.hope-description-label) {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0 0 18px;
+}
+
+
+/* =========================================
+   INSTAGRAM LINK
+========================================= */
+
+.hope-instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding-bottom: 6px;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    border-bottom: 1px solid var(--text-color);
+
+    transition: 
+        color 0.25s ease,
+        border-color 0.25s ease,
+        gap 0.25s ease;
+}
+
+.hope-instagram-link span {
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+}
+
+.hope-instagram-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    gap: 14px;
+}
+
+.hope-instagram-link:hover span {
+    transform: translate(2px, -2px);
+}
+
+
+/* =========================================
+   QUESTIONS SECTION
+========================================= */
+
+.hope-interview-questions {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+.hope-questions-header {
+    margin-bottom: 65px;
+}
+
+
+/* =========================================
+   QUESTION + ANSWER
+========================================= */
+
+.hope-question-item {
+    padding: 0 0 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(70, 67, 100, 0.18);
+}
+
+.hope-question {
+    color: var(--accent);
+    font-size: 1.15rem;
+    line-height: 1.55;
+    font-weight: 700;
+
+    margin: 0 0 20px;
+}
+
+.hope-answer {
+    color: var(--text-color);
+    font-size: 0.98rem;
+    line-height: 1.85;
+
+    margin: 0;
+    max-width: 900px;
+
+    text-align: justify;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode .hope-interview-description,
+body.dark-mode .hope-interview-description h3,
+body.dark-mode .hope-interview-header h2,
+body.dark-mode .hope-questions-header h2,
+body.dark-mode .hope-answer {
+    color: #000;
+}
+
+body.dark-mode .hope-interview-section {
+    background: #fff;
+}
+
+body.dark-mode .hope-question-item {
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .hope-instagram-link {
+    color: #000;
+    border-color: #000;
+}
+
+body.dark-mode .hope-instagram-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .hope-interview-feature {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hope-interview-description {
+        max-width: 750px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hope-interview-section {
+        padding: 90px 5% 80px;
+    }
+
+    .hope-interview-header {
+        margin-bottom: 45px;
+    }
+
+    .hope-interview-feature {
+        margin-bottom: 85px;
+    }
+
+    .hope-video-container {
+        aspect-ratio: 16 / 9;
+    }
+
+    .hope-interview-description h3 {
+        font-size: 1.45rem;
+    }
+
+    .hope-question {
+        font-size: 1.05rem;
+    }
+
+    .hope-answer {
+        font-size: 0.93rem;
+    }
+
+}
