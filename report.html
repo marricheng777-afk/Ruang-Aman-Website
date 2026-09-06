@@ -57,30 +57,70 @@
 
         <div class="nav-actions">
 
-            <!-- PALETTE BUTTON -->
-            <button
-                class="icon-button"
-                id="palette-toggle"
-                aria-label="Choose colour">
-                ●
-            </button>
+    <!-- COLOUR PALETTE -->
+    <div class="palette-container">
 
-            <!-- DARK MODE BUTTON -->
-            <button
-                class="icon-button"
-                id="theme-toggle"
-                aria-label="Toggle dark mode">
-                ☾
-            </button>
+        <button
+            class="icon-button"
+            id="palette-toggle"
+            aria-label="Choose colour">
+            🎨
+        </button>
 
-            <button
-                class="icon-button mobile-menu-button"
-                id="menu-toggle">
-                ☰
-            </button>
+        <div
+            class="palette-menu"
+            id="palette-menu">
+
+            <button class="color-option purple" data-color="purple" aria-label="Purple theme"></button>
+            <button class="color-option green" data-color="green" aria-label="Green theme"></button>
+            <button class="color-option pink" data-color="pink" aria-label="Pink theme"></button>
+            <button class="color-option yellow" data-color="yellow" aria-label="Yellow theme"></button>
+            <button class="color-option blue" data-color="blue" aria-label="Blue theme"></button>
+            <button class="color-option peach" data-color="peach" aria-label="Peach theme"></button>
 
         </div>
 
+    </div>
+
+    <!-- LANGUAGE -->
+    <div class="language-container">
+
+        <button
+            class="icon-button"
+            id="language-toggle"
+            aria-label="Change language"
+            title="Change language">
+            EN
+        </button>
+
+        <div
+            class="language-menu"
+            id="language-menu">
+
+            <button class="language-option" data-language="en">English</button>
+            <button class="language-option" data-language="id">Bahasa Indonesia</button>
+
+        </div>
+
+    </div>
+
+    <!-- DARK MODE -->
+    <button
+        class="icon-button"
+        id="theme-toggle"
+        aria-label="Toggle dark mode">
+        ☾
+    </button>
+
+    <!-- MOBILE MENU -->
+    <button
+        class="icon-button mobile-menu-button"
+        id="menu-toggle"
+        aria-label="Open menu">
+        ☰
+    </button>
+
+</div>
     </div>
 
 </header>

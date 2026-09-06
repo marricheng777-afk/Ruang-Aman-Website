@@ -4327,3 +4327,53 @@ body.dark-mode .hope-instagram-link:hover {
     }
 
 }
+
+/* =========================================
+   FLOATING LANGUAGE + THEME CONTROLS
+========================================= */
+
+.floating-controls {
+    position: fixed !important;
+    top: 100px !important;
+    right: 30px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+
+    z-index: 99999 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.floating-controls .icon-button {
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    cursor: pointer;
+
+    background: var(--card-bg) !important;
+    color: var(--text-color) !important;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+
+    font-size: 18px;
+    
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.floating-controls .icon-button:hover {
+    transform: translateY(-2px);
+}
