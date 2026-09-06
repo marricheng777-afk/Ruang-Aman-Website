@@ -3432,3 +3432,157 @@ body.dark-mode .inside-card .card-link:hover {
 .site-header {
     z-index: 1000;
 }
+/* =========================================================
+   LAW PAGE — THEME TEXT COLORS
+   Layout stays completely unchanged
+========================================================= */
+
+
+/* =========================================================
+   1. NORMAL ARTICLE TEXT
+   Light mode = dark grey
+========================================================= */
+
+.case-university,
+.case-description {
+    color: #303030;
+}
+
+
+/* =========================================================
+   2. DARK MODE ARTICLE TEXT
+   Article label + description = WHITE
+========================================================= */
+
+html.dark .case-university,
+body.dark-mode .case-university,
+html.dark .case-description,
+body.dark-mode .case-description {
+    color: #cccbcb;
+}
+
+
+/* =========================================================
+   3. SOURCES BOX
+   SOURCE TEXT MUST ALWAYS STAY DARK
+========================================================= */
+
+.case-outcome p {
+    color: #303030 !important;
+}
+
+
+/* SOURCES heading also stays dark */
+
+.case-outcome .outcome-label {
+    color: #303030 !important;
+}
+
+
+/* =========================================================
+   4. ARTICLE TITLES
+   Example:
+   "Physical Sexual Harassment"
+   "Electronic-Based Sexual Violence (KSBE)"
+   "Victims' Rights"
+
+   USE THE SAME ACCENT COLOR SYSTEM AS THE FRONT PAGE
+========================================================= */
+
+/* LIGHT MODE */
+
+.case-title {
+    color: var(--accent-dark);
+}
+
+
+/* DARK MODE */
+
+html.dark .case-title,
+body.dark-mode .case-title {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   5. LAW SECTION TITLE
+   "Articles Regarding Sexual Harassment"
+========================================================= */
+
+.law-articles .cases-intro h2 {
+    color: var(--accent-dark);
+}
+
+
+/* DARK MODE */
+
+html.dark .law-articles .cases-intro h2,
+body.dark-mode .law-articles .cases-intro h2 {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   6. SECTION LABEL
+   "UU TPKS — Law No. 12 of 2022"
+========================================================= */
+
+.law-articles .cases-intro .section-label {
+    color: #303030;
+}
+
+
+/* DARK MODE */
+
+html.dark .law-articles .cases-intro .section-label,
+body.dark-mode .law-articles .cases-intro .section-label {
+    color: #cccbcb;
+}
+
+.law-articles h1 {
+    color: var(--accent-dark);
+}
+
+
+/* DARK MODE */
+
+html.dark .law-articles h1,
+body.dark-mode .law-articles h1 {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   7. LAW PAGE MAIN TITLE
+   "Laws and regulations surrounding..."
+========================================================= */
+
+.law-intro h1 {
+    color: var(--accent-dark);
+}
+
+
+/* DARK MODE */
+
+html.dark .law-intro h1,
+body.dark-mode .law-intro h1 {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   8. LAW PAGE SUBTITLE
+   "To what extent do Indonesian laws..."
+========================================================= */
+
+.law-intro h2 {
+    color:  #303030;
+}
+
+
+/* DARK MODE */
+
+html.dark .law-intro h2,
+body.dark-mode .law-intro h2 {
+    color: #cccbcb;
+}
