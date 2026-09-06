@@ -3691,11 +3691,11 @@ body.dark-mode .law-intro h2 {
 
 .university-logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(4, 110px);
+    gap: 45px;
 
-    width: 100%;
-    padding: 35px;
+    width: fit-content;
+    padding: 35px 45px;
 
     background: var(--card-background);
     border: 1px solid var(--border-color);
@@ -3706,13 +3706,13 @@ body.dark-mode .law-intro h2 {
 
 
 .university-logos img {
-    width: 100%;
+    width: 110px;
     height: 110px;
 
     object-fit: contain;
 
     background: white;
-    border-radius: 18px;
+    border-radius: 50%;
     padding: 15px;
 
     box-sizing: border-box;
