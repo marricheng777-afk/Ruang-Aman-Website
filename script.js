@@ -49,6 +49,7 @@ const translations = {
         "nav.law": "Law",
         "nav.report": "Report",
         "nav.hotlines": "Hotlines",
+        "nav.analysis": "Analysis",
 
 
         /* HERO */
@@ -862,6 +863,9 @@ const translations = {
 
         "nav.help":
             "Bantuan",
+
+        "nav.analysis":
+            "Analisis",
 
 
         /* HERO */
