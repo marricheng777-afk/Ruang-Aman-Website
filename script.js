@@ -500,6 +500,345 @@ const translations = {
 "research.hopeInterview.answer7":
     "According to the Director General of HopeHelps UI, the main aspect that needs to change is the reporting and handling system for sexual harassment at universities, which is currently considered complicated and lacks transparency. The reporting process should be made more accessible so that students feel less afraid or hesitant to report cases. In addition, investigation processes and communication with victims should be accelerated so that they receive clearer and more timely updates about their cases. Awareness and cooperation across the academic community are also important to make the reporting process more effective and strengthen victims’ trust in the system. Lastly, university culture should become more victim-centered to prevent the process from negatively affecting victims further.",
     
+
+
+/* =========================================
+   HOTLINES
+========================================= */
+
+"hotlines.label": "Section Hotlines",
+"hotlines.title": "Support Hotlines",
+"hotlines.description": "If you have experienced, witnessed, or simply want to talk about sexual harassment or sexual violence, you do not have to face it alone. The following services may provide emotional support, information, assistance, or reporting options. These are non-emergency support services.",
+
+"hotlines.sapa.name": "1. SAPA 129",
+"hotlines.sapa.org": "Ministry of Women's Empowerment and Child Protection",
+"hotlines.sapa.phone": "129",
+"hotlines.sapa.whatsapp": "08111-129-129",
+"hotlines.sapa.description": "SAPA 129 receives reports concerning violence against women and children and can provide support and information about available next steps.",
+
+"hotlines.ui.name": "2. HopeHelps UI",
+"hotlines.ui.phone": "0822-9978-8860",
+"hotlines.ui.email": "advokasi.hopehelps@gmail.com",
+"hotlines.ui.description": "A support and reporting service for sexual violence within the Universitas Indonesia community.",
+
+"hotlines.itb.name": "3. HopeHelps ITB",
+"hotlines.itb.phone": "0877-0896-6894",
+"hotlines.itb.email": "hopehelps.itb@gmail.com",
+"hotlines.itb.description": "A support and reporting service for sexual violence within the Institut Teknologi Bandung community.",
+
+"hotlines.ipb.name": "4. HopeHelps IPB",
+"hotlines.ipb.phone": "0814-1427-2092",
+"hotlines.ipb.email": "advokasi.hopehelps.ipb@gmail.com",
+"hotlines.ipb.description": "A support and reporting service for sexual violence within the IPB community.",
+
+"hotlines.ugm.name": "5. HopeHelps UGM",
+"hotlines.ugm.phone": "0821-4065-9810",
+"hotlines.ugm.description": "A support and reporting service for sexual violence within the Universitas Gadjah Mada community.",
+
+"hotlines.unair.name": "6. HopeHelps Universitas Airlangga",
+"hotlines.unair.phone": "0851-6149-3614",
+"hotlines.unair.email": "advokasi.hopehelps.unair@gmail.com",
+"hotlines.unair.description": "A support and reporting service for sexual violence within the Universitas Airlangga community.",
+
+"hotlines.unnes.name": "7. HopeHelps UNNES",
+"hotlines.unnes.phone": "0819-1288-80902",
+"hotlines.unnes.email": "advokasi.hopehelps.unnes@gmail.com",
+"hotlines.unnes.description": "A support and reporting service for sexual violence within the Universitas Negeri Semarang community.",
+
+"hotlines.lbh.name": "8. LBH APIK Jakarta",
+"hotlines.lbh.phone": "0813-8882-2669",
+"hotlines.lbh.description": "LBH APIK provides legal assistance and complaint services for women, including support in gender-based cases.",
+"hotlines.lbh.note": "",
+
+"hotlines.polri.name": "POLRI — Call Center 110 ",
+"hotlines.polri.number": "110",
+"hotlines.polri.availability": "Available 24/7",
+"hotlines.polri.cost": "Free of charge",
+"hotlines.polri.description": "If someone is in immediate danger or needs urgent police assistance, contact 110.",
+
+
+/* =========================
+   LAW PAGE
+========================= */
+
+"law.intro.label":
+    "Section Law",
+
+"law.intro.title":
+    "Laws and regulations surrounding sexual harassment and violence in Indonesian universities.",
+
+"law.intro.question":
+    "To what extent do Indonesian laws protect university students from sexual harassment?",
+
+
+"law.articles.label":
+    "UU TPKS — Law No. 12 of 2022",
+
+"law.articles.title":
+    "Articles Regarding Sexual Harassment",
+
+
+/* ARTICLE 5 */
+
+"law.article5.label":
+    "UU TPKS — ARTICLE 5",
+
+"law.article5.title":
+    "Non-Physical Sexual Harassment",
+
+"law.article5.description":
+    "Any person who commits a non-physical sexual act directed toward another person's body, sexual desire, and/or reproductive organs with the intention of degrading a person's dignity based on their sexuality and/or morality.",
+
+"law.sources":
+    "SOURCES",
+
+"law.article5.source":
+    "Full text of UU TPKS, Article 5 — official government publication.",
+
+
+/* ARTICLE 6A */
+
+"law.article6a.label":
+    "UU TPKS — ARTICLE 6A",
+
+"law.article6a.title":
+    "Physical Sexual Harassment",
+
+"law.article6a.description":
+    "Any person who commits a physical sexual act directed toward another person's body, sexual desire, and/or reproductive organs with the intention of degrading a person's dignity based on their sexuality and/or morality, which does not fall under another criminal provision carrying a more severe penalty.",
+
+"law.article6a.source":
+    "Full text of UU TPKS, Article 6A — official government publication.",
+
+
+/* ARTICLE 6B */
+
+"law.article6b.label":
+    "UU TPKS — ARTICLE 6B",
+
+"law.article6b.title":
+    "Physical Sexual Harassment",
+
+"law.article6b.description":
+    "Any person who commits a physical sexual act directed toward another person's body, sexual desire, and/or reproductive organs with the intention of unlawfully placing another person under their control, whether within or outside a marital relationship.",
+
+"law.article6b.source":
+    "Full text of UU TPKS, Article 6B — official government publication.",
+
+
+/* ARTICLE 6C */
+
+"law.article6c.label":
+    "UU TPKS — ARTICLE 6C",
+
+"law.article6c.title":
+    "Physical Sexual Harassment",
+
+"law.article6c.description":
+    "Any person who commits a physical sexual act directed toward another person's body, sexual desire, and/or reproductive organs by abusing their position, authority, trust, or influence arising from deception or a particular relationship or circumstance, or by exploiting another person's vulnerability, helplessness, or dependency, whether within or outside a marital relationship.",
+
+"law.article6c.source":
+    "Full text of UU TPKS, Article 6C — official government publication.",
+
+
+/* ARTICLE 14 */
+
+"law.article14.label":
+    "UU TPKS — ARTICLE 14",
+
+"law.article14.title":
+    "Electronic-Based Sexual Violence (KSBE)",
+
+"law.article14.description":
+    "Regulates sexual violence committed through electronic media, including the misuse or distribution of sexually explicit content without consent and other sexual acts carried out through electronic systems.",
+
+"law.article14.source":
+    "Full text of UU TPKS, Article 14 — official government publication.",
+
+
+/* ARTICLES 66–70 */
+
+"law.article66_70.label":
+    "UU TPKS — ARTICLES 66–70",
+
+"law.article66_70.title":
+    "Victims' Rights",
+
+"law.article66_70.description":
+    "These articles establish that victims of sexual violence have the right to receive assistance, protection, and recovery services from the occurrence of the criminal act. These rights include access to information, legal and health services, psychological support, protection from threats, and recovery according to the victim's needs.",
+
+"law.article66_70.source":
+    "Full text of UU TPKS, Articles 66–70 — official government publication.",
+
+
+/* FOOTER */
+
+"footer.description":
+    "A student-built archive on sexual harassment in Indonesian universities.",
+
+"footer.emergency":
+    "Emergency",
+
+"footer.police":
+    "Police",
+
+"footer.more":
+    "More",
+
+"footer.help":
+    "Get help",
+
+"footer.report":
+    "Submit a report",
+
+"footer.note":
+    "This website is for educational and informational purposes and is not a substitute for professional legal or psychological assistance.",
+
+
+
+/* =========================
+   REPORT PAGE — ENGLISH
+========================= */
+
+"report.eyebrow":
+    "Safe & confidential",
+
+"report.title":
+    "Submit a Report",
+
+"report.introduction":
+    "Your voice matters. Share your experience and help build a safer university community.",
+
+"report.university":
+    "University",
+
+"report.city":
+    "City",
+
+"report.date":
+    "Date of incident",
+
+"report.incidentType":
+    "Type of Incident",
+
+"report.selectIncident":
+    "Select the type of incident",
+
+"report.verbal":
+    "Verbal Harassment",
+
+"report.sexual":
+    "Sexual Harassment",
+
+"report.physical":
+    "Physical Harassment",
+
+"report.online":
+    "Online Harassment",
+
+"report.discrimination":
+    "Discrimination",
+
+"report.bullying":
+    "Bullying",
+
+"report.other":
+    "Other",
+
+"report.experience":
+    "Your Experience",
+
+"report.experiencePlaceholder":
+    "Please describe what happened. Be as detailed as you feel comfortable with.",
+
+"report.fileUpload":
+    "File Upload",
+
+"report.chooseFile":
+    "Choose a file",
+
+"report.fileTypes":
+    "Images, documents, or screenshots",
+
+"report.visibility":
+    "Visibility",
+
+"report.public":
+    "🔒 Public (Anonymous)",
+
+"report.publicDescription":
+    "Your report will be visible to others, but your identity will remain anonymous.",
+
+"report.contact":
+    "Contact for Follow-up",
+
+"report.contactOptional":
+    "Optional, never published",
+
+"report.contactPlaceholder":
+    "Email, phone number, or any way we can contact you",
+
+"report.contactPrivacy":
+    "This information will never be displayed on the public report wall.",
+
+"report.submit":
+    "Submit Report Anonymously",
+
+"report.privacy":
+    "🛡 Your identity will always be protected. Never share personal details unless you choose to.",
+
+/* PUBLIC REPORT WALL */
+
+"report.wallTitle":
+    "Public Reports",
+
+"report.anonymous":
+    "(Anonymous)",
+
+"report.wallDescription":
+    "Real stories from our university community.",
+
+"report.wallNote":
+    "All reports are anonymous. Contact information is never published.",
+
+/* DELETE MODAL */
+
+"report.deleteTitle":
+    "Delete this report?",
+
+"report.deleteDescription":
+    "Are you sure you want to delete this report? This action cannot be undone.",
+
+"report.cancelDelete":
+    "No, cancel",
+
+"report.confirmDelete":
+    "Yes, delete",
+
+/* FOOTER */
+
+"footer.description":
+    "A student-built archive on sexual harassment in Indonesian universities.",
+
+"footer.emergency":
+    "Emergency",
+
+"footer.police":
+    "Police",
+
+"footer.more":
+    "More",
+
+"footer.help":
+    "Get help",
+
+"footer.report":
+    "Submit a report",
+
+"footer.note":
+    "This website is for educational and informational purposes and is not a substitute for professional legal or psychological assistance."
+
+
     },
 
     /* ---------- TRANSLATIONS INDONESIAN ---------- */
@@ -933,6 +1272,345 @@ const translations = {
 
 "research.hopeInterview.answer7":
     "Menurut Direktur Jenderal HopeHelps UI, aspek utama yang perlu diubah adalah sistem pelaporan dan penanganan pelecehan seksual di universitas, yang saat ini dianggap rumit dan kurang transparan. Proses pelaporan perlu dibuat lebih mudah diakses agar mahasiswa tidak terlalu takut atau ragu untuk melaporkan kasus. Selain itu, proses investigasi dan komunikasi dengan korban perlu dipercepat agar mereka menerima informasi yang lebih jelas dan tepat waktu mengenai kasus mereka. Kesadaran dan kerja sama di seluruh komunitas akademik juga penting untuk membuat proses pelaporan lebih efektif dan meningkatkan kepercayaan korban terhadap sistem. Terakhir, budaya universitas perlu menjadi lebih berpusat pada korban (victim-centered) agar proses tersebut tidak semakin memberikan dampak negatif kepada korban.",
+
+
+
+/* =========================================
+   HOTLINES INDONESIA
+========================================= */    
+
+"hotlines.label": "Bagian Hotline",
+"hotlines.title": "Hotline Dukungan",
+"hotlines.description": "Jika kamu mengalami, menyaksikan, atau ingin membicarakan pelecehan atau kekerasan seksual, kamu tidak harus menghadapinya sendirian. Berikut beberapa layanan yang dapat dihubungi untuk mendapatkan dukungan, informasi, pendampingan, atau membuat laporan. Layanan di bawah ini bukan layanan darurat.",
+
+"hotlines.sapa.name": "1. SAPA 129",
+"hotlines.sapa.org": "Kementerian Pemberdayaan Perempuan dan Perlindungan Anak (Kemen PPPA)",
+"hotlines.sapa.phone": "129",
+"hotlines.sapa.whatsapp": "08111-129-129",
+"hotlines.sapa.description": "SAPA 129 menerima pengaduan terkait kekerasan terhadap perempuan dan anak serta dapat memberikan bantuan dan informasi mengenai langkah selanjutnya.",
+
+"hotlines.ui.name": "2. HopeHelps UI",
+"hotlines.ui.phone": "0822-9978-8860",
+"hotlines.ui.email": "advokasi.hopehelps@gmail.com",
+"hotlines.ui.description": "Layanan dukungan dan pengaduan terkait kekerasan seksual di lingkungan Universitas Indonesia.",
+
+"hotlines.itb.name": "3. HopeHelps ITB",
+"hotlines.itb.phone": "0877-0896-6894",
+"hotlines.itb.email": "hopehelps.itb@gmail.com",
+"hotlines.itb.description": "Layanan dukungan dan pengaduan terkait kekerasan seksual di lingkungan Institut Teknologi Bandung.",
+
+"hotlines.ipb.name": "4. HopeHelps IPB",
+"hotlines.ipb.phone": "0814-1427-2092",
+"hotlines.ipb.email": "advokasi.hopehelps.ipb@gmail.com",
+"hotlines.ipb.description": "Layanan dukungan dan pengaduan terkait kekerasan seksual di lingkungan IPB.",
+
+"hotlines.ugm.name": "5. HopeHelps UGM",
+"hotlines.ugm.phone": "0821-4065-9810",
+"hotlines.ugm.description": "Layanan dukungan dan pengaduan terkait kekerasan seksual di lingkungan Universitas Gadjah Mada.",
+
+"hotlines.unair.name": "6. HopeHelps Universitas Airlangga",
+"hotlines.unair.phone": "0851-6149-3614",
+"hotlines.unair.email": "advokasi.hopehelps.unair@gmail.com",
+"hotlines.unair.description": "Layanan dukungan dan pengaduan terkait kekerasan seksual di lingkungan Universitas Airlangga.",
+
+"hotlines.unnes.name": "7. HopeHelps UNNES",
+"hotlines.unnes.phone": "0819-1288-80902",
+"hotlines.unnes.email": "advokasi.hopehelps.unnes@gmail.com",
+"hotlines.unnes.description": "Layanan dukungan dan pengaduan terkait kekerasan seksual di lingkungan Universitas Negeri Semarang.",
+
+"hotlines.lbh.name": "8. LBH APIK Jakarta",
+"hotlines.lbh.phone": "0813-8882-2669",
+"hotlines.lbh.description": "LBH APIK menyediakan bantuan hukum dan pengaduan bagi perempuan, termasuk pendampingan dalam berbagai persoalan berbasis gender.",
+"hotlines.lbh.note": "Catatan: Jika kamu berada dalam bahaya atau membutuhkan bantuan polisi segera, gunakan POLRI 110, bukan daftar hotline dukungan di atas.",
+
+"hotlines.polri.name": "POLRI — Call Center 110",
+"hotlines.polri.number": "110",
+"hotlines.polri.availability": "24 jam, 7 hari seminggu",
+"hotlines.polri.cost": "Gratis",
+"hotlines.polri.description": "Jika seseorang sedang dalam keadaan darurat atau membutuhkan bantuan polisi segera, hubungi 110.",
+
+
+/* =========================
+   HALAMAN HUKUM
+========================= */
+
+"law.intro.label":
+    "Bagian Hukum",
+
+"law.intro.title":
+    "Hukum dan peraturan mengenai pelecehan seksual dan kekerasan seksual di universitas-universitas Indonesia.",
+
+"law.intro.question":
+    "Sejauh mana hukum di Indonesia melindungi mahasiswa dari pelecehan seksual?",
+
+
+"law.articles.label":
+    "UU TPKS — Undang-Undang Nomor 12 Tahun 2022",
+
+"law.articles.title":
+    "Pasal-Pasal Mengenai Pelecehan Seksual",
+
+
+/* PASAL 5 */
+
+"law.article5.label":
+    "UU TPKS — PASAL 5",
+
+"law.article5.title":
+    "Pelecehan Seksual Nonfisik",
+
+"law.article5.description":
+    "Setiap orang yang melakukan perbuatan seksual nonfisik yang ditujukan terhadap tubuh, keinginan seksual, dan/atau organ reproduksi orang lain dengan maksud merendahkan harkat dan martabat seseorang berdasarkan seksualitas dan/atau kesusilaannya.",
+
+"law.sources":
+    "SUMBER",
+
+"law.article5.source":
+    "Teks lengkap UU TPKS, Pasal 5 — publikasi resmi pemerintah.",
+
+
+/* PASAL 6A */
+
+"law.article6a.label":
+    "UU TPKS — PASAL 6A",
+
+"law.article6a.title":
+    "Pelecehan Seksual Fisik",
+
+"law.article6a.description":
+    "Setiap orang yang melakukan perbuatan seksual secara fisik yang ditujukan terhadap tubuh, keinginan seksual, dan/atau organ reproduksi orang lain dengan maksud merendahkan harkat dan martabat seseorang berdasarkan seksualitas dan/atau kesusilaannya, yang tidak termasuk dalam ketentuan pidana lain yang memiliki ancaman hukuman lebih berat.",
+
+"law.article6a.source":
+    "Teks lengkap UU TPKS, Pasal 6A — publikasi resmi pemerintah.",
+
+
+/* PASAL 6B */
+
+"law.article6b.label":
+    "UU TPKS — PASAL 6B",
+
+"law.article6b.title":
+    "Pelecehan Seksual Fisik",
+
+"law.article6b.description":
+    "Setiap orang yang melakukan perbuatan seksual secara fisik yang ditujukan terhadap tubuh, keinginan seksual, dan/atau organ reproduksi orang lain dengan maksud secara melawan hukum menempatkan orang lain di bawah kekuasaannya, baik dalam maupun di luar hubungan perkawinan.",
+
+"law.article6b.source":
+    "Teks lengkap UU TPKS, Pasal 6B — publikasi resmi pemerintah.",
+
+
+/* PASAL 6C */
+
+"law.article6c.label":
+    "UU TPKS — PASAL 6C",
+
+"law.article6c.title":
+    "Pelecehan Seksual Fisik",
+
+"law.article6c.description":
+    "Setiap orang yang melakukan perbuatan seksual secara fisik yang ditujukan terhadap tubuh, keinginan seksual, dan/atau organ reproduksi orang lain dengan menyalahgunakan kedudukan, wewenang, kepercayaan, atau pengaruh yang timbul dari tipu muslihat atau hubungan atau keadaan tertentu, atau dengan memanfaatkan kerentanan, ketidakberdayaan, atau ketergantungan orang lain, baik dalam maupun di luar hubungan perkawinan.",
+
+"law.article6c.source":
+    "Teks lengkap UU TPKS, Pasal 6C — publikasi resmi pemerintah.",
+
+
+/* PASAL 14 */
+
+"law.article14.label":
+    "UU TPKS — PASAL 14",
+
+"law.article14.title":
+    "Kekerasan Seksual Berbasis Elektronik (KSBE)",
+
+"law.article14.description":
+    "Mengatur mengenai kekerasan seksual yang dilakukan melalui media elektronik, termasuk penyalahgunaan atau penyebaran konten seksual eksplisit tanpa persetujuan serta tindakan seksual lainnya yang dilakukan melalui sistem elektronik.",
+
+"law.article14.source":
+    "Teks lengkap UU TPKS, Pasal 14 — publikasi resmi pemerintah.",
+
+
+/* PASAL 66–70 */
+
+"law.article66_70.label":
+    "UU TPKS — PASAL 66–70",
+
+"law.article66_70.title":
+    "Hak Korban",
+
+"law.article66_70.description":
+    "Pasal-pasal ini menetapkan bahwa korban kekerasan seksual berhak memperoleh bantuan, perlindungan, dan layanan pemulihan sejak terjadinya tindak pidana. Hak tersebut mencakup akses terhadap informasi, layanan hukum dan kesehatan, dukungan psikologis, perlindungan dari ancaman, serta pemulihan sesuai dengan kebutuhan korban.",
+
+"law.article66_70.source":
+    "Teks lengkap UU TPKS, Pasal 66–70 — publikasi resmi pemerintah.",
+
+
+
+/* =========================
+   REPORT PAGE — BAHASA INDONESIA
+========================= */
+
+"report.eyebrow":
+    "Aman & rahasia",
+
+"report.title":
+    "Kirim Laporan",
+
+"report.introduction":
+    "Suara Anda penting. Bagikan pengalaman Anda dan bantu membangun lingkungan universitas yang lebih aman.",
+
+"report.university":
+    "Universitas",
+
+"report.city":
+    "Kota",
+
+"report.date":
+    "Tanggal kejadian",
+
+"report.incidentType":
+    "Jenis Kejadian",
+
+"report.selectIncident":
+    "Pilih jenis kejadian",
+
+"report.verbal":
+    "Pelecehan Verbal",
+
+"report.sexual":
+    "Pelecehan Seksual",
+
+"report.physical":
+    "Pelecehan Fisik",
+
+"report.online":
+    "Pelecehan Daring",
+
+"report.discrimination":
+    "Diskriminasi",
+
+"report.bullying":
+    "Perundungan",
+
+"report.other":
+    "Lainnya",
+
+"report.experience":
+    "Pengalaman Anda",
+
+"report.experiencePlaceholder":
+    "Jelaskan apa yang terjadi. Berikan detail sebanyak yang Anda rasa nyaman untuk dibagikan.",
+
+"report.fileUpload":
+    "Unggah File",
+
+"report.chooseFile":
+    "Pilih file",
+
+"report.fileTypes":
+    "Gambar, dokumen, atau tangkapan layar",
+
+"report.visibility":
+    "Visibilitas",
+
+"report.public":
+    "🔒 Publik (Anonim)",
+
+"report.publicDescription":
+    "Laporan Anda akan dapat dilihat oleh orang lain, tetapi identitas Anda akan tetap anonim.",
+
+"report.contact":
+    "Kontak untuk Tindak Lanjut",
+
+"report.contactOptional":
+    "Opsional, tidak akan dipublikasikan",
+
+"report.contactPlaceholder":
+    "Email, nomor telepon, atau cara lain untuk menghubungi Anda",
+
+"report.contactPrivacy":
+    "Informasi ini tidak akan pernah ditampilkan di halaman laporan publik.",
+
+"report.submit":
+    "Kirim Laporan Secara Anonim",
+
+"report.privacy":
+    "🛡 Identitas Anda akan selalu dilindungi. Jangan membagikan informasi pribadi kecuali Anda menginginkannya.",
+
+/* PUBLIC REPORT WALL */
+
+"report.wallTitle":
+    "Laporan Publik",
+
+"report.anonymous":
+    "(Anonim)",
+
+"report.wallDescription":
+    "Kisah nyata dari komunitas universitas kami.",
+
+"report.wallNote":
+    "Semua laporan bersifat anonim. Informasi kontak tidak pernah dipublikasikan.",
+
+/* DELETE MODAL */
+
+"report.deleteTitle":
+    "Hapus laporan ini?",
+
+"report.deleteDescription":
+    "Apakah Anda yakin ingin menghapus laporan ini? Tindakan ini tidak dapat dibatalkan.",
+
+"report.cancelDelete":
+    "Tidak, batalkan",
+
+"report.confirmDelete":
+    "Ya, hapus",
+
+/* FOOTER */
+
+"footer.description":
+    "Arsip yang dibuat oleh siswa mengenai pelecehan seksual di universitas-universitas Indonesia.",
+
+"footer.emergency":
+    "Darurat",
+
+"footer.police":
+    "Polisi",
+
+"footer.more":
+    "Lainnya",
+
+"footer.help":
+    "Dapatkan bantuan",
+
+"footer.report":
+    "Kirim laporan",
+
+"footer.note":
+    "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional.",
+
+
+
+/* FOOTER */
+
+"footer.description":
+    "Arsip yang dibuat oleh siswa mengenai pelecehan seksual di universitas-universitas Indonesia.",
+
+"footer.emergency":
+    "Darurat",
+
+"footer.police":
+    "Polisi",
+
+"footer.more":
+    "Lainnya",
+
+"footer.help":
+    "Dapatkan bantuan",
+
+"footer.report":
+    "Kirim laporan",
+
+"footer.note":
+    "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional.",
 
 
 

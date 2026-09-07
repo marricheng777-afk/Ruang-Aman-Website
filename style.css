@@ -3254,7 +3254,12 @@ body.dark-mode .inside-card .card-link:hover {
     font-family:Georgia, "Times New Roman", serif;
     font-size: clamp(20px, 1.8vw, 29px);
     line-height: 1.55;
-    color: #68677b;
+    color: #303030;
+}
+
+html.dark .law-intro p,
+body.dark-mode .law-intro p {
+    color: #ffffff;
 }
 
 
@@ -4326,5 +4331,132 @@ body.dark-mode .hope-instagram-link:hover {
         font-size: 0.93rem;
     }
 
+}
+
+/* =========================================================
+   HOTLINES SECTION
+========================================================= */
+
+.hotlines-section {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 55px 4.3% 110px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.hotline-card {
+    background: var(--inside-card-background);
+
+    border: 1px solid var(--inside-border);
+    border-radius: 18px;
+
+    padding: 32px 36px;
+}
+
+.hotline-card.emergency {
+    border-color: #d22b2b;
+}
+
+.hotline-name {
+    margin: 0 0 14px;
+
+    color: var(--heading-color);
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.hotline-org {
+    margin: 0 0 10px;
+
+    color: var(--inside-text);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hotline-contact {
+    margin: 0 0 6px;
+
+    color: var(--inside-text);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+.hotline-description {
+    margin: 16px 0 0;
+
+    color: var(--inside-text);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.hotline-note {
+    margin: 14px 0 0;
+
+    color: #d22b2b;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.hotline-note:empty {
+    display: none;
+    margin: 0;
+}
+
+.hotline-list {
+    margin: 0 0 4px;
+    padding-left: 22px;
+
+    color: var(--inside-text);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 900px) {
+
+    .hotlines-section {
+        padding: 45px 5% 90px;
+        gap: 20px;
+    }
+
+    .hotline-card {
+        padding: 26px 28px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .hotlines-section {
+        padding: 35px 6% 70px;
+        gap: 18px;
+    }
+
+    .hotline-card {
+        padding: 22px 24px;
+        border-radius: 14px;
+    }
+
+    .hotline-name {
+        font-size: 21px;
+    }
 }
 
