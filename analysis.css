@@ -1,0 +1,1379 @@
+/* =========================================================
+   RUANG AMAN — ANALYSIS PAGE
+========================================================= */
+
+
+/* =========================================================
+   1. PAGE
+========================================================= */
+
+.analysis-page {
+
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100vh;
+
+    color: var(--text-color);
+
+    background: transparent;
+
+    overflow-x: hidden;
+}
+
+
+/*
+   IMPORTANT:
+   The Analysis page does NOT create its own background.
+
+   style.css already controls the global page background
+   through body and body::before.
+
+   Therefore every Analysis section remains transparent.
+*/
+
+.analysis-page > section,
+.analysis-section,
+.analysis-intro-section,
+.protection-section,
+.rights-section,
+.reporting-section,
+.analysis-final {
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   2. SHARED CONTAINER
+========================================================= */
+
+.analysis-container {
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding-left: 4.3%;
+    padding-right: 4.3%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   3. INTRODUCTION
+========================================================= */
+
+.analysis-intro-section {
+
+    width: 100%;
+
+    padding-top: 170px;
+    padding-bottom: 90px;
+}
+
+
+/*
+   Same visual treatment as the Research page.
+
+   No special background.
+   No separate gradient.
+*/
+
+.analysis-intro {
+
+    width: 100%;
+
+    padding: 0;
+}
+
+
+/* Main "Our Analysis" title */
+
+.analysis-intro h1 {
+
+    margin: 30px 0 45px;
+
+    max-width: 1200px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 5vw, 76px);
+
+    line-height: 1.05;
+
+    font-weight: 600;
+
+    color: var(--heading-color);
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   4. INTRODUCTION BOX
+========================================================= */
+
+.analysis-intro-box {
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 30px 32px;
+
+    box-sizing: border-box;
+
+    border: 1px solid var(--card-border);
+
+    border-radius: 28px;
+
+    background: var(--card-background);
+
+    color: var(--text-color);
+
+    box-shadow:
+        0 8px 30px rgba(60, 50, 100, 0.06);
+}
+
+
+.analysis-intro-box p {
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    font-weight: 400;
+}
+
+
+.analysis-intro-box p + p {
+
+    margin-top: 16px;
+}
+
+
+/* =========================================================
+   5. SECTION LABEL
+========================================================= */
+
+.analysis-page .section-label {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: var(--accent);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   6. PROTECTION SECTION
+========================================================= */
+
+.protection-section {
+
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+
+/* Heading */
+
+.analysis-heading-block {
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin-bottom: 42px;
+}
+
+
+.analysis-heading-block h2 {
+
+    margin: 0 0 22px;
+
+    max-width: 1000px;
+
+    color: var(--heading-color);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 600;
+}
+
+
+.analysis-lead {
+
+    max-width: 900px;
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   7. FINDING CARDS
+========================================================= */
+
+.finding-cards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: stretch;
+}
+
+
+/* Individual card */
+
+.finding-card {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid var(--card-border);
+
+    border-radius: 22px;
+
+    background: var(--card-background);
+
+    box-shadow:
+        0 8px 30px rgba(60, 50, 100, 0.06);
+}
+
+
+/* Top and bottom sections */
+
+.finding-card-top,
+.finding-card-bottom {
+
+    flex: 1;
+
+    min-height: 210px;
+
+    padding: 25px 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+}
+
+
+/* Percentage */
+
+.finding-number {
+
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+
+/* Card description */
+
+.finding-card p {
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   8. BUT
+========================================================= */
+
+/*
+   IMPORTANT:
+
+   The BUT is NOT allowed to touch the outer card edges.
+
+   It sits inside the card as an independent accent element.
+*/
+
+.finding-but {
+
+    width: calc(100% - 36px);
+
+    min-height: 62px;
+
+    margin: 0 18px;
+
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: var(--accent-dark);
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   9. CONCLUSION BAR
+========================================================= */
+
+.analysis-conclusion-bar {
+
+    width: 100%;
+
+    margin-top: 28px;
+
+    padding: 17px 28px;
+
+    box-sizing: border-box;
+
+    border-radius: 28px;
+
+    background: var(--accent-dark);
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   10. RIGHTS / RESEARCH STYLE
+========================================================= */
+
+.rights-section {
+
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+
+.research-style-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.9fr);
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   11. RESEARCH STYLE TEXT
+========================================================= */
+
+.research-style-text {
+
+    min-width: 0;
+}
+
+
+.research-style-eyebrow {
+
+    margin-bottom: 18px;
+
+    color: var(--accent);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.research-style-text h2 {
+
+    margin: 0 0 28px;
+
+    color: var(--heading-color);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(32px, 3.2vw, 48px);
+
+    line-height: 1.1;
+
+    font-weight: 600;
+}
+
+
+.research-style-text p {
+
+    max-width: 700px;
+
+    margin: 0 0 20px;
+
+    color: var(--text-color);
+
+    font-size: 18px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+}
+
+
+/* Important statement */
+
+.research-style-highlight {
+
+    color: var(--accent) !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   12. RIGHTS LIST
+========================================================= */
+
+.research-style-list {
+
+    margin-top: 32px;
+}
+
+
+.research-style-list h3 {
+
+    margin: 0 0 14px;
+
+    color: var(--heading-color);
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+    font-weight: 700;
+}
+
+
+.research-style-list ul {
+
+    margin: 0;
+
+    padding-left: 22px;
+
+    color: var(--text-color);
+}
+
+
+.research-style-list li {
+
+    margin-bottom: 8px;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   13. RESEARCH STYLE VISUAL
+========================================================= */
+
+.research-style-visual {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   14. QUESTION CALLOUT
+========================================================= */
+
+.question-callout {
+
+    width: 100%;
+
+    padding: 22px 24px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+
+    background: var(--accent-dark);
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+
+.question-callout span {
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   15. SURVEY IMAGE
+========================================================= */
+
+.survey-image-wrapper {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 0;
+
+    background: var(--card-background);
+}
+
+
+.survey-image-wrapper img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   16. IMAGE DESCRIPTION
+========================================================= */
+
+.survey-image-caption {
+
+    margin: 0;
+
+    color: var(--accent);
+
+    font-size: 17px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   17. REPORTING
+========================================================= */
+
+.reporting-section {
+
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+
+.reporting-heading {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-bottom: 48px;
+}
+
+
+.reporting-heading h2 {
+
+    margin: 0 0 20px;
+
+    color: var(--heading-color);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 4.5vw, 62px);
+
+    line-height: 1.05;
+
+    font-weight: 600;
+}
+
+
+.reporting-heading p {
+
+    max-width: 1000px;
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+}
+
+
+.reporting-heading u {
+
+    text-underline-offset: 3px;
+}
+
+
+/* =========================================================
+   18. REPORTING STAT ROW
+========================================================= */
+
+.reporting-stat-row {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(260px, 0.7fr)
+        minmax(0, 1fr);
+
+    gap: 50px;
+
+    align-items: center;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   19. REPORTING STAT
+========================================================= */
+
+.reporting-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.reporting-stat span {
+
+    margin-bottom: 5px;
+
+    color: var(--text-color);
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+.reporting-stat strong {
+
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(58px, 6vw, 82px);
+
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   20. REPORTING REASONS
+========================================================= */
+
+.reporting-reasons {
+
+    padding: 24px 28px;
+
+    border-radius: 18px;
+
+    background: var(--accent-dark);
+
+    color: #ffffff;
+}
+
+
+.reporting-reasons p {
+
+    margin: 0 0 14px;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+}
+
+
+.reporting-reasons p:last-of-type {
+
+    margin-bottom: 6px;
+}
+
+
+.reporting-reasons ul {
+
+    margin: 0;
+
+    padding-left: 22px;
+}
+
+
+.reporting-reasons li {
+
+    margin-bottom: 4px;
+
+    font-size: 16px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   21. INTERVIEW BOX
+========================================================= */
+
+.reporting-interview {
+
+    width: 100%;
+
+    padding: 28px 30px;
+
+    box-sizing: border-box;
+
+    border: 1px solid var(--card-border);
+
+    border-radius: 22px;
+
+    background: var(--card-background);
+
+    color: var(--text-color);
+
+    box-shadow:
+        0 8px 30px rgba(60, 50, 100, 0.05);
+}
+
+
+.reporting-interview h3 {
+
+    margin: 0 0 8px;
+
+    color: var(--accent);
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+
+.reporting-interview > p {
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   22. LAW / REALITY
+========================================================= */
+
+.law-reality {
+
+    margin-top: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+
+.law-reality strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--accent);
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.law-reality p {
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   23. REPORTING FINAL
+========================================================= */
+
+.reporting-interview .reporting-final {
+
+    margin-top: 26px;
+
+    color: var(--accent);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   24. FINAL TAKEAWAY
+========================================================= */
+
+.analysis-final {
+
+    padding-top: 90px;
+    padding-bottom: 130px;
+}
+
+
+.analysis-final h2 {
+
+    max-width: 900px;
+
+    margin: 0 0 24px;
+
+    color: var(--heading-color);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(40px, 4vw, 56px);
+
+    line-height: 1.08;
+
+    font-weight: 600;
+}
+
+
+.analysis-final p {
+
+    max-width: 850px;
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 19px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   25. FLOATING TABLE OF CONTENTS
+========================================================= */
+
+.analysis-toc {
+
+    position: fixed;
+
+    top: 120px;
+    right: 28px;
+
+    z-index: 90;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+}
+
+
+/* ❖ */
+
+.analysis-toc-toggle {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--card-border);
+
+    border-radius: 17px;
+
+    background: var(--card-background);
+
+    color: var(--accent);
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(60, 50, 100, 0.10);
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.analysis-toc-toggle:hover {
+
+    transform: translateY(-2px);
+}
+
+
+/* Menu */
+
+.analysis-toc-menu {
+
+    width: 210px;
+
+    margin-top: 10px;
+
+    padding: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    border: 1px solid var(--card-border);
+
+    border-radius: 18px;
+
+    background: var(--card-background);
+
+    box-shadow:
+        0 15px 40px rgba(60, 50, 100, 0.12);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+
+
+/*
+   Open menu when the TOC is hovered.
+*/
+
+.analysis-toc:hover .analysis-toc-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+
+.analysis-toc-label {
+
+    margin: 0 0 8px;
+
+    color: var(--accent);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.analysis-toc-menu a {
+
+    padding: 8px 4px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.analysis-toc-menu a:hover {
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   26. RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+
+    .analysis-container {
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .finding-cards {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .research-style-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 50px;
+    }
+
+
+    .reporting-stat-row {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .reporting-stat {
+
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================================
+   27. RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+
+    .analysis-intro-section {
+
+        padding-top: 130px;
+        padding-bottom: 65px;
+    }
+
+
+    .analysis-intro h1 {
+
+        margin-top: 20px;
+
+        font-size: clamp(42px, 11vw, 58px);
+    }
+
+
+    .analysis-intro-box {
+
+        padding: 24px 22px;
+
+        border-radius: 22px;
+    }
+
+
+    .analysis-intro-box p {
+
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    .protection-section,
+    .rights-section,
+    .reporting-section {
+
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+
+    .analysis-heading-block h2 {
+
+        font-size: clamp(34px, 9vw, 48px);
+    }
+
+
+    .analysis-lead {
+
+        font-size: 18px;
+    }
+
+
+    .finding-cards {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .finding-card-top,
+    .finding-card-bottom {
+
+        min-height: 0;
+
+        padding: 24px 22px;
+    }
+
+
+    .finding-number {
+
+        font-size: 38px;
+    }
+
+
+    .finding-but {
+
+        width: calc(100% - 32px);
+
+        margin-left: 16px;
+        margin-right: 16px;
+
+        min-height: 58px;
+    }
+
+
+    .analysis-conclusion-bar {
+
+        padding: 16px 20px;
+
+        border-radius: 20px;
+
+        font-size: 15px;
+    }
+
+
+    .research-style-text h2 {
+
+        font-size: clamp(32px, 9vw, 46px);
+    }
+
+
+    .question-callout {
+
+        font-size: 17px;
+
+        padding: 20px;
+    }
+
+
+    .survey-image-caption {
+
+        font-size: 16px;
+    }
+
+
+    .reporting-heading h2 {
+
+        font-size: clamp(38px, 10vw, 52px);
+    }
+
+
+    .reporting-heading p {
+
+        font-size: 18px;
+    }
+
+
+    .reporting-stat strong {
+
+        font-size: 64px;
+    }
+
+
+    .reporting-interview {
+
+        padding: 24px 22px;
+
+        border-radius: 20px;
+    }
+
+
+    .law-reality {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .analysis-final {
+
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
+
+    .analysis-final h2 {
+
+        font-size: clamp(36px, 9vw, 50px);
+    }
+
+
+    /*
+       Move the floating TOC slightly inward on mobile.
+    */
+
+    .analysis-toc {
+
+        top: 100px;
+
+        right: 16px;
+    }
+
+
+    .analysis-toc-toggle {
+
+        width: 48px;
+        height: 48px;
+
+        border-radius: 15px;
+    }
+
+
+    .analysis-toc-menu {
+
+        width: 190px;
+    }
+
+}
