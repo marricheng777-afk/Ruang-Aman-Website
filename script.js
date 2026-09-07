@@ -2930,46 +2930,54 @@ if (deleteModal) {
 }
 
 /* =========================================================
-   ANALYSIS — CONFETTI
+   ANALYSIS — CONFETTI BUTTON
 ========================================================= */
 
 const celebrateButton = document.getElementById("celebrateButton");
 
 if (celebrateButton) {
 
-    celebrateButton.addEventListener("click", () => {
+    celebrateButton.addEventListener("click", function () {
 
-        const colors = [
+        const confettiColors = [
             "#303030",
             "#ffffff",
-            "var(--accent)"
+            "#8B7FB8"
         ];
 
-        for (let i = 0; i < 90; i++) {
+        for (let i = 0; i < 100; i++) {
 
-            const piece = document.createElement("span");
+            const confetti = document.createElement("span");
 
-            piece.className = "confetti-piece";
+            confetti.className = "confetti-piece";
 
-            piece.style.left =
+            confetti.style.left =
                 Math.random() * 100 + "vw";
 
-            piece.style.top = "-10px";
+            confetti.style.top = "-20px";
 
-            piece.style.background =
-                colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.backgroundColor =
+                confettiColors[
+                    Math.floor(
+                        Math.random() * confettiColors.length
+                    )
+                ];
 
-            piece.style.animationDelay =
-                Math.random() * 0.4 + "s";
+            confetti.style.animationDelay =
+                Math.random() * 0.5 + "s";
 
-            piece.style.transform =
+            confetti.style.animationDuration =
+                1.8 + Math.random() * 1.2 + "s";
+
+            confetti.style.transform =
                 `rotate(${Math.random() * 360}deg)`;
 
-            document.body.appendChild(piece);
+            document.body.appendChild(confetti);
 
             setTimeout(() => {
-                piece.remove();
-            }, 2500);
+                confetti.remove();
+            }, 3200);
+
         }
 
     });

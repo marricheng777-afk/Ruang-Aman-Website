@@ -2143,3 +2143,50 @@
 
     font-weight: 600;
 }
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+.confetti-piece {
+
+    position: fixed;
+
+    top: -20px;
+
+    width: 8px;
+    height: 14px;
+
+    z-index: 9999;
+
+    pointer-events: none;
+
+    animation-name: confetti-fall;
+
+    animation-timing-function: ease-out;
+
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes confetti-fall {
+
+    0% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateY(105vh)
+            rotate(720deg);
+    }
+
+}
