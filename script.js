@@ -880,6 +880,296 @@ const translations = {
 "analysis.conclusion.text": "We conclude that current Indonesian legal frameworks protect university students from sexual harassment to a significant extent in principle, but not always to the same extent in practice.",
 "analysis.conclusion.text2": "Strengthening implementation, student awareness, trustworthy reporting mechanisms, and victim-centered support would help ensure that the protections provided by law become more accessible and effective for students.",
 
+
+/* =========================
+   ANALYSIS — ENGLISH
+========================= */
+
+"analysis.hero.label":
+    "FINAL RESEARCH ANALYSIS",
+
+"analysis.hero.title":
+    "Law vs. Reality",
+
+"analysis.hero.description":
+    "How effectively do Indonesian laws protect university students from sexual harassment in practice?",
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+"analysis.overview.label":
+    "ANALYSIS SECTION",
+
+"analysis.overview.title":
+    "Our Analysis",
+
+"analysis.overview.p1":
+    "Indonesia has developed a relatively strong legal framework for addressing sexual violence. Law No. 12 of 2022 on Sexual Violence Crimes (UU TPKS) recognizes sexual violence as a serious criminal issue and provides victims with rights to protection, assistance, and recovery.",
+
+"analysis.overview.p2":
+    "For university students specifically, Permendikbudristek No. 55 of 2024 provides a framework for preventing and handling violence in higher education. It addresses prevention, reporting and case handling, university task forces, recovery, and the rights of victims, witnesses, and reported individuals.",
+
+
+/* =========================================================
+   PROTECTION GAP
+========================================================= */
+
+"analysis.protection.label":
+    "WHAT THE SURVEY SHOWS",
+
+"analysis.protection.title":
+    "Protection on Paper ≠ Protection in Practice",
+
+"analysis.protection.lead":
+    "The survey showed that students generally understand what sexual harassment is:",
+
+"analysis.protection.card1.top":
+    "gave the highest score for understanding the meaning of sexual harassment.",
+
+"analysis.protection.card1.bottom":
+    "gave the highest score for knowing where to seek help.",
+
+"analysis.protection.card2.top":
+    "recognized that sexual harassment can occur in educational institutions.",
+
+"analysis.protection.card2.bottom":
+    "gave the highest score for believing prevention information is easy to find.",
+
+"analysis.protection.card3.top":
+    "felt confident distinguishing respectful behavior from behavior that crosses personal boundaries.",
+
+"analysis.protection.card3.bottom":
+    "Some respondents gave low scores when asked about access to reporting systems.",
+
+"analysis.protection.but":
+    "BUT",
+
+"analysis.protection.conclusion":
+    "Students appear to understand the problem better than they understand the systems designed to protect them from it.",
+
+
+/* =========================================================
+   RIGHTS
+========================================================= */
+
+"analysis.rights.eyebrow":
+    "WHY THIS MATTERS",
+
+"analysis.rights.title":
+    "Understanding protection is not the same as accessing it.",
+
+"analysis.rights.highlight":
+    "This is important because it contrasts with the lower confidence in knowing where to seek help.",
+
+"analysis.rights.p1":
+    "Students recognize that protection is important, but knowing that protection exists does not automatically mean they know how to access it.",
+
+"analysis.rights.p2":
+    "This suggests that simply creating laws and regulations is not enough.",
+
+"analysis.rights.listTitle":
+    "Universities also need to make information about those rights:",
+
+"analysis.rights.list1":
+    "easy to find",
+
+"analysis.rights.list2":
+    "easy to understand",
+
+"analysis.rights.list3":
+    "accessible to students",
+
+"analysis.rights.list4":
+    "connected to clear reporting and support procedures",
+
+"analysis.rights.question":
+    "I believe that students need to know about their rights and the protections available to them regarding sexual harassment.",
+
+"analysis.rights.questionLabel":
+    "Question 7:",
+
+"analysis.rights.caption":
+    "88.6% of respondents selected the highest score, showing strong agreement that students should know their rights and available protections.",
+
+
+/* =========================================================
+   REPORTING
+========================================================= */
+
+"analysis.reporting.label":
+    "A GAP BETWEEN RIGHTS AND ACTION",
+
+"analysis.reporting.title":
+    "Issue of Reporting",
+
+"analysis.reporting.intro":
+    "The law provides mechanisms intended to protect victims, but students may still choose not to report.",
+
+"analysis.reporting.survey":
+    "In our Survey:",
+
+"analysis.reporting.reason1":
+    "strongly agreed that someone may experience sexual harassment but choose not to report it.",
+
+"analysis.reporting.reason2":
+    "agreed that victims may be afraid of:",
+
+"analysis.reporting.reason3":
+    "being blamed",
+
+"analysis.reporting.reason4":
+    "not being believed",
+
+"analysis.reporting.reason5":
+    "being judged when reporting",
+
+"analysis.reporting.interviewTitle":
+    "Our interview with Fahmi, Director General of HopeHelps UI also explained:",
+
+"analysis.reporting.interview":
+    "He explained that students may hesitate to report because they fear being labeled as an “attention seeker”, being judged by others, or experiencing consequences within their relationships with friends, partners, seniors, or the perpetrator. Trauma can also make it difficult for survivors to discuss what happened.",
+
+"analysis.reporting.law":
+    "Law:",
+
+"analysis.reporting.lawText":
+    "A student has the right to protection and assistance.",
+
+"analysis.reporting.reality":
+    "Reality:",
+
+"analysis.reporting.realityText":
+    "The student may be too afraid, uncertain, or uncomfortable to access those protections.",
+
+"analysis.reporting.final":
+    "Therefore, the existence of a reporting mechanism does not automatically mean that students feel safe enough to use it.",
+
+
+/* =========================================================
+   LAW VS. REALITY
+========================================================= */
+
+"analysis.gap.label":
+    "LAW VS. REALITY",
+
+"analysis.gap.title":
+    "The Protection Gap",
+
+"analysis.gap.intro":
+    "What is protected by law does not always translate into protection that students can understand, trust, access, and experience.",
+
+"analysis.gap.law.label":
+    "THE LAW",
+
+"analysis.gap.law.title":
+    "Protection in law",
+
+"analysis.gap.law.1":
+    "Victims have legal rights",
+
+"analysis.gap.law.2":
+    "Reporting mechanisms are provided",
+
+"analysis.gap.law.3":
+    "Victims should receive protection",
+
+"analysis.gap.law.4":
+    "Victims have rights to assistance and recovery",
+
+"analysis.gap.law.5":
+    "Universities have responsibilities to prevent and handle violence",
+
+"analysis.gap.law.6":
+    "Sexual violence is formally recognized as a serious issue",
+
+"analysis.gap.law.7":
+    "Regulations provide procedures for handling cases",
+
+"analysis.gap.reality.label":
+    "OUR RESEARCH",
+
+"analysis.gap.reality.title":
+    "Reality identified by students",
+
+"analysis.gap.reality.1":
+    "Students may not know how to access those rights",
+
+"analysis.gap.reality.2":
+    "Students may hesitate to report",
+
+"analysis.gap.reality.3":
+    "Fear of stigma may prevent them from seeking protection",
+
+"analysis.gap.reality.4":
+    "Students may not know what support is available",
+
+"analysis.gap.reality.5":
+    "Students may have limited confidence in institutional systems",
+
+"analysis.gap.reality.6":
+    "Social stigma and victim-blaming can still influence reporting",
+
+"analysis.gap.reality.7":
+    "Students want systems that are more accessible, transparent, and trustworthy",
+
+"analysis.gap.divider":
+    "THE GAP",
+
+"analysis.gap.conclusionLabel":
+    "THE GAP",
+
+"analysis.gap.conclusion":
+    "The biggest gap is not necessarily the absence of laws, but the gap between legal protection and students' ability to understand, trust, access, and experience that protection.",
+
+
+/* =========================================================
+   EXTENT OF PROTECTION
+========================================================= */
+
+"analysis.extent.label":
+    "EXTENT OF PROTECTION",
+
+"analysis.extent.title":
+    "To What Extent Do Indonesian Laws Protect University Students?",
+
+"analysis.extent.answerLabel":
+    "Based on our findings, we would answer:",
+
+"analysis.extent.answer":
+    "To a significant extent in principle, but less consistently in practice.",
+
+"analysis.extent.p1":
+    "Indonesia has established substantial formal protections through UU TPKS and higher education regulations. These frameworks recognize sexual violence, establish victim rights, and create responsibilities for institutions. However, legal protection alone cannot guarantee that students feel protected.",
+
+"analysis.extent.p2":
+    "Our survey demonstrates that students have relatively strong awareness of sexual harassment, but there is weaker confidence regarding where to seek help and how accessible prevention and support information is. Our interview further shows that fear, stigma, confidentiality concerns, trauma, and distrust of reporting systems can prevent students from using the protections available to them.",
+
+"analysis.extent.layersIntro":
+    "Therefore, the extent of protection depends on two layers:",
+
+"analysis.extent.layer1.title":
+    "Protection on paper is strong",
+
+"analysis.extent.layer1.text":
+    "Laws and regulations establish rights, responsibilities, reporting mechanisms, and victim support.",
+
+"analysis.extent.layer2.title":
+    "Protection in reality is inconsistent",
+
+"analysis.extent.layer2.text":
+    "Students may struggle to access these protections because of limited awareness, fear of reporting, stigma, lack of trust, and concerns about institutional responses.",
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+"analysis.celebrate.label":
+    "Celebrate our findings",
+
+
 /* FOOTER */
 
 "footer.description":
@@ -1631,6 +1921,297 @@ const translations = {
 
 "report.confirmDelete":
     "Ya, hapus",
+
+
+/* =========================
+   ANALYSIS — INDONESIAN
+========================= */
+
+"analysis.hero.label":
+    "ANALISIS PENELITIAN AKHIR",
+
+"analysis.hero.title":
+    "Hukum vs. Realitas",
+
+"analysis.hero.description":
+    "Seberapa efektif hukum Indonesia melindungi mahasiswa dari pelecehan seksual dalam praktik?",
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+"analysis.overview.label":
+    "BAGIAN ANALISIS",
+
+"analysis.overview.title":
+    "Analisis Kami",
+
+"analysis.overview.p1":
+    "Indonesia telah mengembangkan kerangka hukum yang relatif kuat untuk menangani kekerasan seksual. Undang-Undang No. 12 Tahun 2022 tentang Tindak Pidana Kekerasan Seksual (UU TPKS) mengakui kekerasan seksual sebagai tindak pidana yang serius dan memberikan korban hak atas perlindungan, pendampingan, dan pemulihan.",
+
+"analysis.overview.p2":
+    "Khusus bagi mahasiswa, Permendikbudristek No. 55 Tahun 2024 memberikan kerangka untuk mencegah dan menangani kekerasan di lingkungan perguruan tinggi. Peraturan ini mencakup pencegahan, pelaporan dan penanganan kasus, satuan tugas perguruan tinggi, pemulihan, serta hak korban, saksi, dan pihak yang dilaporkan.",
+
+
+/* =========================================================
+   PROTECTION GAP
+========================================================= */
+
+"analysis.protection.label":
+    "HASIL SURVEI",
+
+"analysis.protection.title":
+    "Perlindungan di Atas Kertas ≠ Perlindungan dalam Praktik",
+
+"analysis.protection.lead":
+    "Hasil survei menunjukkan bahwa mahasiswa pada umumnya memahami apa itu pelecehan seksual:",
+
+"analysis.protection.card1.top":
+    "memberikan skor tertinggi dalam memahami pengertian pelecehan seksual.",
+
+"analysis.protection.card1.bottom":
+    "memberikan skor tertinggi dalam mengetahui tempat untuk mencari bantuan.",
+
+"analysis.protection.card2.top":
+    "menyadari bahwa pelecehan seksual dapat terjadi di lingkungan pendidikan.",
+
+"analysis.protection.card2.bottom":
+    "memberikan skor tertinggi dalam menilai bahwa informasi mengenai pencegahan mudah ditemukan.",
+
+"analysis.protection.card3.top":
+    "merasa yakin dalam membedakan perilaku yang menghormati batas pribadi dengan perilaku yang melanggar batas tersebut.",
+
+"analysis.protection.card3.bottom":
+    "Sebagian responden memberikan skor rendah ketika ditanya mengenai akses terhadap sistem pelaporan.",
+
+"analysis.protection.but":
+    "TETAPI",
+
+"analysis.protection.conclusion":
+    "Mahasiswa tampaknya lebih memahami masalahnya dibandingkan memahami sistem yang dirancang untuk melindungi mereka dari masalah tersebut.",
+
+
+/* =========================================================
+   RIGHTS
+========================================================= */
+
+"analysis.rights.eyebrow":
+    "MENGAPA HAL INI PENTING",
+
+"analysis.rights.title":
+    "Memahami adanya perlindungan tidak sama dengan mampu mengaksesnya.",
+
+"analysis.rights.highlight":
+    "Hal ini penting karena berbeda dengan tingkat keyakinan yang lebih rendah dalam mengetahui tempat untuk mencari bantuan.",
+
+"analysis.rights.p1":
+    "Mahasiswa menyadari bahwa perlindungan itu penting, tetapi mengetahui bahwa perlindungan tersedia tidak secara otomatis berarti mereka tahu cara mengaksesnya.",
+
+"analysis.rights.p2":
+    "Hal ini menunjukkan bahwa hanya membuat undang-undang dan peraturan saja tidak cukup.",
+
+"analysis.rights.listTitle":
+    "Universitas juga perlu membuat informasi mengenai hak-hak tersebut:",
+
+"analysis.rights.list1":
+    "mudah ditemukan",
+
+"analysis.rights.list2":
+    "mudah dipahami",
+
+"analysis.rights.list3":
+    "mudah diakses oleh mahasiswa",
+
+"analysis.rights.list4":
+    "terhubung dengan prosedur pelaporan dan dukungan yang jelas",
+
+"analysis.rights.question":
+    "Saya percaya bahwa mahasiswa perlu mengetahui hak dan perlindungan yang tersedia bagi mereka terkait pelecehan seksual.",
+
+"analysis.rights.questionLabel":
+    "Pertanyaan 7:",
+
+"analysis.rights.caption":
+    "88,6% responden memilih skor tertinggi, menunjukkan kesepakatan yang kuat bahwa mahasiswa perlu mengetahui hak dan perlindungan yang tersedia bagi mereka.",
+
+
+/* =========================================================
+   REPORTING
+========================================================= */
+
+"analysis.reporting.label":
+    "KESENJANGAN ANTARA HAK DAN TINDAKAN",
+
+"analysis.reporting.title":
+    "Masalah Pelaporan",
+
+"analysis.reporting.intro":
+    "Hukum menyediakan mekanisme yang bertujuan untuk melindungi korban, tetapi mahasiswa tetap dapat memilih untuk tidak melapor.",
+
+"analysis.reporting.survey":
+    "Dalam Survei Kami:",
+
+"analysis.reporting.reason1":
+    "sangat setuju bahwa seseorang mungkin mengalami pelecehan seksual tetapi memilih untuk tidak melaporkannya.",
+
+"analysis.reporting.reason2":
+    "setuju bahwa korban mungkin takut akan:",
+
+"analysis.reporting.reason3":
+    "disalahkan",
+
+"analysis.reporting.reason4":
+    "tidak dipercaya",
+
+"analysis.reporting.reason5":
+    "dihakimi ketika melapor",
+
+"analysis.reporting.interviewTitle":
+    "Wawancara kami dengan Fahmi, Direktur Jenderal HopeHelps UI, juga menjelaskan:",
+
+"analysis.reporting.interview":
+    "Ia menjelaskan bahwa mahasiswa mungkin ragu untuk melapor karena takut diberi label sebagai “pencari perhatian”, dihakimi oleh orang lain, atau menghadapi konsekuensi dalam hubungan mereka dengan teman, pasangan, senior, atau pelaku. Trauma juga dapat membuat penyintas kesulitan untuk membicarakan apa yang terjadi.",
+
+"analysis.reporting.law":
+    "Hukum:",
+
+"analysis.reporting.lawText":
+    "Mahasiswa memiliki hak atas perlindungan dan pendampingan.",
+
+"analysis.reporting.reality":
+    "Realitas:",
+
+"analysis.reporting.realityText":
+    "Mahasiswa mungkin terlalu takut, tidak yakin, atau merasa tidak nyaman untuk mengakses perlindungan tersebut.",
+
+"analysis.reporting.final":
+    "Oleh karena itu, keberadaan mekanisme pelaporan tidak secara otomatis berarti bahwa mahasiswa merasa cukup aman untuk menggunakannya.",
+
+
+/* =========================================================
+   LAW VS. REALITY
+========================================================= */
+
+"analysis.gap.label":
+    "HUKUM VS. REALITAS",
+
+"analysis.gap.title":
+    "Kesenjangan Perlindungan",
+
+"analysis.gap.intro":
+    "Perlindungan yang tersedia secara hukum tidak selalu diterjemahkan menjadi perlindungan yang dapat dipahami, dipercaya, diakses, dan dirasakan oleh mahasiswa.",
+
+"analysis.gap.law.label":
+    "HUKUM",
+
+"analysis.gap.law.title":
+    "Perlindungan dalam hukum",
+
+"analysis.gap.law.1":
+    "Korban memiliki hak secara hukum",
+
+"analysis.gap.law.2":
+    "Mekanisme pelaporan telah disediakan",
+
+"analysis.gap.law.3":
+    "Korban seharusnya menerima perlindungan",
+
+"analysis.gap.law.4":
+    "Korban memiliki hak atas pendampingan dan pemulihan",
+
+"analysis.gap.law.5":
+    "Universitas memiliki tanggung jawab untuk mencegah dan menangani kekerasan",
+
+"analysis.gap.law.6":
+    "Kekerasan seksual secara resmi diakui sebagai masalah yang serius",
+
+"analysis.gap.law.7":
+    "Peraturan menyediakan prosedur untuk menangani kasus",
+
+"analysis.gap.reality.label":
+    "HASIL PENELITIAN KAMI",
+
+"analysis.gap.reality.title":
+    "Realitas yang diidentifikasi oleh mahasiswa",
+
+"analysis.gap.reality.1":
+    "Mahasiswa mungkin tidak tahu cara mengakses hak-hak tersebut",
+
+"analysis.gap.reality.2":
+    "Mahasiswa mungkin ragu untuk melapor",
+
+"analysis.gap.reality.3":
+    "Ketakutan terhadap stigma dapat menghalangi mereka untuk mencari perlindungan",
+
+"analysis.gap.reality.4":
+    "Mahasiswa mungkin tidak mengetahui dukungan apa yang tersedia",
+
+"analysis.gap.reality.5":
+    "Mahasiswa mungkin memiliki kepercayaan yang terbatas terhadap sistem institusi",
+
+"analysis.gap.reality.6":
+    "Stigma sosial dan victim-blaming masih dapat memengaruhi pelaporan",
+
+"analysis.gap.reality.7":
+    "Mahasiswa menginginkan sistem yang lebih mudah diakses, transparan, dan dapat dipercaya",
+
+"analysis.gap.divider":
+    "KESENJANGAN",
+
+"analysis.gap.conclusionLabel":
+    "KESENJANGAN",
+
+"analysis.gap.conclusion":
+    "Kesenjangan terbesar bukan berarti tidak adanya hukum, tetapi kesenjangan antara perlindungan hukum dan kemampuan mahasiswa untuk memahami, mempercayai, mengakses, dan merasakan perlindungan tersebut.",
+
+
+/* =========================================================
+   EXTENT OF PROTECTION
+========================================================= */
+
+"analysis.extent.label":
+    "SEJAUH MANA PERLINDUNGAN DIBERIKAN",
+
+"analysis.extent.title":
+    "Sejauh Mana Hukum Indonesia Melindungi Mahasiswa?",
+
+"analysis.extent.answerLabel":
+    "Berdasarkan temuan kami, jawaban kami adalah:",
+
+"analysis.extent.answer":
+    "Secara prinsip dalam tingkat yang signifikan, tetapi penerapannya masih kurang konsisten.",
+
+"analysis.extent.p1":
+    "Indonesia telah menetapkan perlindungan formal yang substansial melalui UU TPKS dan peraturan di bidang pendidikan tinggi. Kerangka hukum ini mengakui kekerasan seksual, menetapkan hak korban, dan menciptakan tanggung jawab bagi institusi. Namun, perlindungan hukum saja tidak dapat menjamin bahwa mahasiswa merasa terlindungi.",
+
+"analysis.extent.p2":
+    "Survei kami menunjukkan bahwa mahasiswa memiliki kesadaran yang relatif kuat mengenai pelecehan seksual, tetapi memiliki tingkat keyakinan yang lebih rendah mengenai tempat untuk mencari bantuan dan seberapa mudah informasi tentang pencegahan serta dukungan dapat diakses. Wawancara kami juga menunjukkan bahwa rasa takut, stigma, kekhawatiran mengenai kerahasiaan, trauma, dan ketidakpercayaan terhadap sistem pelaporan dapat mencegah mahasiswa menggunakan perlindungan yang tersedia bagi mereka.",
+
+"analysis.extent.layersIntro":
+    "Oleh karena itu, tingkat perlindungan bergantung pada dua lapisan:",
+
+"analysis.extent.layer1.title":
+    "Perlindungan di atas kertas kuat",
+
+"analysis.extent.layer1.text":
+    "Undang-undang dan peraturan menetapkan hak, tanggung jawab, mekanisme pelaporan, dan dukungan bagi korban.",
+
+"analysis.extent.layer2.title":
+    "Perlindungan dalam kenyataan tidak konsisten",
+
+"analysis.extent.layer2.text":
+    "Mahasiswa mungkin kesulitan mengakses perlindungan tersebut karena keterbatasan kesadaran, ketakutan untuk melapor, stigma, kurangnya kepercayaan, dan kekhawatiran terhadap respons institusi.",
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+"analysis.celebrate.label":
+    "Rayakan temuan kami"
+
+
 
 /* FOOTER */
 

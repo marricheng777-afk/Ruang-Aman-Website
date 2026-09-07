@@ -1438,8 +1438,8 @@
 
     z-index: 95;
 
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
     display: flex;
 
@@ -1452,7 +1452,7 @@
 
     background: var(--card-background);
 
-    font-size: 21px;
+    font-size: 25px;
 
     cursor: pointer;
 
