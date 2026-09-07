@@ -816,6 +816,70 @@ const translations = {
 "report.confirmDelete":
     "Yes, delete",
 
+
+/* =========================
+   ANALYSIS — ENGLISH
+========================= */
+"nav.analysis": "Analysis",
+
+"analysis.hero.label": "FINAL RESEARCH ANALYSIS",
+"analysis.hero.title": "Law vs. Reality",
+"analysis.hero.description": "How effectively do Indonesian laws protect university students from sexual harassment in practice?",
+
+"analysis.overview.title": "Protection exists. But is it accessible?",
+"analysis.overview.p1": "Indonesia has established legal frameworks intended to protect people from sexual violence. Law No. 12 of 2022 on Sexual Violence Crimes (UU TPKS) provides a legal basis for preventing sexual violence and protecting, handling, and restoring victims' rights.",
+"analysis.overview.p2": "For university students, this protection is further supported by Permendikbudristek No. 55 of 2024 on the Prevention and Handling of Violence in Higher Education. The regulation specifically addresses violence within higher education, including prevention, case handling, recovery, and the rights of victims, witnesses, and reported individuals.",
+
+"analysis.frameworks.label": "LEGAL FRAMEWORK",
+"analysis.frameworks.title": "Two important layers of protection",
+
+"analysis.frameworks.card1.title": "UU TPKS",
+"analysis.frameworks.card1.subtitle": "Law No. 12 of 2022",
+"analysis.frameworks.card1.text": "Establishes legal protection against sexual violence and recognizes victims' rights to protection, assistance, and recovery.",
+
+"analysis.frameworks.card2.title": "Permendikbudristek",
+"analysis.frameworks.card2.subtitle": "No. 55 of 2024",
+"analysis.frameworks.card2.text": "Specifically addresses the prevention and handling of violence within higher education institutions, including university responsibilities and survivor support.",
+
+"analysis.findings.label": "OUR RESEARCH",
+"analysis.findings.title": "What we found beyond the law",
+
+"analysis.findings.survey.type": "SURVEY",
+"analysis.findings.survey.title": "Awareness is relatively high",
+"analysis.findings.survey.text": "Our survey showed strong general awareness of sexual harassment. Most respondents understood what sexual harassment is, recognized that it can occur in educational institutions, and understood the importance of personal boundaries.",
+
+"analysis.findings.help.type": "SURVEY",
+"analysis.findings.help.title": "Knowing what it is ≠ knowing what to do",
+"analysis.findings.help.text": "Confidence became lower when respondents were asked about where to seek help. This suggests a gap between understanding sexual harassment and knowing how to access practical support.",
+
+"analysis.findings.reporting.type": "SURVEY",
+"analysis.findings.reporting.title": "Fear can prevent reporting",
+"analysis.findings.reporting.text": "Respondents strongly recognized that victims may choose not to report because they fear being blamed, disbelieved, judged, or facing social consequences.",
+
+"analysis.findings.interview.type": "INTERVIEW",
+"analysis.findings.interview.title": "Trust is central to reporting",
+"analysis.findings.interview.text": "The interview with Fahmi, Director General of HopeHelps UI, reinforced these findings. He emphasized privacy, confidentiality, empathy, and freedom from judgment as important parts of a trustworthy reporting system.",
+
+"analysis.gap.label": "THE CENTRAL FINDING",
+"analysis.gap.title": "There is a gap between protection on paper and protection in practice.",
+"analysis.gap.text": "The law establishes rights and responsibilities, but awareness, accessibility, confidentiality, transparency, and institutional response can determine whether students are actually able to benefit from those protections.",
+
+"analysis.interview.label": "INTERVIEW INSIGHT",
+"analysis.interview.title": "What does protection look like from a student's perspective?",
+"analysis.interview.quote": "Privacy, confidentiality, empathy, and non-judgment are essential for building trust.",
+"analysis.interview.text": "According to Fahmi, students may hesitate to report because of concerns about privacy, stigma, being judged, or not being believed. He also identified reporting systems as an area that needs to become more accessible, transparent, and victim-centered.",
+"analysis.interview.text2": "These concerns demonstrate that legal protection can only be effective when students are able to understand, access, and trust the mechanisms created to protect them.",
+
+"analysis.evaluation.label": "EVALUATING THE EXTENT OF PROTECTION",
+"analysis.evaluation.title": "Substantial protection in principle.",
+"analysis.evaluation.p1": "Our findings suggest that Indonesian legal frameworks provide substantial formal protection, particularly through UU TPKS and regulations specifically addressing violence in higher education.",
+"analysis.evaluation.p2": "However, the effectiveness of this protection is influenced by how these frameworks are implemented within universities.",
+
+"analysis.conclusion.label": "CONCLUSION",
+"analysis.conclusion.title": "Protected by law. Not always protected in practice.",
+"analysis.conclusion.text": "We conclude that current Indonesian legal frameworks protect university students from sexual harassment to a significant extent in principle, but not always to the same extent in practice.",
+"analysis.conclusion.text2": "Strengthening implementation, student awareness, trustworthy reporting mechanisms, and victim-centered support would help ensure that the protections provided by law become more accessible and effective for students.",
+
 /* FOOTER */
 
 "footer.description":
@@ -1591,6 +1655,10 @@ const translations = {
 "footer.note":
     "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional.",
 
+
+/* =========================
+   ANALYSIS — BINDO
+========================= */
 
 
 /* FOOTER */

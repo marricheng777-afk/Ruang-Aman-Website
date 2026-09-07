@@ -2,103 +2,943 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Analysis — Ruang Aman</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Our Analysis — Ruang Aman</title>
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Main Website CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <!-- Analysis Page CSS -->
+    <link
+        rel="stylesheet"
+        href="analysis.css">
+
 </head>
+
 
 <body>
 
-<header class="site-header">
 
-    <div class="navbar">
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
 
-        <a href="index.html" class="logo">
-            <span class="logo-icon">❖</span>
-            <span>Ruang Aman</span>
-        </a>
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+    <div class="background-circle circle-three"></div>
 
-        <nav class="navigation">
 
-            <a href="index.html" data-i18n="nav.home">Home</a>
+    <!-- =========================================
+         HEADER
+    ========================================== -->
 
-            <a href="research.html" data-i18n="nav.research">
-                Research
+    <header class="site-header">
+
+        <div class="navbar">
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo">
+
+                <span class="logo-icon">❖</span>
+                <span>Ruang Aman</span>
+
             </a>
 
-            <a href="law.html" data-i18n="nav.law">
-                Law
-            </a>
 
-            <a href="analysis.html" class="active" data-i18n="nav.analysis">
-                Analysis
-            </a>
+            <!-- NAVIGATION -->
 
-            <a href="report.html" data-i18n="nav.report">
-                Report
-            </a>
+            <nav class="navigation">
 
-            <a href="hotlines.html" data-i18n="nav.hotlines">
-                Hotlines
-            </a>
+                <a
+                    href="index.html"
+                    data-i18n="nav.home">
+                    Home
+                </a>
 
-        </nav>
+                <a
+                    href="research.html"
+                    data-i18n="nav.research">
+                    Research
+                </a>
 
-        <div class="nav-actions">
+                <a
+                    href="law.html"
+                    data-i18n="nav.law">
+                    Law
+                </a>
 
-            <!-- Keep your existing palette, language,
-                 dark mode and mobile menu code here -->
+                <a
+                    href="report.html"
+                    data-i18n="nav.report">
+                    Report
+                </a>
 
-        </div>
+                <a
+                    href="hotlines.html"
+                    data-i18n="nav.hotlines">
+                    Hotlines
+                </a>
 
-    </div>
+                <a
+                    href="analysis.html"
+                    class="active"
+                    data-i18n="nav.analysis">
+                    Analysis
+                </a>
 
-</header>
+            </nav>
 
 
-<main>
+            <!-- NAVIGATION ACTIONS -->
 
-    <section class="analysis-page">
+            <div class="nav-actions">
 
-        <div class="analysis-intro">
+                <!-- COLOUR PALETTE -->
 
-            <div class="section-label">
-                Analysis
+                <div class="palette-container">
+
+                    <button
+                        class="icon-button"
+                        id="palette-toggle"
+                        aria-label="Choose colour">
+
+                        🎨
+
+                    </button>
+
+
+                    <div
+                        class="palette-menu"
+                        id="palette-menu">
+
+                        <button
+                            class="color-option purple"
+                            data-color="purple"
+                            aria-label="Purple theme">
+                        </button>
+
+                        <button
+                            class="color-option green"
+                            data-color="green"
+                            aria-label="Green theme">
+                        </button>
+
+                        <button
+                            class="color-option pink"
+                            data-color="pink"
+                            aria-label="Pink theme">
+                        </button>
+
+                        <button
+                            class="color-option yellow"
+                            data-color="yellow"
+                            aria-label="Yellow theme">
+                        </button>
+
+                        <button
+                            class="color-option blue"
+                            data-color="blue"
+                            aria-label="Blue theme">
+                        </button>
+
+                        <button
+                            class="color-option peach"
+                            data-color="peach"
+                            aria-label="Peach theme">
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LANGUAGE -->
+
+                <div class="language-container">
+
+                    <button
+                        class="icon-button"
+                        id="language-toggle"
+                        aria-label="Change language"
+                        title="Change language">
+
+                        EN
+
+                    </button>
+
+
+                    <div
+                        class="language-menu"
+                        id="language-menu">
+
+                        <button
+                            class="language-option"
+                            data-language="en">
+                            English
+                        </button>
+
+                        <button
+                            class="language-option"
+                            data-language="id">
+                            Bahasa Indonesia
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    class="icon-button"
+                    id="theme-toggle"
+                    aria-label="Toggle dark mode">
+
+                    ☾
+
+                </button>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    class="icon-button mobile-menu-button"
+                    id="menu-toggle"
+                    aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
             </div>
 
-            <h1>
-                Analysis of Sexual Harassment in Indonesian Universities
-            </h1>
+        </div>
 
-            <p>
-                Explore the findings and analysis from our research.
+    </header>
+
+
+
+    <!-- =========================================
+         FLOATING TABLE OF CONTENTS
+    ========================================== -->
+
+    <aside class="analysis-toc">
+
+        <button
+            class="analysis-toc-toggle"
+            aria-label="Open analysis table of contents">
+
+            ❖
+
+        </button>
+
+
+        <div class="analysis-toc-menu">
+
+            <p class="analysis-toc-label">
+                On this page
             </p>
+
+            <a href="#overview">
+                Overview
+            </a>
+
+            <a href="#understanding">
+                What students understand
+            </a>
+
+            <a href="#protection">
+                Protection gap
+            </a>
+
+            <a href="#rights">
+                Knowing their rights
+            </a>
+
+            <a href="#reporting">
+                Issue of reporting
+            </a>
 
         </div>
 
-    </section>
-
-</main>
+    </aside>
 
 
-<footer class="site-footer">
 
-    <!-- Use your existing footer here -->
+    <!-- =========================================
+         MAIN
+    ========================================== -->
 
-</footer>
+    <main class="analysis-page">
 
 
-<script src="script.js"></script>
+        <!-- =====================================
+             SECTION 01
+             INTRODUCTION
+        ====================================== -->
+
+        <section
+            class="analysis-section analysis-intro-section"
+            id="overview">
+
+            <div class="analysis-container">
+
+                <div class="analysis-intro-heading">
+
+                    <span class="section-label">
+                        Section Analysis
+                    </span>
+
+                    <section class="analysis-intro">
+
+                    <h1>Our Analysis</h1>
+
+                </section>
+
+                </div>
+
+
+                <div class="analysis-intro-box">
+
+                    <p>
+                        Indonesia has developed a relatively strong legal
+                        framework for addressing sexual violence. Law No. 12
+                        of 2022 on Sexual Violence Crimes (UU TPKS) recognizes
+                        sexual violence as a serious criminal issue and
+                        provides victims with rights to protection,
+                        assistance, and recovery.
+                    </p>
+
+                    <p>
+                        For university students specifically,
+                        Permendikbudristek No. 55 of 2024 provides a framework
+                        for preventing and handling violence in higher
+                        education. It addresses prevention, reporting and
+                        case handling, university task forces, recovery, and
+                        the rights of victims, witnesses, and reported
+                        individuals.
+                    </p>
+
+                </div>
+
+
+
+        <!-- =====================================
+             SECTION 02
+             PROTECTION GAP
+        ====================================== -->
+
+        <section
+            class="analysis-section protection-section"
+            id="protection">
+
+            <div class="analysis-container">
+
+                <div class="analysis-heading-block">
+
+                    <span class="section-label">
+                        What the survey shows
+                    </span>
+
+                    <h2>
+                        Protection on Paper ≠<br>
+                        Protection in Practice
+                    </h2>
+
+                    <p class="analysis-lead">
+                        The survey showed that students generally
+                        understand what sexual harassment is:
+                    </p>
+
+                </div>
+
+
+                <div class="finding-cards">
+
+
+                    <!-- CARD 01 -->
+
+                    <article class="finding-card">
+
+                        <div class="finding-card-top">
+
+                            <strong class="finding-number">
+                                85.7%
+                            </strong>
+
+                            <p>
+                                gave the highest score for
+                                understanding the meaning of
+                                sexual harassment.
+                            </p>
+
+                        </div>
+
+
+                        <div class="finding-but">
+                            BUT
+                        </div>
+
+
+                        <div class="finding-card-bottom">
+
+                            <strong class="finding-number">
+                                42.9%
+                            </strong>
+
+                            <p>
+                                gave the highest score for knowing
+                                where to seek help.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 02 -->
+
+                    <article class="finding-card">
+
+                        <div class="finding-card-top">
+
+                            <strong class="finding-number">
+                                94.3%
+                            </strong>
+
+                            <p>
+                                recognized that sexual harassment
+                                can occur in educational
+                                institutions.
+                            </p>
+
+                        </div>
+
+
+                        <div class="finding-but">
+                            BUT
+                        </div>
+
+
+                        <div class="finding-card-bottom">
+
+                            <strong class="finding-number">
+                                34.3%
+                            </strong>
+
+                            <p>
+                                gave the highest score for
+                                believing prevention information
+                                is easy to find.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 03 -->
+
+                    <article class="finding-card">
+
+                        <div class="finding-card-top">
+
+                            <strong class="finding-number">
+                                85.7%
+                            </strong>
+
+                            <p>
+                                felt confident distinguishing
+                                respectful behavior from behavior
+                                that crosses personal boundaries.
+                            </p>
+
+                        </div>
+
+
+                        <div class="finding-but">
+                            BUT
+                        </div>
+
+
+                        <div class="finding-card-bottom">
+
+                            <p>
+                                Some respondents gave low scores
+                                when asked about access to reporting
+                                systems.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="analysis-conclusion-bar">
+
+                    Students appear to understand the problem better
+                    than they understand the systems designed to
+                    protect them from it.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SECTION 03
+             RIGHTS / RESEARCH STYLE
+        ====================================== -->
+
+        <section
+            class="analysis-section rights-section"
+            id="rights">
+
+            <div class="analysis-container">
+
+                <div class="research-style-grid">
+
+
+                    <!-- LEFT TEXT -->
+
+                    <div class="research-style-text">
+
+                        <div class="research-style-eyebrow">
+                            WHY THIS MATTERS
+                        </div>
+
+                        <h2>
+                            Understanding protection
+                            is not the same as
+                            accessing it.
+                        </h2>
+
+                        <p class="research-style-highlight">
+                            This is important because it contrasts
+                            with the lower confidence in knowing
+                            where to seek help.
+                        </p>
+
+                        <p>
+                            Students recognize that protection is
+                            important, but knowing that protection
+                            exists does not automatically mean they
+                            know how to access it.
+                        </p>
+
+                        <p>
+                            This suggests that simply creating laws
+                            and regulations is not enough.
+                        </p>
+
+
+                        <div class="research-style-list">
+
+                            <h3>
+                                Universities also need to make
+                                information about those rights:
+                            </h3>
+
+                            <ul>
+
+                                <li>
+                                    easy to find
+                                </li>
+
+                                <li>
+                                    easy to understand
+                                </li>
+
+                                <li>
+                                    accessible to students
+                                </li>
+
+                                <li>
+                                    connected to clear reporting
+                                    and support procedures
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- RIGHT QUESTION -->
+
+                    <div class="research-style-visual">
+
+                        <div class="question-callout">
+
+                            <span>
+                                Question 7:
+                            </span>
+
+                            I believe that students need to know
+                            about their rights and the protections
+                            available to them regarding sexual
+                            harassment.
+
+                        </div>
+
+
+                        <div class="survey-image-wrapper">
+
+                            <img
+                                src="assets/question7_surveyresult.png"
+                                alt="Survey result for Question 7">
+
+                        </div>
+
+
+                        <p class="survey-image-caption">
+
+                            88.6% of respondents selected the highest
+                            score, showing strong agreement that
+                            students should know their rights and
+                            available protections.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SECTION 04
+             REPORTING
+        ====================================== -->
+
+        <section
+            class="analysis-section reporting-section"
+            id="reporting">
+
+            <div class="analysis-container">
+
+                <div class="reporting-heading">
+
+                    <span class="section-label">
+                        A gap between rights and action
+                    </span>
+
+                    <h2>
+                        ISSUE OF REPORTING
+                    </h2>
+
+                    <p>
+                        The law provides mechanisms intended to
+                        <u>protect victims</u>, but students may still
+                        <u>choose not to report.</u>
+                    </p>
+
+                </div>
+
+
+                <div class="reporting-stat-row">
+
+
+                    <!-- STAT -->
+
+                    <div class="reporting-stat">
+
+                        <span>
+                            In our Survey:
+                        </span>
+
+                        <strong>
+                            81.3%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- REASON BOX -->
+
+                    <div class="reporting-reasons">
+
+                        <p>
+                            <strong>1.</strong>
+                            strongly agreed that someone may
+                            experience sexual harassment but choose
+                            not to report it.
+                        </p>
+
+                        <p>
+                            <strong>2.</strong>
+                            agreed that victims may be afraid of:
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                being blamed
+                            </li>
+
+                            <li>
+                                not being believed
+                            </li>
+
+                            <li>
+                                being judged when reporting
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- INTERVIEW -->
+
+                <div class="reporting-interview">
+
+                    <h3>
+                        Our interview with Fahmi, Director General
+                        of HopeHelps UI also explained:
+                    </h3>
+
+                    <p>
+                        He explained that students may hesitate to
+                        report because they fear being labeled as an
+                        “attention seeker”, being judged by others, or
+                        experiencing consequences within their
+                        relationships with friends, partners, seniors,
+                        or the perpetrator. Trauma can also make it
+                        difficult for survivors to discuss what
+                        happened.
+                    </p>
+
+
+                    <div class="law-reality">
+
+                        <div>
+
+                            <strong>
+                                Law:
+                            </strong>
+
+                            <p>
+                                A student has the right to protection
+                                and assistance.
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Reality:
+                            </strong>
+
+                            <p>
+                                The student may be too afraid,
+                                uncertain, or uncomfortable to access
+                                those protections.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="reporting-final">
+
+                        Therefore, the existence of a reporting
+                        mechanism does not automatically mean that
+                        students feel safe enough to use it.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FINAL TAKEAWAY
+        ====================================== -->
+
+        <section class="analysis-final">
+
+            <div class="analysis-container">
+
+                <span class="section-label">
+                    What this tells us
+                </span>
+
+                <h2>
+                    Awareness is only the beginning.
+                </h2>
+
+                <p>
+                    Students can recognize sexual harassment and
+                    understand that protection should exist, while
+                    still lacking the confidence, information, or
+                    safety needed to access that protection in
+                    practice.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+
+            <div class="footer-about">
+
+                <p class="footer-logo">
+                    Ruang Aman ©
+                </p>
+
+                <p data-i18n="footer.description">
+                    A student-built archive on sexual harassment
+                    in Indonesian universities.
+                </p>
+
+            </div>
+
+
+            <div class="footer-emergency">
+
+                <p
+                    class="footer-heading"
+                    data-i18n="footer.emergency">
+
+                    Emergency
+
+                </p>
+
+                <p>
+
+                    <span data-i18n="footer.police">
+                        Police
+                    </span>
+
+                    <strong>110</strong>
+
+                    <br>
+
+                    SAPA <strong>129</strong>
+
+                    <br>
+
+                    Komnas Perempuan
+
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <p
+                    class="footer-heading"
+                    data-i18n="footer.more">
+
+                    More
+
+                </p>
+
+                <a
+                    href="hotlines.html"
+                    data-i18n="footer.hotlines">
+
+                    Hotlines
+
+                </a>
+
+                <a
+                    href="report.html"
+                    data-i18n="footer.report">
+
+                    Submit a report
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <p
+            class="footer-note"
+            data-i18n="footer.note">
+
+            This website is for educational and informational
+            purposes and is not a substitute for professional
+            legal or psychological assistance.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
 
 </body>
+
 </html>
