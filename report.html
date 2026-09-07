@@ -39,7 +39,8 @@
             <a href="hotlines.html" data-i18n="nav.hotlines">Hotlines</a>
             <a href="analysis.html" data-i18n="nav.analysis">
         Analysis
-            </a>
+        </a>
+
         </nav>
 
 
@@ -333,63 +334,29 @@
 
                     </div>
 
+                    <!-- PUBLIC ANONYMOUS REPORT -->
 
-                    <!-- VISIBILITY -->
+<div class="form-group report-public-note">
 
-                    <div class="form-group">
+    <label>
+        Report Visibility
+    </label>
 
-                        <label>
-                            Visibility
-                        </label>
+    <div class="public-report-notice">
 
+        <strong>
+            ❖ Anonymous Public Report
+        </strong>
 
-                        <label class="radio-option">
+        <p>
+            Your report will be published anonymously
+            on the public report wall. Your name and
+            contact information will never be displayed.
+        </p>
 
-                            <input
-                                type="radio"
-                                name="visibility"
-                                value="public"
-                                checked>
+    </div>
 
-                            <span>
-
-                                <strong>
-                                    🔒 Public (Anonymous)
-                                </strong>
-
-                                <small>
-                                    Your report will be visible to others,
-                                    but your identity will remain anonymous.
-                                </small>
-
-                            </span>
-
-                        </label>
-
-
-                        <label class="radio-option">
-
-                            <input
-                                type="radio"
-                                name="visibility"
-                                value="private">
-
-                            <span>
-
-                                <strong>
-                                    🔒 Private (Not Published)
-                                </strong>
-
-                                <small>
-                                    Your report will not appear on the
-                                    public wall.
-                                </small>
-
-                            </span>
-
-                        </label>
-
-                    </div>
+</div>
 
 
                     <!-- CONTACT -->
@@ -597,7 +564,7 @@
 
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="script.js"></script>
 
 </body>
