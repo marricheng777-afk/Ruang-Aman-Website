@@ -48,7 +48,7 @@ const translations = {
         "nav.research": "Research",
         "nav.law": "Law",
         "nav.report": "Report",
-        "nav.help": "Help",
+        "nav.hotlines": "Hotlines",
 
 
         /* HERO */
@@ -121,10 +121,10 @@ const translations = {
         "inside.law.description":
             "Learn about Indonesian laws and regulations relating to sexual harassment and violence on university campuses.",
 
-        "inside.help.title":
-            "Get help",
+        "inside.hotlines.title":
+            "Hotlines",
 
-        "inside.help.description":
+        "inside.hotlines.description":
             "Find hotlines, campus support systems, legal aid organisations and resources.",
 
         "inside.report.title":
@@ -150,8 +150,8 @@ const translations = {
         "footer.more":
             "More",
 
-        "footer.help":
-            "Get help",
+        "footer.hotlines":
+            "Hotlines",
 
         "footer.report":
             "Submit a report",
@@ -950,8 +950,8 @@ const translations = {
         "footer.more":
             "Lainnya",
 
-        "footer.help":
-            "Dapatkan bantuan",
+        "footer.hotlines":
+            "Hotlines",
 
         "footer.report":
             "Kirim laporan",
