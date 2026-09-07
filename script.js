@@ -36,7 +36,7 @@ const languageOptions =
     document.querySelectorAll(".language-option");
 
 
-/* ---------- TRANSLATIONS ---------- */
+/* ---------- TRANSLATIONS ENGLISH ---------- */
 
 const translations = {
 
@@ -157,9 +157,7 @@ const translations = {
             "Submit a report",
 
         "footer.note":
-            "This website is for educational and informational purposes and is not a substitute for professional legal or psychological assistance."
-
-    },
+            "This website is for educational and informational purposes and is not a substitute for professional legal or psychological assistance.",
 
     /* =========================================
    RESEARCH
@@ -502,6 +500,9 @@ const translations = {
 "research.hopeInterview.answer7":
     "According to the Director General of HopeHelps UI, the main aspect that needs to change is the reporting and handling system for sexual harassment at universities, which is currently considered complicated and lacks transparency. The reporting process should be made more accessible so that students feel less afraid or hesitant to report cases. In addition, investigation processes and communication with victims should be accelerated so that they receive clearer and more timely updates about their cases. Awareness and cooperation across the academic community are also important to make the reporting process more effective and strengthen victims’ trust in the system. Lastly, university culture should become more victim-centered to prevent the process from negatively affecting victims further.",
     
+    },
+
+    /* ---------- TRANSLATIONS INDONESIAN ---------- */
 
 
     id: {
@@ -956,7 +957,7 @@ const translations = {
             "Kirim laporan",
 
         "footer.note":
-            "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional."
+            "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional.",
 
     }
 
@@ -966,7 +967,6 @@ const translations = {
 /* =========================================================
    APPLY LANGUAGE
 ========================================================= */
-
 function applyLanguage(language) {
 
     const selectedLanguage =
@@ -1013,8 +1013,6 @@ function applyLanguage(language) {
                 ? "ID" : "EN";
     }
 
-    }
-
 
     /* Highlight selected language */
 
@@ -1037,6 +1035,7 @@ function applyLanguage(language) {
         language
     );
 
+}
 
 
 
