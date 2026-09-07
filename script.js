@@ -2929,6 +2929,53 @@ if (deleteModal) {
 
 }
 
+/* =========================================================
+   ANALYSIS — CONFETTI
+========================================================= */
+
+const celebrateButton = document.getElementById("celebrateButton");
+
+if (celebrateButton) {
+
+    celebrateButton.addEventListener("click", () => {
+
+        const colors = [
+            "#303030",
+            "#ffffff",
+            "var(--accent)"
+        ];
+
+        for (let i = 0; i < 90; i++) {
+
+            const piece = document.createElement("span");
+
+            piece.className = "confetti-piece";
+
+            piece.style.left =
+                Math.random() * 100 + "vw";
+
+            piece.style.top = "-10px";
+
+            piece.style.background =
+                colors[Math.floor(Math.random() * colors.length)];
+
+            piece.style.animationDelay =
+                Math.random() * 0.4 + "s";
+
+            piece.style.transform =
+                `rotate(${Math.random() * 360}deg)`;
+
+            document.body.appendChild(piece);
+
+            setTimeout(() => {
+                piece.remove();
+            }, 2500);
+        }
+
+    });
+
+}
+
 
 /* ================================
    DISPLAY SAVED REPORTS
