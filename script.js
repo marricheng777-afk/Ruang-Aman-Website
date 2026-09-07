@@ -610,42 +610,42 @@ const translations = {
         "inside.open":
             "Buka bagian →",
 
-/*RESEARCH*/ 
+/*RESEARCH*/
 
        "research.intro.label":
-    "Bagian Penelitian",
+              "Bagian Penelitian",
 
-"research.title":
-    "Metode Penelitian Kami",
+        "research.title":
+             "Metode Penelitian Kami",
 
-"survey.title":
-    "Survei",
+        "survey.title":
+         "Survei",
 
-"survey.description":
-    "Kami melakukan survei untuk memahami pandangan, pengalaman, dan tingkat pemahaman masyarakat mengenai pelecehan seksual, perlindungan hukum, serta keamanan dan dukungan yang tersedia bagi korban di Indonesia. Survei ini menerima total 35 responden dari berbagai mahasiswa perguruan tinggi. Seluruh jawaban yang dikirim melalui Google Forms bersifat anonim. Hasil dan analisis survei disajikan di bawah ini.",
+        "survey.description":
+         "Kami melakukan survei untuk memahami pandangan, pengalaman, dan tingkat pemahaman masyarakat mengenai pelecehan seksual, perlindungan hukum, serta keamanan dan dukungan yang tersedia bagi korban di Indonesia. Survei ini menerima total 35 responden dari berbagai mahasiswa perguruan tinggi. Seluruh jawaban yang dikirim melalui Google Forms bersifat anonim. Hasil dan analisis survei disajikan di bawah ini.",
 
-"research.universities.title":
-    "Respons dari Universitas",
+        "research.universities.title":
+         "Respons dari Universitas",
 
-"research.universities.description":
-    "Survei ini menerima respons dari mahasiswa yang mewakili berbagai universitas di Indonesia.",
+        "research.universities.description":
+            "Survei ini menerima respons dari mahasiswa yang mewakili berbagai universitas di Indonesia.",
 
 
         /* =========================================
-   QUESTION 1
+   QUESTION 1 indonesia
 ========================================= */
 
-"research.question1.number":
-    "Pertanyaan 1.",
+        "research.question1.number":
+            "Pertanyaan 1.",
 
-"research.question1.title":
-    "Saya memahami apa yang dimaksud dengan pelecehan seksual.",
+        "research.question1.title":
+            "Saya memahami apa yang dimaksud dengan pelecehan seksual.",
 
-"research.question1.analysis":
-    "Sebanyak 30 dari 35 responden (85,7%) memberikan skor 5, sedangkan 5 responden lainnya (14,3%) memberikan skor 4. Tidak ada responden yang memilih skor 1–3. Hasil menunjukkan bahwa responden secara umum memiliki pemahaman yang sangat baik mengenai pelecehan seksual. Hal ini menunjukkan bahwa kesadaran dasar mengenai isu pelecehan seksual sudah cukup tinggi di antara mahasiswa yang menjadi responden survei.",
+        "research.question1.analysis":
+            "Sebanyak 30 dari 35 responden (85,7%) memberikan skor 5, sedangkan 5 responden lainnya (14,3%) memberikan skor 4. Tidak ada responden yang memilih skor 1–3. Hasil menunjukkan bahwa responden secara umum memiliki pemahaman yang sangat baik mengenai pelecehan seksual. Hal ini menunjukkan bahwa kesadaran dasar mengenai isu pelecehan seksual sudah cukup tinggi di antara mahasiswa yang menjadi responden survei.",
 
-"research.question1.imageDescription":
-    "Pertanyaan ini mengukur seberapa baik responden memahami pengertian dan definisi dasar dari pelecehan seksual.",
+        "research.question1.imageDescription":
+            "Pertanyaan ini mengukur seberapa baik responden memahami pengertian dan definisi dasar dari pelecehan seksual.",
 
 
 /* =========================================
@@ -1010,8 +1010,8 @@ function applyLanguage(language) {
 
         languageToggle.textContent =
             language === "id"
-                ? "ID"
-                : "EN";
+                ? "ID" : "EN";
+    }
 
     }
 
@@ -1037,7 +1037,7 @@ function applyLanguage(language) {
         language
     );
 
-}
+
 
 
 /* =========================================================
