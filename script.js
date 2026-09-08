@@ -85,6 +85,9 @@ const translations = {
         "info.box.what":
             "   Sexual harassment is behavior or an act involving sexual activity without the consent of one of the parties involved. Sexual harassment can make victims feel uncomfortable, degraded, humiliated, or threatened. Generally, sexual harassment is associated with extreme acts such as physical violence or even murder. However, sexual harassment does not only involve extreme actions. It can also include actions that may be considered minor, such as catcalling or staring at someone in a sexual manner.                Sexual harassment can happen to anyone, including children, teenagers, and adults. However, there are many cases where neither the perpetrator nor the victim realizes that what happened or was done constitutes sexual harassment. In many cases, victims of sexual harassment may also be unwilling to disclose or report what happened.",
 
+        "info.box.what.cont":
+            " Sexual harassment can happen to anyone, including children, teenagers, and adults. However, there are many cases where neither the perpetrator nor the victim realizes that what happened or was done constitutes sexual harassment. In many cases, victims of sexual harassment may also be unwilling to disclose or report what happened.",
+
          "info.title.why":
             "Why should we care about sexual harassment?",
     
@@ -106,6 +109,9 @@ const translations = {
         "types.verbal.box":
             "Sexually suggestive words, comments, or jokes that make someone feeel uncomfortable, embarrassed, or unsafe, such as remarks about their body, appearance, clothing, relationships, or sexuality. Verbal harassment can cause anxiety, stress, humiliation, or emotional distress, and may make someone feel afraid to speak, participate in conversations, or spend time around the person responsible.",
        
+        "types.verbal.box.cont":
+            "Verbal harassment can cause anxiety, stress, humiliation, or emotional distress, and may make someone feel afraid to speak, participate in conversations, or spend time around the person responsible.",
+
         "types.Physical.box":
             "<strong>Physical:</strong> Sexual behavior that does not involve physical contact but is intrusive or unwanted, such as sexual stares or gestures.",
         
@@ -1058,6 +1064,10 @@ const translations = {
         "info.box.what":
             "Pelecehan seksual adalah perilaku atau tindakan yang melibatkan aktivitas seksual tanpa persetujuan dari salah satu pihak yang terlibat. Pelecehan seksual dapat membuat korban merasa tidak nyaman, direndahkan, dipermalukan, atau terancam. Pada umumnya, pelecehan seksual sering dikaitkan dengan tindakan ekstrem seperti kekerasan fisik atau bahkan pembunuhan. Namun, pelecehan seksual tidak hanya mencakup tindakan ekstrem. Tindakan yang sering dianggap sepele, seperti catcalling atau menatap seseorang secara seksual, juga dapat termasuk dalam bentuk pelecehan. Pelecehan seksual dapat terjadi pada siapa saja, termasuk anak-anak, remaja, maupun orang dewasa. Namun, terdapat banyak kasus di mana baik pelaku maupun korban tidak menyadari bahwa tindakan yang terjadi atau dilakukan merupakan bentuk pelecehan seksual. Dalam banyak kasus, korban pelecehan seksual juga mungkin merasa enggan untuk menceritakan atau melaporkan apa yang telah terjadi.",
 
+        "info.box.what.cont":
+            " Pelecehan seksual dapat terjadi pada siapa saja, termasuk anak-anak, remaja, maupun orang dewasa. Namun, banyak kasus di mana baik pelaku maupun korban tidak menyadari bahwa peristiwa atau tindakan tersebut merupakan bentuk pelecehan seksual. Dalam banyak kasus, korban pelecehan seksual juga mungkin enggan mengungkapkan atau melaporkan kejadian yang dialaminya.",
+
+
          "info.title.why":
             "Mengapa kita harus peduli terhadap pelecehan seksual?",
     
@@ -1077,7 +1087,9 @@ const translations = {
             "Pelecehan melalui Media Elektronik",
 
         "types.verbal.box":
-            "Kata-kata, komentar, atau lelucon bernuansa seksual yang membuat seseorang merasa tidak nyaman, malu, atau tidak aman, seperti komentar mengenai tubuh, penampilan, pakaian, hubungan, atau orientasi seksualnya. Pelecehan verbal dapat menimbulkan kecemasan, stres, rasa terhina, atau penderitaan emosional, dan mungkin membuat seseorang merasa takut untuk berbicara, ikut serta dalam percakapan, atau menghabiskan waktu bersama orang yang bertanggung jawab atas hal tersebut.",
+            "Kata-kata, komentar, atau lelucon bernuansa seksual yang membuat seseorang merasa tidak nyaman, malu, atau tidak aman, seperti komentar mengenai tubuh, penampilan, pakaian, hubungan, atau orientasi seksualnya.",
+        "types.verbal.box.cont":
+            "Pelecehan verbal dapat menimbulkan kecemasan, stres, rasa terhina, atau penderitaan emosional, dan mungkin membuat seseorang merasa takut untuk berbicara, ikut serta dalam percakapan, atau menghabiskan waktu bersama orang yang bertanggung jawab atas hal tersebut.",
 
         "types.Physical.box":
             "<strong>Fisik:</strong> Perilaku seksual yang tidak melibatkan kontak fisik tetapi bersifat mengganggu atau tidak diinginkan, seperti tatapan atau gestur seksual.",
