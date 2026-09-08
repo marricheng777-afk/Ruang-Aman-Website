@@ -69,6 +69,13 @@ const translations = {
         "hero.research":
             "Our research",
 
+        /*RESEARCH QUESTION*/
+
+        "research.question.htmllabel":
+        "RESEARCH QUESTION",
+
+        "research.question.html":
+        "To What Extent Do Indonesian Laws Protect University Students?",
 
          /* INFO SECTION */
 
@@ -90,7 +97,7 @@ const translations = {
         "types.verbal.title":
             "Verbal Harassment",
 
-        "types.Physical & Non-physical.title":
+        "types.Physical & Non-Physical.title":
             "Physical & Non-Physical Harassment",
 
         "types.electronic.media.title":
@@ -99,8 +106,11 @@ const translations = {
         "types.verbal.box":
             "Sexually suggestive words, comments, or jokes that make someone feeel uncomfortable, embarrassed, or unsafe, such as remarks about their body, appearance, clothing, relationships, or sexuality. Verbal harassment can cause anxiety, stress, humiliation, or emotional distress, and may make someone feel afraid to speak, participate in conversations, or spend time around the person responsible.",
        
-        "types.Physical & Non-physical.box":
-            "<strong>Physical:</strong> Sexual behavior that does not involve physical contact but is intrusive or unwanted, such as sexual stares or gestures. <strong>Non-Physical:</strong> Unwanted physical contact or touching of a sexual nature without the consent of one of the parties.",
+        "types.Physical.box":
+            "<strong>Physical:</strong> Sexual behavior that does not involve physical contact but is intrusive or unwanted, such as sexual stares or gestures.",
+        
+        "types.NonPhysical.box":
+            "<strong>Non-Physical:</strong> Unwanted physical contact or touching of a sexual nature without the consent of one of the parties.",
         
         "types.electronic.media.box":
             "Harassment through electronic media is unwanted sexual behavior carried outthrough conversations, social media, or digital platforms. Examples include sending unsolicited sexual messages, photos, or videos; making sexual comments via direct messages or group chats; and sending content that makes someone feel uncomfortable. These actions can cause fear, embarrassment, anxiety, and distress, and make victims feel unsafe when using digital media.",        
@@ -1031,6 +1041,14 @@ const translations = {
         "hero.research":
             "Penelitian kami",
 
+        /*RESEARCH QUESTION*/
+
+        "research.question.html":
+            "Sejauh mana hukum di Indonesia melindungi mahasiswa dari pelecehan seksual?",
+
+        "research.question.htmllabel":
+            "pertanyaan penelitian",
+
 
         /* INFO SECTION */
 
@@ -1061,8 +1079,11 @@ const translations = {
         "types.verbal.box":
             "Kata-kata, komentar, atau lelucon bernuansa seksual yang membuat seseorang merasa tidak nyaman, malu, atau tidak aman, seperti komentar mengenai tubuh, penampilan, pakaian, hubungan, atau orientasi seksualnya. Pelecehan verbal dapat menimbulkan kecemasan, stres, rasa terhina, atau penderitaan emosional, dan mungkin membuat seseorang merasa takut untuk berbicara, ikut serta dalam percakapan, atau menghabiskan waktu bersama orang yang bertanggung jawab atas hal tersebut.",
 
-        "types.Physical & Non-Physical.box":
-            "<strong>Fisik:</strong> Perilaku seksual yang tidak melibatkan kontak fisik tetapi bersifat mengganggu atau tidak diinginkan, seperti tatapan atau gestur seksual. <strong>Non-Fisik:</strong> Sentuhan atau kontak fisik yang tidak diinginkan dan bersifat seksual tanpa persetujuan dari salah satu pihak.",
+        "types.Physical.box":
+            "<strong>Fisik:</strong> Perilaku seksual yang tidak melibatkan kontak fisik tetapi bersifat mengganggu atau tidak diinginkan, seperti tatapan atau gestur seksual.",
+        
+        "types.NonPhysical.box":
+            "<strong>Non-Fisik:</strong> Sentuhan atau kontak fisik yang tidak diinginkan dan bersifat seksual tanpa persetujuan dari salah satu pihak.",
         
         "types.electronic.media.box":
             "Pelecehan melalui media elektronik adalah perilaku seksual yang tidak diinginkan yang dilakukan melalui percakapan, media sosial, atau platform digital. Contohnya termasuk mengirim pesan, foto, atau video seksual yang tidak diminta, memberikan komentar seksual melalui pesan langsung atau grup chat, serta mengirim konten yang membuat seseorang merasa tidak nyaman. Tindakan ini dapat menyebabkan rasa takut, malu, cemas, tertekan, dan membuat korban merasa tidak aman saat menggunakan media digital.",
