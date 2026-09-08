@@ -776,7 +776,52 @@ body.dark-mode .button-secondary:hover {
 
     color: #322d2d;
 }
+/* =====================================================
+   HOME — RESEARCH QUESTION
+===================================================== */
 
+.home-research-question {
+    width: 100%;
+    padding: 70px 5% 75px;
+}
+
+.home-research-question-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-research-question-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #303030;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.home-research-question h1 {
+    margin: 0 auto;
+
+    max-width: 1000px;
+
+    color: var(--accent);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 68px);
+
+    font-weight: 600;
+
+    line-height: 1.08;
+
+    text-align: center;
+}
 
 /* =========================================================
    TYPES OF HARASSMENT SECTION
