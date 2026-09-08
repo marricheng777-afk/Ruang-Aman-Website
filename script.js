@@ -1044,7 +1044,7 @@ const translations = {
         /*RESEARCH QUESTION*/
 
         "research.question.html":
-            "Sejauh mana hukum di Indonesia melindungi mahasiswa dari pelecehan seksual?",
+        "Sejauh mana hukum di Indonesia melindungi mahasiswa dari pelecehan seksual?",
 
         "research.question.htmllabel":
             "pertanyaan penelitian",
