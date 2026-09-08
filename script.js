@@ -168,7 +168,7 @@ const translations = {
     "survey.title":
         "Survey",
 
-    "survey.description":
+    "survey.description": 
         "We conducted a survey to understand the public’s views, experiences, and level of understanding regarding sexual harassment, legal protection, as well as the safety and support available to victims in Indonesia. The survey received a total of 35 responses from various college students. All responses submitted through Google Forms were anonymous. The results and analysis of the survey are presented below.",
 
     "research.universities.title":
