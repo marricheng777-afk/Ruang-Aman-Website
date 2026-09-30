@@ -75,7 +75,7 @@ const translations = {
         "RESEARCH QUESTION",
 
         "research.question.html":
-        "To What Extent Do Indonesian Laws Protect University Students?",
+        "To what extent do current Indonesian legal frameworks protect university students from sexual harassment?",
 
          /* INFO SECTION */
 
@@ -505,7 +505,7 @@ const translations = {
         "Laws and regulations surrounding sexual harassment and violence in Indonesian universities.",
 
     "law.intro.question":
-        "To what extent do Indonesian laws protect university students from sexual harassment?",
+        "To what extent do current Indonesian legal frameworks protect university students from sexual harassment?",
 
 
     "law.articles.label":
@@ -967,7 +967,7 @@ const translations = {
         "RESEARCH QUESTION",
 
     "analysis.researchQuestionTitle":
-        "To What Extent Do Indonesian Laws Protect University Students?",
+        "To what extent do current Indonesian legal frameworks protect university students from sexual harassment?",
 
     "analysis.extent.answerLabel":
         "Based on our findings, we would answer:",
