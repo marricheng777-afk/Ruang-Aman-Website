@@ -4729,14 +4729,29 @@ body.dark-mode .resource-item:hover {
         font-size: 1.25rem;
     }
 
-    /* RESOURCES PAGE — SPACING BELOW NAVBAR */
 
-.resources-page {
-    padding-top: 45px;
+/* =========================================
+   RESOURCES PAGE — FIX TITLE POSITION
+========================================= */
+
+/* Push the page content below the navbar */
+body {
+    padding-top: 175px !important;
 }
 
-.resources-page .resources-header {
-    margin-top: 15px;
+/* Tablet */
+@media (max-width: 900px) {
+    body {
+        padding-top: 155px !important;
+    }
 }
+
+/* Mobile */
+@media (max-width: 650px) {
+    body {
+        padding-top: 135px !important;
+    }
+}
+
 
 }
