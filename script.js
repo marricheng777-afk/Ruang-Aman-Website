@@ -1029,6 +1029,10 @@ const translations = {
     "Accessed 7 Nov. 2026.",
     },
 
+"feedback.title": "Reached this far? Might as well give us a feedback!",
+"feedback.description": "The link below is the feedback form. Feel free to share your honest opinion of our research!",
+"feedback.link": "Share your feedback with us here",
+
     /* ---------- TRANSLATIONS INDONESIAN ----------------------------------------------------------------------------------- */ 
 
 
@@ -2003,9 +2007,14 @@ const translations = {
 
 "resources.accessed":
     "Diakses 7 Nov. 2026.",
+
+"feedback.title": "Sudah sampai sejauh ini? Yuk, berikan kami masukan!",
+"feedback.description": "Tautan di bawah ini merupakan formulir masukan. Silakan bagikan pendapat jujur Anda mengenai penelitian kami!",
+"feedback.link": "Bagikan masukan Anda kepada kami di sini",
     }
 
 }
+
 
 
 /* =========================================================

@@ -4670,37 +4670,13 @@ body.dark-mode .resource-item:hover {
 
 
 /* =========================================
-   RESOURCES PAGE
-   RESPONSIVE DESIGN + NAVBAR SPACING
+   RESPONSIVE DESIGN
 ========================================= */
-
-/* DESKTOP */
-
-.resources-page {
-    width: 100%;
-    min-height: 80vh;
-
-    /* Space below the floating navbar */
-    padding: 175px 5% 85px;
-}
-
-.resources-intro {
-    margin: 0 auto 30px;
-    max-width: 1500px;
-}
-
-.resources-container {
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-
-/* TABLET */
 
 @media (max-width: 768px) {
 
     .resources-page {
-        padding: 150px 5% 60px;
+        padding: 38px 5% 60px;
     }
 
     .resources-intro {
@@ -4724,6 +4700,10 @@ body.dark-mode .resource-item:hover {
         padding: 15px 8px;
     }
 
+    .resource-item:hover {
+        padding-left: 12px;
+    }
+
     .resource-item p {
         font-size: 0.91rem;
         line-height: 1.8;
@@ -4731,13 +4711,10 @@ body.dark-mode .resource-item:hover {
 
 }
 
-
-/* MOBILE */
-
 @media (max-width: 480px) {
 
     .resources-page {
-        padding: 130px 4% 45px;
+        padding: 30px 4% 45px;
     }
 
     .resources-container {
@@ -4753,3 +4730,328 @@ body.dark-mode .resource-item:hover {
     }
 
 }
+
+/* =====================================
+   RESOURCES PAGE — NAVBAR SPACING FIX
+===================================== */
+
+.resources-page {
+    padding-top: 175px !important;
+    padding-bottom: 85px !important;
+}
+
+@media (max-width: 1024px) {
+    .resources-page {
+        padding-top: 150px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .resources-page {
+        padding-top: 130px !important;
+    }
+}
+
+/* =====================================
+   FEEDBACK — TWO COLUMN IMAGE LAYOUT
+===================================== */
+
+#feedback .feedback-content {
+    display: grid !important;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) !important;
+    align-items: start !important;
+    gap: 35px !important;
+    width: 100% !important;
+}
+
+#feedback .feedback-qr,
+#feedback .feedback-preview {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+}
+
+/* Keep the preview image non-clickable */
+#feedback .feedback-preview {
+    pointer-events: none !important;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    #feedback .feedback-content {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
+
+
+/* =========================================================
+   RUANG AMAN — FEEDBACK SECTION
+   Responsive layout + website theme integration
+========================================================= */
+
+/* MAIN FEEDBACK SECTION */
+
+.feedback-section {
+    width: 100%;
+    padding: 65px 6% 85px;
+    margin: 0 auto;
+
+    background: transparent;
+    color: var(--text-color);
+}
+
+/* CONTENT CONTAINER */
+
+.feedback-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* FEEDBACK HEADING */
+
+.feedback-heading {
+    margin-bottom: 28px;
+}
+
+.feedback-heading h2 {
+    margin: 0 0 14px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 600;
+    line-height: 1.2;
+
+    /* Follows the selected colour palette */
+    color: var(--accent);
+
+    transition: color 0.4s ease;
+}
+
+.feedback-heading p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+
+    color: var(--text-color);
+}
+
+/* IMAGE LAYOUT */
+
+.feedback-content {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 25px auto 28px;
+
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    align-items: center;
+    gap: 25px;
+}
+
+/* IMAGE WRAPPERS */
+
+.feedback-qr,
+.feedback-preview {
+    width: 100%;
+    height: 370px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    overflow: hidden;
+
+    padding: 12px;
+
+    background: var(--card-background);
+
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(50, 40, 90, 0.08);
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+/* ACTUAL IMAGES */
+
+.feedback-qr img,
+.feedback-preview img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 11px;
+}
+
+/* QR CODE */
+
+.feedback-qr img {
+    object-fit: contain;
+}
+
+/* FORM PREVIEW */
+
+.feedback-preview img {
+    object-fit: contain;
+}
+
+/* CLICKABLE FEEDBACK LINK */
+
+.feedback-link-container {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 30px auto 0;
+}
+
+.feedback-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: fit-content;
+    max-width: 100%;
+
+    padding: 17px 27px;
+
+    border: 1px solid var(--card-border);
+    border-radius: 50px;
+
+    background: var(--card-background);
+
+    /* Bold dark blue link */
+    color: #174b86;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+
+    box-shadow:
+        0 8px 25px rgba(50, 40, 90, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.4s ease;
+}
+
+.feedback-link:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(50, 40, 90, 0.13);
+
+    text-decoration: underline;
+}
+
+.feedback-arrow {
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+/* DARK MODE */
+
+html.dark .feedback-qr,
+html.dark .feedback-preview,
+body.dark-mode .feedback-qr,
+body.dark-mode .feedback-preview {
+    background: var(--card-background);
+    border-color: var(--card-border);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.20);
+}
+
+html.dark .feedback-link,
+body.dark-mode .feedback-link {
+    background: var(--card-background);
+    color: #8dbbff;
+    border-color: var(--card-border);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .feedback-section {
+        padding: 55px 5% 70px;
+    }
+
+    .feedback-content {
+        grid-template-columns:
+            minmax(0, 0.9fr)
+            minmax(0, 1.1fr);
+
+        gap: 18px;
+    }
+
+    .feedback-qr,
+    .feedback-preview {
+        height: 300px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .feedback-section {
+        padding: 45px 7% 60px;
+    }
+
+    .feedback-heading h2 {
+        font-size: 34px;
+    }
+
+    .feedback-heading p {
+        font-size: 16px;
+    }
+
+    .feedback-content {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .feedback-qr,
+    .feedback-preview {
+        height: 300px;
+        max-width: 100%;
+    }
+
+    .feedback-link {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 19px;
+        font-size: 14px;
+    }
+}
+
