@@ -4670,13 +4670,37 @@ body.dark-mode .resource-item:hover {
 
 
 /* =========================================
-   RESPONSIVE DESIGN
+   RESOURCES PAGE
+   RESPONSIVE DESIGN + NAVBAR SPACING
 ========================================= */
+
+/* DESKTOP */
+
+.resources-page {
+    width: 100%;
+    min-height: 80vh;
+
+    /* Space below the floating navbar */
+    padding: 175px 5% 85px;
+}
+
+.resources-intro {
+    margin: 0 auto 30px;
+    max-width: 1500px;
+}
+
+.resources-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* TABLET */
 
 @media (max-width: 768px) {
 
     .resources-page {
-        padding: 38px 5% 60px;
+        padding: 150px 5% 60px;
     }
 
     .resources-intro {
@@ -4700,10 +4724,6 @@ body.dark-mode .resource-item:hover {
         padding: 15px 8px;
     }
 
-    .resource-item:hover {
-        padding-left: 12px;
-    }
-
     .resource-item p {
         font-size: 0.91rem;
         line-height: 1.8;
@@ -4711,10 +4731,13 @@ body.dark-mode .resource-item:hover {
 
 }
 
+
+/* MOBILE */
+
 @media (max-width: 480px) {
 
     .resources-page {
-        padding: 30px 4% 45px;
+        padding: 130px 4% 45px;
     }
 
     .resources-container {
@@ -4728,30 +4751,5 @@ body.dark-mode .resource-item:hover {
     .resource-category h2 {
         font-size: 1.25rem;
     }
-
-
-/* =========================================
-   RESOURCES PAGE — FIX TITLE POSITION
-========================================= */
-
-/* Push the page content below the navbar */
-body {
-    padding-top: 175px !important;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-    body {
-        padding-top: 155px !important;
-    }
-}
-
-/* Mobile */
-@media (max-width: 650px) {
-    body {
-        padding-top: 135px !important;
-    }
-}
-
 
 }
