@@ -4499,3 +4499,234 @@ body.dark-mode .hope-instagram-link:hover {
         font-size: 21px;
     }
 }
+
+
+/* =========================================
+   RESOURCES PAGE
+========================================= */
+
+.resources-page {
+    width: 100%;
+    min-height: 80vh;
+    padding: 55px 5% 85px;
+}
+
+
+/* PAGE INTRO */
+
+.resources-intro {
+    margin: 0 auto 30px;
+    max-width: 1500px;
+}
+
+.resources-intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 8px;
+
+    color: var(--primary-color, #873b5c);
+}
+
+.resources-intro p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1.05rem, 2vw, 1.5rem);
+    font-weight: 400;
+
+    margin: 0;
+    color: var(--text-color, #252525);
+}
+
+
+/* MAIN WHITE CONTAINER */
+
+.resources-container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    padding: 38px 42px;
+
+    background: var(--card-background, #ffffff);
+
+    border: 1px solid var(--border-color, #454545);
+    border-radius: 23px;
+
+    box-shadow: 0 12px 35px rgba(50, 30, 45, 0.07);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* RESOURCE CATEGORY */
+
+.resource-category {
+    margin-bottom: 38px;
+}
+
+.resource-category:last-child {
+    margin-bottom: 0;
+}
+
+.resource-category h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    color: var(--primary-color, #873b5c);
+
+    margin: 0 0 19px;
+}
+
+
+/* SOURCE LIST */
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+/* INDIVIDUAL SOURCE */
+
+.resource-item {
+    padding: 17px 19px;
+
+    border-bottom: 1px solid var(--border-color, #e5d8de);
+
+    transition:
+        background 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+.resource-item:first-child {
+    border-top: 1px solid var(--border-color, #e5d8de);
+}
+
+.resource-item:last-child {
+    border-bottom: none;
+}
+
+.resource-item:hover {
+    background: rgba(135, 59, 92, 0.045);
+    padding-left: 25px;
+}
+
+.resource-item p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 400;
+
+    line-height: 1.85;
+
+    color: var(--text-color, #333333);
+
+    margin: 0;
+
+    overflow-wrap: anywhere;
+}
+
+.resource-item em {
+    font-style: italic;
+}
+
+
+/* SOURCE LINKS */
+
+.resource-item a {
+    color: var(--primary-color, #873b5c);
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    transition: opacity 0.2s ease;
+}
+
+.resource-item a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   DARK MODE
+   Uses the site's existing dark-mode class.
+========================================= */
+
+body.dark-mode .resources-container {
+    background: var(--card-background, #242124);
+    border-color: var(--border-color, #555055);
+}
+
+body.dark-mode .resource-item:hover {
+    background: rgba(255, 255, 255, 0.045);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .resources-page {
+        padding: 38px 5% 60px;
+    }
+
+    .resources-intro {
+        margin-bottom: 23px;
+    }
+
+    .resources-container {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .resource-category {
+        margin-bottom: 30px;
+    }
+
+    .resource-category h2 {
+        margin-bottom: 12px;
+    }
+
+    .resource-item {
+        padding: 15px 8px;
+    }
+
+    .resource-item:hover {
+        padding-left: 12px;
+    }
+
+    .resource-item p {
+        font-size: 0.91rem;
+        line-height: 1.8;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .resources-page {
+        padding: 30px 4% 45px;
+    }
+
+    .resources-container {
+        padding: 21px 15px;
+    }
+
+    .resources-intro h1 {
+        font-size: 2.35rem;
+    }
+
+    .resource-category h2 {
+        font-size: 1.25rem;
+    }
+
+}

@@ -1002,9 +1002,34 @@ const translations = {
     "analysis.extent.layer2.description":
         "Students may struggle to access these protections because of limited awareness, fear of reporting, stigma, lack of trust, and concerns about institutional responses.",
 
+    
+/* =========================
+   RESOURCES PAGE
+========================= */
+
+"nav.resources":
+    "Resources",
+
+"resources.title":
+    "Our Secondary Resources",
+
+"resources.subtitle":
+    "You may refer to these links",
+
+"resources.category1":
+    "01. Legal Foundations & Government Portals",
+
+"resources.category2":
+    "02. Educational & Medical References",
+
+"resources.category3":
+    "03. Support & Reporting Services (Indonesia)",
+
+"resources.accessed":
+    "Accessed 7 Nov. 2026.",
     },
 
-    /* ---------- TRANSLATIONS INDONESIAN ---------- */
+    /* ---------- TRANSLATIONS INDONESIAN ----------------------------------------------------------------------------------- */ 
 
 
     id: {
@@ -1953,6 +1978,31 @@ const translations = {
         "footer.note":
             "Website ini dibuat untuk tujuan edukasi dan informasi dan bukan pengganti bantuan hukum atau psikologis profesional.",
 
+    
+/* =========================
+   HALAMAN SUMBER
+========================= */
+
+"nav.resources":
+    "Sumber",
+
+"resources.title":
+    "Sumber Sekunder Kami",
+
+"resources.subtitle":
+    "Berikut adalah sumber-sumber yang dapat Anda jadikan referensi",
+
+"resources.category1":
+    "01. Landasan Hukum & Portal Pemerintah",
+
+"resources.category2":
+    "02. Referensi Pendidikan & Medis",
+
+"resources.category3":
+    "03. Layanan Dukungan & Pelaporan (Indonesia)",
+
+"resources.accessed":
+    "Diakses 7 Nov. 2026.",
     }
 
 }
