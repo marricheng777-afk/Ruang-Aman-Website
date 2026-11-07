@@ -4729,4 +4729,14 @@ body.dark-mode .resource-item:hover {
         font-size: 1.25rem;
     }
 
+    /* RESOURCES PAGE — SPACING BELOW NAVBAR */
+
+.resources-page {
+    padding-top: 45px;
+}
+
+.resources-page .resources-header {
+    margin-top: 15px;
+}
+
 }
